@@ -197,8 +197,8 @@ for output_name, input_path in files_to_process.items():
         content = f.read()
     
     # Update navigation links
-    content = re.sub(r'<a[^>]*href="#"[^>]*>Face</a>', '<a class="font-label-md text-label-md text-muted-taupe hover:text-deep-plum transition-standard" href="services.html">Face</a>', content)
-    content = re.sub(r'<a[^>]*href="#"[^>]*>Body</a>', '<a class="font-label-md text-label-md text-muted-taupe hover:text-deep-plum transition-standard" href="services.html">Body</a>', content)
+    content = re.sub(r'<a[^>]*href="#"[^>]*>Face</a>\s*', '', content)
+    content = re.sub(r'<a[^>]*href="#"[^>]*>Body</a>\s*', '', content)
     content = re.sub(r'<a[^>]*href="#"[^>]*>Injectables', '<a href="services.html">Injectables', content)
     content = re.sub(r'href="#"[^>]*>About Us', 'href="about.html">About Us', content)
     content = re.sub(r'href="#"[^>]*>Consultation', 'href="consultation.html">Consultation', content)
