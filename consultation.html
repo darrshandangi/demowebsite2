@@ -123,6 +123,26 @@
             opacity: 0.6;
         }
     </style>
+
+    <style>
+    #scroll-container { height: 8000px; width: 100%; position: relative; }
+    #sticky-viewport { position: sticky; top: 0; width: 100%; height: 100vh; overflow: hidden; }
+    #loading-screen { position: absolute; inset: 0; z-index: 50; display: flex; flex-direction: column; align-items: center; justify-content: center; background-color: #000; transition: opacity 0.5s; }
+    #hero-image { position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; object-position: center; }
+    .hero-overlay { position: absolute; inset: 0; z-index: 1; background: linear-gradient(to bottom, rgba(0,0,0,0.2) 0%, rgba(0,0,0,0) 35%, rgba(0,0,0,0) 55%, rgba(0,0,0,0.55) 100%); pointer-events: none; }
+    .hero-section { position: absolute; inset: 0; z-index: 10; display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center; padding: 0 24px; opacity: 0; pointer-events: none; transform: translateY(40px); transition: opacity 0.1s, transform 0.1s; }
+    .hero-section h1 { font-size: clamp(40px, 8vw, 100px); font-weight: 200; line-height: 1.1; margin: 0; text-shadow: 0 2px 20px rgba(0,0,0,0.5); color: #fff; font-family: 'Libre Caslon Text', serif; }
+    .hero-section p { color: rgba(255,255,255,0.7); font-size: 14px; letter-spacing: 0.4em; text-transform: uppercase; margin-bottom: 12px; }
+    .hero-section .subtitle { color: rgba(255,255,255,0.6); font-size: clamp(14px, 1.5vw, 18px); font-weight: 300; max-width: 480px; letter-spacing: normal; text-transform: none; margin-top: 28px; }
+    .hero-divider { width: 60px; height: 1px; background-color: rgba(255,255,255,0.4); margin: 28px 0; }
+    .hero-btn { padding: 14px 40px; border: 1px solid rgba(255,255,255,0.6); background-color: rgba(255,255,255,0.05); color: #fff; font-size: 13px; letter-spacing: 0.25em; text-transform: uppercase; cursor: pointer; backdrop-filter: blur(8px); transition: all 0.4s ease; margin-top: 36px; }
+    .hero-btn:hover { background-color: #fff; color: #000; }
+    #scroll-indicator { position: absolute; bottom: 32px; left: 50%; transform: translateX(-50%); z-index: 10; display: flex; flex-direction: column; align-items: center; pointer-events: none; }
+    @keyframes scrollPulse { 0%, 100% { transform: translateY(0); opacity: 0.3; } 50% { transform: translateY(14px); opacity: 1; } }
+    .scroll-track { width: 1px; height: 28px; background-color: rgba(255,255,255,0.3); margin-top: 10px; }
+    .scroll-thumb { width: 100%; height: 50%; background-color: rgba(255,255,255,0.7); animation: scrollPulse 1.5s ease-in-out infinite; }
+    </style>
+
 </head>
 <body class="bg-paper-white font-body-md text-on-background selection:bg-soft-blush/30">
 <!-- TopNavBar -->
@@ -145,23 +165,159 @@
 </div>
 </header>
 <main class="pt-20">
-<!-- Hero Section -->
-<section class="relative h-[614px] flex items-center overflow-hidden">
-<div class="absolute inset-0 z-0">
-<div class="w-full h-full bg-cover bg-center transition-transform duration-1000 scale-105" data-alt="A serene, high-end medical spa lobby in San Antonio, featuring minimalist architecture with limestone walls, soft warm lighting, and a signature deep-plum velvet accent chair. The atmosphere is clinical yet sophisticated, reflecting the Beauty Refined philosophy with vast white space and clean lines. Professional medical grade skincare products are artfully displayed on floating shelves in the background." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDMLCTKXrROwK7PDBnhedYFYzFMLuvFyGLliVjmQbEpJqwKndTJKTZuoVEnlHkApN2222mgYnwsYqWII2ZPP0GrixULeUWZzqf4Dh78y9-Br00m6oJWTUsqHSvF5HNUB4VqR3v_7WFwG3u9DNEslC5xugiDVxScjRPgxDHe1fWP7Hcxp8XHRSF_eSMfpbWlIgs0khVUl2gD8h6KFkjmS-k6WP899GGPPmwqbN_Z-FpJJ8Z6bPzRSqly')">
+
+<!-- Hero Section (Scroll Animation) -->
+<div id="scroll-container">
+  <div id="sticky-viewport">
+    
+    <div id="loading-screen">
+      <div style="color: rgba(255,255,255,0.5); font-size: 12px; letter-spacing: 0.3em; text-transform: uppercase; margin-bottom: 24px; font-family: sans-serif;">
+        Loading Experience
+      </div>
+      <div style="width: 200px; height: 2px; background-color: rgba(255,255,255,0.1); border-radius: 4px; overflow: hidden;">
+        <div id="loading-bar" style="height: 100%; width: 0%; background-color: rgba(255,255,255,0.7); transition: width 0.3s ease-out;"></div>
+      </div>
+      <div id="loading-text" style="color: rgba(255,255,255,0.35); font-size: 11px; margin-top: 12px; letter-spacing: 0.2em; font-family: sans-serif;">
+        0%
+      </div>
+    </div>
+
+    <img id="hero-image" src="" alt="">
+    <div class="hero-overlay"></div>
+
+    <!-- Section 1 -->
+    <div class="hero-section" id="sec-1">
+      <p>Welcome to</p>
+      <h1>SSM Health</h1>
+      <h2 style="color: rgba(255,255,255,0.8); font-size: clamp(20px, 3.5vw, 42px); font-weight: 300; margin: 4px 0 0; text-shadow: 0 2px 10px rgba(0,0,0,0.4); font-family: 'Libre Caslon Text', serif;">Medical Spa</h2>
+      <div class="hero-divider"></div>
+      <div class="subtitle">Where modern science meets timeless beauty</div>
+    </div>
+
+    <!-- Section 2 -->
+    <div class="hero-section" id="sec-2">
+      <p>Our Expertise</p>
+      <h1>Advanced Aesthetics</h1>
+      <div class="hero-divider"></div>
+      <div class="subtitle">Precision treatments tailored to your unique natural beauty</div>
+    </div>
+
+    <!-- Section 3 -->
+    <div class="hero-section" id="sec-3">
+      <p>Begin Your Journey</p>
+      <h1>Step Inside</h1>
+      <div class="hero-divider"></div>
+      <div class="subtitle">Experience world-class care in an environment of absolute tranquility</div>
+      <button class="hero-btn" onclick="window.location.href='consultation.html'">Book a Consultation</button>
+    </div>
+
+    <!-- Scroll Indicator -->
+    <div id="scroll-indicator">
+      <div style="color: rgba(255,255,255,0.45); font-size: 11px; letter-spacing: 0.3em; text-transform: uppercase;">Scroll to explore</div>
+      <div class="scroll-track">
+        <div class="scroll-thumb"></div>
+      </div>
+    </div>
+
+  </div>
 </div>
-<div class="absolute inset-0 bg-paper-white/60"></div>
-</div>
-<div class="relative z-10 max-w-7xl mx-auto px-margin-edge w-full">
-<div class="max-w-2xl">
-<span class="font-label-md text-label-md text-soft-blush uppercase tracking-widest block mb-4">Contact &amp; Consultation</span>
-<h1 class="font-display-lg text-display-lg text-deep-plum mb-6">Beauty <br/><i class="font-serif">Refined</i></h1>
-<p class="font-body-lg text-body-lg text-muted-taupe max-w-lg mb-8">
-                        Let your natural beauty shine with the expert care of Dr. Michael Ablavsky. Experience a sanctuary of clinical excellence and quiet luxury in the heart of San Antonio.
-                    </p>
-</div>
-</div>
-</section>
+
+<script>
+  const FRAME_COUNT = 240;
+  const framePaths = [];
+  for (let i = 1; i <= FRAME_COUNT; i++) {
+    framePaths.push(`frames/ezgif-170fe61aa28c72d3-jpg/ezgif-frame-${i.toString().padStart(3, "0")}.jpg`);
+  }
+
+  const imgRef = document.getElementById('hero-image');
+  const loadingScreen = document.getElementById('loading-screen');
+  const loadingBar = document.getElementById('loading-bar');
+  const loadingText = document.getElementById('loading-text');
+  const container = document.getElementById('scroll-container');
+  const scrollIndicator = document.getElementById('scroll-indicator');
+
+  const sections = [
+    { el: document.getElementById('sec-1'), startFade: 0.0, startFull: 0.06, endFull: 0.2, endFade: 0.3 },
+    { el: document.getElementById('sec-2'), startFade: 0.34, startFull: 0.4, endFull: 0.55, endFade: 0.65 },
+    { el: document.getElementById('sec-3'), startFade: 0.68, startFull: 0.75, endFull: 0.92, endFade: 1.0 }
+  ];
+
+  let images = new Array(FRAME_COUNT);
+  let loadedCount = 0;
+  let isLoaded = false;
+  let currentFrame = 0;
+  let rafId = 0;
+
+  for (let i = 0; i < FRAME_COUNT; i++) {
+    const img = new Image();
+    img.src = framePaths[i];
+    img.onload = () => { loadedCount++; updateLoading(); };
+    img.onerror = () => { loadedCount++; updateLoading(); };
+    images[i] = img;
+  }
+
+  function updateLoading() {
+    const progress = Math.round((loadedCount / FRAME_COUNT) * 100);
+    if(loadingBar) loadingBar.style.width = `${progress}%`;
+    if(loadingText) loadingText.innerText = `${progress}%`;
+    if (loadedCount === FRAME_COUNT) {
+      isLoaded = true;
+      setTimeout(() => {
+        if(loadingScreen) loadingScreen.style.opacity = '0';
+        setTimeout(() => { if(loadingScreen) loadingScreen.style.display = 'none'; }, 500);
+      }, 200);
+      if(images[0]) imgRef.src = images[0].src;
+      onScroll();
+    }
+  }
+
+  function updateSections(p) {
+    sections.forEach(sec => {
+      if(!sec.el) return;
+      let opacity = 0;
+      let ty = 40;
+      if (p >= sec.startFade && p < sec.startFull) {
+        const t = (p - sec.startFade) / (sec.startFull - sec.startFade);
+        opacity = t; ty = 40 * (1 - t);
+      } else if (p >= sec.startFull && p <= sec.endFull) {
+        opacity = 1; ty = 0;
+      } else if (p > sec.endFull && p <= sec.endFade) {
+        const t = (p - sec.endFull) / (sec.endFade - sec.endFull);
+        opacity = 1 - t; ty = -20 * t;
+      }
+      sec.el.style.opacity = opacity;
+      sec.el.style.transform = `translateY(${ty}px)`;
+      sec.el.style.pointerEvents = opacity > 0.1 ? 'auto' : 'none';
+    });
+    if(scrollIndicator) scrollIndicator.style.opacity = Math.max(0, 1 - p * 10);
+  }
+
+  function onScroll() {
+    if(!container) return;
+    if (rafId) cancelAnimationFrame(rafId);
+    rafId = requestAnimationFrame(() => {
+      const rect = container.getBoundingClientRect();
+      const scrollable = rect.height - window.innerHeight;
+      const scrolled = -rect.top;
+      let progress = Math.max(0, Math.min(1, scrolled / scrollable));
+      
+      if (isLoaded) {
+        const frameIndex = Math.round(progress * (FRAME_COUNT - 1));
+        if (frameIndex !== currentFrame) {
+          currentFrame = frameIndex;
+          if (images[currentFrame] && images[currentFrame].complete) {
+            imgRef.src = images[currentFrame].src;
+          }
+        }
+      }
+      updateSections(progress);
+    });
+  }
+
+  window.addEventListener('scroll', onScroll, { passive: true });
+  onScroll();
+</script>
+
 <!-- Main Content Area -->
 <section class="max-w-7xl mx-auto px-margin-edge py-section-desktop">
 <div class="grid grid-cols-1 lg:grid-cols-12 gap-gutter">

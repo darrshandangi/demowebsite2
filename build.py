@@ -226,18 +226,30 @@ for output_name, input_path in files_to_process.items():
     # Keep all procedure cards in index.html and services.html
     # (Removed previous regex substitutions that stripped Face and Body)
     
+    # Inject CSS on all pages
+    content = content.replace('</head>', hero_css + '\n</head>')
+    
+    # Replace hero section
+    start_idx = -1
+    end_idx = -1
     if output_name == "index.html":
-        # Inject CSS
-        content = content.replace('</head>', hero_css + '\n</head>')
-        
-        # Replace hero section
-        # The hero section in smm_med_spa_home starts with <header class="relative min-h-screen flex items-center pt-20 overflow-hidden">
-        # and ends with </header>
-        
         start_idx = content.find('<!-- Hero Section -->')
         end_idx = content.find('<!-- Procedure Grid Section -->')
-        if start_idx != -1 and end_idx != -1:
-            content = content[:start_idx] + hero_html + '\n' + content[end_idx:]
+    elif output_name == "services.html":
+        start_idx = content.find('<!-- Hero Section -->')
+        end_idx = content.find('<!-- Procedures Bento Grid -->')
+    elif output_name == "consultation.html":
+        start_idx = content.find('<!-- Hero Section -->')
+        end_idx = content.find('<!-- Main Content Area -->')
+    elif output_name == "about.html":
+        start_idx = content.find('<section class="relative h-[819px]')
+        if start_idx != -1:
+            end_idx = content.find('</section>', start_idx)
+            if end_idx != -1:
+                end_idx += len('</section>')
+                
+    if start_idx != -1 and end_idx != -1:
+        content = content[:start_idx] + hero_html + '\n' + content[end_idx:]
     
     with open(os.path.join(out_dir, output_name), 'w', encoding='utf-8') as f:
         f.write(content)
