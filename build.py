@@ -197,13 +197,9 @@ for output_name, input_path in files_to_process.items():
         content = f.read()
     
     # Update navigation links
-    content = re.sub(r'<a[^>]*href="#"[^>]*>Face</a>\s*', '', content)
-    content = re.sub(r'<a[^>]*href="#"[^>]*>Body</a>\s*', '', content)
-    # also remove them if they were already converted to services.html in previous steps (though we are reading from fresh code.html)
-    content = re.sub(r'<a[^>]*href="services.html"[^>]*>Face</a>\s*', '', content)
-    content = re.sub(r'<a[^>]*href="services.html"[^>]*>Body</a>\s*', '', content)
-    
-    content = re.sub(r'href="#"[^>]*>Injectables', 'href="services.html">Injectables', content)
+    content = re.sub(r'<a[^>]*href="#"[^>]*>Face</a>', '<a class="font-label-md text-label-md text-muted-taupe hover:text-deep-plum transition-standard" href="services.html">Face</a>', content)
+    content = re.sub(r'<a[^>]*href="#"[^>]*>Body</a>', '<a class="font-label-md text-label-md text-muted-taupe hover:text-deep-plum transition-standard" href="services.html">Body</a>', content)
+    content = re.sub(r'<a[^>]*href="#"[^>]*>Injectables', '<a href="services.html">Injectables', content)
     content = re.sub(r'href="#"[^>]*>About Us', 'href="about.html">About Us', content)
     content = re.sub(r'href="#"[^>]*>Consultation', 'href="consultation.html">Consultation', content)
     
@@ -227,16 +223,8 @@ for output_name, input_path in files_to_process.items():
     phone_input_regex_2 = r'<div class="group">\s*<label[^>]*>Phone Number\*</label>\s*<input[^>]*type="tel"/>\s*</div>'
     content = re.sub(phone_input_regex_2, '', content)
 
-    # Remove Face and Body sections from index.html / services.html
-    # We can just remove the div blocks containing them.
-    # To be safe, we'll use a broad regex that matches the card blocks.
-    # For index.html (smm_med_spa_home/code.html) Face Card:
-    content = re.sub(r'<!-- Face Card -->.*?<!-- Breast Card -->', '<!-- Breast Card -->', content, flags=re.DOTALL)
-    content = re.sub(r'<!-- Body Card -->.*?<!-- Injectables Card -->', '<!-- Injectables Card -->', content, flags=re.DOTALL)
-
-    # For services.html Face and Body blocks
-    content = re.sub(r'<!-- Face -->.*?<!-- Breast -->', '<!-- Breast -->', content, flags=re.DOTALL)
-    content = re.sub(r'<!-- Body -->.*?<!-- Injectables -->', '<!-- Injectables -->', content, flags=re.DOTALL)
+    # Keep all procedure cards in index.html and services.html
+    # (Removed previous regex substitutions that stripped Face and Body)
     
     if output_name == "index.html":
         # Inject CSS
