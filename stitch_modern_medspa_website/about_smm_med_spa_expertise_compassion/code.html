@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+
+<html class="scroll-smooth" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>About Us | SMM Med Spa - Dr. Michael Ablavsky</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Libre+Caslon+Text:ital,wght@0,400;0,700;1,400&amp;family=Manrope:wght@200;400;600;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<style>
+    .material-symbols-outlined {
+      font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24;
+    }
+    .stagger-grid > div:nth-child(even) {
+      margin-top: 40px;
+    }
+    .medical-line {
+      height: 1px;
+      background: linear-gradient(90deg, transparent, #EDEDED, transparent);
+    }
+    @media (max-width: 768px) {
+      .stagger-grid > div:nth-child(even) {
+        margin-top: 0;
+      }
+    }
+  </style>
+<script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          "colors": {
+            "surface-container": "#efedec",
+            "secondary-fixed": "#ffdbcc",
+            "primary-fixed": "#ffd8e8",
+            "deep-plum": "#5E3E4D",
+            "tertiary-fixed": "#f1dfd6",
+            "primary-fixed-dim": "#e6bbcd",
+            "error": "#ba1a1a",
+            "on-secondary-container": "#7a5c4f",
+            "paper-white": "#FDFDFD",
+            "tertiary": "#392f29",
+            "surface-container-high": "#eae8e6",
+            "on-secondary-fixed-variant": "#5b4135",
+            "on-primary": "#ffffff",
+            "background": "#fbf9f7",
+            "on-secondary-fixed": "#2b160d",
+            "surface-dim": "#dbdad8",
+            "inverse-primary": "#e6bbcd",
+            "surface-tint": "#775464",
+            "soft-blush": "#C5A192",
+            "primary": "#452836",
+            "on-surface": "#1b1c1b",
+            "surface-container-highest": "#e4e2e0",
+            "surface-container-lowest": "#ffffff",
+            "tertiary-fixed-dim": "#d4c3ba",
+            "secondary-fixed-dim": "#e5beaf",
+            "inverse-surface": "#30302f",
+            "on-tertiary-fixed": "#231a14",
+            "surface-bright": "#fbf9f7",
+            "on-tertiary-container": "#c3b3aa",
+            "primary-container": "#5e3e4d",
+            "error-container": "#ffdad6",
+            "on-background": "#1b1c1b",
+            "secondary": "#75584b",
+            "on-secondary": "#ffffff",
+            "on-primary-fixed": "#2d1320",
+            "surface-variant": "#e4e2e0",
+            "surface": "#fbf9f7",
+            "on-tertiary-fixed-variant": "#50443e",
+            "tertiary-container": "#51453e",
+            "on-error-container": "#93000a",
+            "on-error": "#ffffff",
+            "outline": "#807478",
+            "muted-taupe": "#8B7D75",
+            "outline-variant": "#d2c3c7",
+            "secondary-container": "#ffd7c7",
+            "on-surface-variant": "#4e4448",
+            "on-primary-fixed-variant": "#5d3d4c",
+            "on-primary-container": "#d5abbc",
+            "medical-gray": "#EDEDED",
+            "on-tertiary": "#ffffff",
+            "surface-container-low": "#f5f3f1",
+            "inverse-on-surface": "#f2f0ee"
+          },
+          "borderRadius": {
+            "DEFAULT": "0.25rem",
+            "lg": "0.5rem",
+            "xl": "0.75rem",
+            "full": "9999px"
+          },
+          "spacing": {
+            "stack-md": "32px",
+            "base": "8px",
+            "stack-sm": "16px",
+            "section-mobile": "64px",
+            "gutter": "24px",
+            "margin-edge": "40px",
+            "section-desktop": "120px"
+          },
+          "fontFamily": {
+            "display-lg": ["Libre Caslon Text"],
+            "headline-md": ["Libre Caslon Text"],
+            "body-md": ["Manrope"],
+            "headline-lg": ["Libre Caslon Text"],
+            "label-md": ["Manrope"],
+            "label-sm": ["Manrope"],
+            "body-lg": ["Manrope"],
+            "headline-xl": ["Libre Caslon Text"]
+          },
+          "fontSize": {
+            "display-lg": ["64px", {"lineHeight": "72px", "letterSpacing": "-0.02em", "fontWeight": "400"}],
+            "headline-md": ["24px", {"lineHeight": "32px", "fontWeight": "400"}],
+            "body-md": ["16px", {"lineHeight": "24px", "fontWeight": "400"}],
+            "headline-lg": ["32px", {"lineHeight": "40px", "fontWeight": "400"}],
+            "label-md": ["14px", {"lineHeight": "20px", "letterSpacing": "0.05em", "fontWeight": "600"}],
+            "label-sm": ["12px", {"lineHeight": "16px", "letterSpacing": "0.02em", "fontWeight": "500"}],
+            "body-lg": ["18px", {"lineHeight": "28px", "fontWeight": "400"}],
+            "headline-xl": ["48px", {"lineHeight": "56px", "fontWeight": "400"}]
+          }
+        },
+      },
+    }
+  </script>
+</head>
+<body class="bg-paper-white text-on-surface font-body-md">
+<nav class="bg-paper-white dark:bg-inverse-surface border-b border-medical-gray dark:border-on-surface-variant docked full-width top-0 z-50 sticky">
+<div class="flex justify-between items-center px-margin-edge h-20 max-w-7xl mx-auto">
+<div class="font-headline-lg text-headline-lg uppercase tracking-widest text-deep-plum dark:text-primary-fixed-dim">
+        SMM Med Spa
+      </div>
+<div class="hidden md:flex gap-gutter items-center">
+<a class="text-muted-taupe dark:text-on-tertiary-container hover:text-deep-plum font-label-md text-label-md hover:opacity-90 transition-opacity duration-300" href="#">Face</a>
+<a class="text-muted-taupe dark:text-on-tertiary-container hover:text-deep-plum font-label-md text-label-md hover:opacity-90 transition-opacity duration-300" href="#">Body</a>
+<a class="text-muted-taupe dark:text-on-tertiary-container hover:text-deep-plum font-label-md text-label-md hover:opacity-90 transition-opacity duration-300" href="#">Injectables</a>
+<a class="text-deep-plum dark:text-primary-fixed font-bold border-b-2 border-soft-blush pb-1 font-label-md text-label-md" href="#">About Us</a>
+<a class="text-muted-taupe dark:text-on-tertiary-container hover:text-deep-plum font-label-md text-label-md hover:opacity-90 transition-opacity duration-300" href="#">Consultation</a>
+</div>
+<button class="bg-deep-plum text-paper-white px-stack-sm py-2 font-label-md text-label-md uppercase tracking-wider scale-95 duration-200 ease-in-out hover:opacity-90">
+        Request Consultation
+      </button>
+</div>
+</nav>
+<main>
+<section class="relative h-[819px] flex items-center overflow-hidden">
+<div class="absolute inset-0 z-0">
+<div class="w-full h-full bg-cover bg-center opacity-90" data-alt="A serene, high-end medical spa lobby with minimalist architectural lines. Soft natural light spills across smooth white surfaces and limestone textures. The atmosphere is clinical yet luxurious, featuring a subtle palette of soft blush and deep plum accents in the furniture. Large glass windows reveal a hint of greenery outside, maintaining a sense of safety and tranquility." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDuq0joBKa87M1B1xBfIkYJ8ZZrOsRiaBdiaHgQHQG0HbilyXbNqGTiQo-sUtUGbhC90vCMHtYMQ3oZ5XhaZBPVOTrzH_dveA1nOKvHPMLVoH3-ka2qoD5Bm8Jrohd0JfQCPUyWenj-g380gpFy-vLnS5Z0u7kGM3Rppu5FNyhom4ODJ39G9RhSNBnWfYPXoIPwYM2sTAA9pOuC4Xy1pK2ksYal0-mKrV1yAJ0dNWA5o9v-traXvFMu')"></div>
+<div class="absolute inset-0 bg-gradient-to-r from-paper-white via-paper-white/60 to-transparent"></div>
+</div>
+<div class="relative z-10 px-margin-edge max-w-7xl mx-auto w-full">
+<div class="max-w-2xl">
+<span class="font-label-md text-label-md text-soft-blush uppercase tracking-[0.3em] mb-4 block">Our Philosophy</span>
+<h1 class="font-display-lg text-display-lg text-deep-plum mb-6">
+            Beauty <br/> <span class="italic font-light">Refined</span>
+</h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant mb-10 leading-relaxed">
+            Let your natural beauty shine with the help of Dr. Michael Ablavsky, a board-certified plastic surgeon specializing in cosmetic surgery in San Antonio. We offer a sanctuary where medical rigor meets a high-end spa experience.
+          </p>
+<div class="flex flex-col sm:flex-row gap-gutter">
+<button class="bg-deep-plum text-paper-white px-8 py-4 font-label-md text-label-md uppercase tracking-widest hover:bg-opacity-90 transition-all border border-transparent">
+              Request Your Consultation
+            </button>
+<button class="border border-deep-plum text-deep-plum px-8 py-4 font-label-md text-label-md uppercase tracking-widest hover:bg-deep-plum hover:text-paper-white transition-all">
+              Our Procedures
+            </button>
+</div>
+</div>
+</div>
+</section>
+<section class="py-section-desktop px-margin-edge max-w-7xl mx-auto">
+<div class="grid grid-cols-1 lg:grid-cols-2 gap-section-mobile items-center">
+<div class="relative">
+<div class="aspect-[4/5] bg-cover bg-center grayscale-[20%]" data-alt="A professional portrait of Dr. Michael Ablavsky in a clean, modern medical setting. He is wearing a sharp, dark suit and a tie, projecting an image of compassionate expertise and board-certified authority. The lighting is soft and flattering, emphasizing a bright, clinical but warm environment that aligns with the premium med spa aesthetic." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCTr_CYhzGjXDGnC99HjJ0ZIQxsvqET2vOWDkiJ2ts30swwyLmi4BgQqgcBhiVqOgyQq22ts2Wl0jFdj_RmoFOjBWI4p4KeMxga-F66nhgMKQ8ObA5ix3XyFTGOTvds76fpJlQ5NO-7u-YyXh2zPM5Pz3ATWsvINEsZz04GPVS8rqfozGvN4GdPBOqEaCz_-VWW0g3Wt0i2dZ08zgqQ-73Abhc-OSnn7sCrgExQtb32zzwFjRQJ0XGC')"></div>
+<div class="absolute -bottom-8 -right-8 w-64 h-64 border-r-2 border-b-2 border-soft-blush hidden lg:block"></div>
+</div>
+<div class="lg:pl-gutter">
+<span class="font-label-md text-label-md text-soft-blush uppercase tracking-[0.3em] mb-4 block">Meet the Director</span>
+<h2 class="font-headline-xl text-headline-xl text-deep-plum mb-8">Dr. Michael Ablavsky</h2>
+<div class="space-y-6 font-body-md text-body-md text-on-surface-variant leading-relaxed">
+<p>
+              Dr. Ablavsky is a board-certified, fellowship-trained plastic surgeon whose patients trust him for natural-looking results from face, breast, and body procedures.
+            </p>
+<p>
+              His philosophy centers on listening closely to each patient's unique concerns, taking the time to answer questions with honesty, clinical precision, and genuine compassion.
+            </p>
+<p>
+              Specializing in cosmetic surgery in San Antonio, he has built a practice that serves as a sanctuary for those seeking to refine their aesthetic while prioritizing safety and professional excellence.
+            </p>
+</div>
+<div class="mt-12 flex items-center gap-6">
+<div class="w-16 h-[1px] bg-soft-blush"></div>
+<div class="font-label-md text-label-md text-deep-plum italic tracking-widest">Board-Certified Excellence</div>
+</div>
+</div>
+</div>
+</section>
+<section class="bg-surface-container-low py-section-desktop px-margin-edge overflow-hidden">
+<div class="max-w-7xl mx-auto">
+<div class="text-center mb-section-mobile">
+<span class="font-label-md text-label-md text-soft-blush uppercase tracking-[0.3em] mb-4 block">Our Values</span>
+<h2 class="font-headline-xl text-headline-xl text-deep-plum">The Clinical Sanctuary</h2>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-gutter stagger-grid">
+<div class="bg-paper-white p-stack-md border border-medical-gray hover:border-soft-blush transition-colors group">
+<span class="material-symbols-outlined text-deep-plum text-4xl mb-6 block group-hover:scale-110 transition-transform">verified_user</span>
+<h3 class="font-headline-md text-headline-md text-deep-plum mb-4">Board Certified</h3>
+<p class="font-body-md text-on-surface-variant">Expertise you can trust, backed by the highest standards of medical certification and rigorous fellowship training.</p>
+</div>
+<div class="bg-paper-white p-stack-md border border-medical-gray hover:border-soft-blush transition-colors group">
+<span class="material-symbols-outlined text-deep-plum text-4xl mb-6 block group-hover:scale-110 transition-transform">spa</span>
+<h3 class="font-headline-md text-headline-md text-deep-plum mb-4">Quiet Luxury</h3>
+<p class="font-body-md text-on-surface-variant">A refined, serene environment designed to make your journey toward beauty as tranquil as a high-end spa retreat.</p>
+</div>
+<div class="bg-paper-white p-stack-md border border-medical-gray hover:border-soft-blush transition-colors group">
+<span class="material-symbols-outlined text-deep-plum text-4xl mb-6 block group-hover:scale-110 transition-transform">volunteer_activism</span>
+<h3 class="font-headline-md text-headline-md text-deep-plum mb-4">Patient-Centered</h3>
+<p class="font-body-md text-on-surface-variant">Your goals are our priority. We listen, we care, and we tailor every procedure to your unique natural anatomy.</p>
+</div>
+</div>
+</div>
+</section>
+<section class="py-section-desktop px-margin-edge max-w-7xl mx-auto">
+<div class="flex flex-col md:flex-row justify-between items-end mb-section-mobile">
+<div>
+<span class="font-label-md text-label-md text-soft-blush uppercase tracking-[0.3em] mb-4 block">Patient Voices</span>
+<h2 class="font-headline-xl text-headline-xl text-deep-plum">Trust &amp; Results</h2>
+</div>
+<a class="font-label-md text-label-md text-deep-plum uppercase tracking-widest border-b border-soft-blush pb-1 hover:text-soft-blush transition-colors" href="#">Read All Reviews</a>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+<div class="border-l-4 border-soft-blush pl-stack-md py-4 italic text-body-lg text-on-surface">
+<p class="mb-6">"Dr. Ablavsky and his team provided a level of care I hadn't experienced before. From the first consultation to the final follow-up, I felt safe, heard, and incredibly confident in the results. My natural look was preserved perfectly."</p>
+<cite class="font-label-md text-label-md not-italic text-muted-taupe">— Sarah J., Patient</cite>
+</div>
+<div class="border-l-4 border-soft-blush pl-stack-md py-4 italic text-body-lg text-on-surface">
+<p class="mb-6">"The attention to detail is remarkable. Not just in the surgery itself, but in the way the entire office handles your privacy and comfort. Truly a premium experience in San Antonio."</p>
+<cite class="font-label-md text-label-md not-italic text-muted-taupe">— Michael R., Patient</cite>
+</div>
+</div>
+</section>
+<section class="bg-deep-plum text-paper-white py-section-desktop relative overflow-hidden">
+<div class="absolute inset-0 opacity-10 pointer-events-none">
+<div class="w-full h-full" style="background-image: radial-gradient(#FDFDFD 1px, transparent 0); background-size: 40px 40px;"></div>
+</div>
+<div class="max-w-4xl mx-auto px-margin-edge text-center relative z-10">
+<h2 class="font-display-lg text-display-lg mb-8">Begin Your Journey</h2>
+<p class="font-body-lg mb-12 opacity-90 leading-relaxed">
+          Ready to discover your refined beauty? Schedule a consultation with Dr. Ablavsky to discuss your aesthetic goals in a private, clinical environment.
+        </p>
+<button class="bg-paper-white text-deep-plum px-12 py-5 font-label-md text-label-md uppercase tracking-[0.2em] font-bold hover:bg-soft-blush hover:text-paper-white transition-all duration-300">
+          Request Consultation
+        </button>
+</div>
+</section>
+</main>
+<footer class="bg-background dark:bg-surface-dim border-t border-medical-gray dark:border-on-surface-variant mt-section-desktop">
+<div class="grid grid-cols-1 md:grid-cols-3 gap-gutter px-margin-edge py-stack-md max-w-7xl mx-auto">
+<div class="space-y-4">
+<div class="font-headline-md text-headline-md text-deep-plum">SMM Med Spa</div>
+<p class="font-body-md text-body-md text-on-background dark:text-on-surface">
+          19296 Stone Oak Pkwy, Suite 102<br/>
+          San Antonio, TX 78258<br/>
+          Phone: (210) 942-6672
+        </p>
+</div>
+<div class="flex flex-col gap-2">
+<h4 class="font-label-md text-label-md text-deep-plum uppercase mb-2">Quick Links</h4>
+<a class="font-label-sm text-label-sm text-muted-taupe hover:text-soft-blush hover:underline decoration-soft-blush" href="#">Privacy Policy</a>
+<a class="font-label-sm text-label-sm text-muted-taupe hover:text-soft-blush hover:underline decoration-soft-blush" href="#">COVID-19 Update</a>
+<a class="font-label-sm text-label-sm text-muted-taupe hover:text-soft-blush hover:underline decoration-soft-blush" href="#">Site Map</a>
+<a class="font-label-sm text-label-sm text-muted-taupe hover:text-soft-blush hover:underline decoration-soft-blush" href="#">Patient Resources</a>
+<a class="font-label-sm text-label-sm text-muted-taupe hover:text-soft-blush hover:underline decoration-soft-blush" href="#">Blog</a>
+</div>
+<div class="flex flex-col gap-4">
+<h4 class="font-label-md text-label-md text-deep-plum uppercase mb-2">Connect</h4>
+<div class="flex gap-4">
+<a class="text-deep-plum hover:text-soft-blush transition-colors" href="#">
+<svg class="w-6 h-6 fill-current" viewbox="0 0 24 24"><path d="M22 12c0-5.52-4.48-10-10-10S2 6.48 2 12c0 4.84 3.44 8.87 8 9.8V15H8v-3h2V9.5C10 7.57 11.57 6 13.5 6H16v3h-2c-.55 0-1 .45-1 1V12h3l-.5 3H13v6.8c4.56-.93 8-4.96 8-9.8z"></path></svg>
+</a>
+<a class="text-deep-plum hover:text-soft-blush transition-colors" href="#">
+<svg class="w-6 h-6 fill-current" viewbox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.266.069 1.645.069 4.849s-.011 3.584-.069 4.849c-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07s-3.584-.012-4.849-.07c-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.848s.012-3.584.07-4.849c.149-3.225 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948s.014 3.667.072 4.947c.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072s3.667-.014 4.947-.072c4.358-.2 6.78-2.618 6.98-6.98.058-1.281.072-1.689.072-4.948s-.014-3.667-.072-4.947c-.2-4.358-2.618-6.78-6.98-6.98-1.281-.058-1.689-.072-4.948-.072zM12 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.162 6.162 6.162 6.162-2.759 6.162-6.162-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.791-4-4s1.791-4 4-4 4 1.791 4 4-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"></path></svg>
+</a>
+</div>
+<p class="font-label-sm text-label-sm text-on-background dark:text-on-surface opacity-60">
+          © 2024 SMM Med Spa. All Rights Reserved. Medical Director: Dr. Michael Ablavsky.
+        </p>
+</div>
+</div>
+</footer>
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const observerOptions = {
+        threshold: 0.1
+      };
+
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('opacity-100', 'translate-y-0');
+            entry.target.classList.remove('opacity-0', 'translate-y-10');
+          }
+        });
+      }, observerOptions);
+
+      document.querySelectorAll('section').forEach(section => {
+        section.classList.add('transition-all', 'duration-1000', 'opacity-0', 'translate-y-10');
+        observer.observe(section);
+      });
+    });
+  </script>
+</body></html>
