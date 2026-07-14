@@ -145,8 +145,15 @@
     .scroll-thumb { width: 100%; height: 50%; background-color: rgba(255,255,255,0.7); animation: scrollPulse 1.5s ease-in-out infinite; }
     @media (max-width: 768px) { 
         #scroll-container { height: 4500px; } 
-        #hero-image { object-fit: cover !important; }
-        #sticky-viewport { background-color: #000; }
+        #sticky-viewport { background-color: #2b1f24; } 
+        #hero-image { 
+            height: 60dvh !important; 
+            top: 20dvh !important; 
+            object-fit: cover !important; 
+            border-top: 1px solid rgba(255,255,255,0.1);
+            border-bottom: 1px solid rgba(255,255,255,0.1);
+        }
+        #loading-screen { background-color: #2b1f24; }
     }
     </style>
 
