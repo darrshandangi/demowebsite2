@@ -130,9 +130,9 @@
     #scroll-container { height: 8000px; width: 100%; position: relative; }
     #sticky-viewport { position: sticky; top: 0; width: 100%; height: 100vh; overflow: hidden; }
     #loading-screen { position: absolute; inset: 0; z-index: 50; display: flex; flex-direction: column; align-items: center; justify-content: center; background-color: #000; transition: opacity 0.5s; }
-    #hero-image { position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; object-position: center; }
+    #hero-image { position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; object-position: center; will-change: contents, transform; transform: translateZ(0); }
     .hero-overlay { position: absolute; inset: 0; z-index: 1; background: linear-gradient(to bottom, rgba(0,0,0,0.2) 0%, rgba(0,0,0,0) 35%, rgba(0,0,0,0) 55%, rgba(0,0,0,0.55) 100%); pointer-events: none; }
-    .hero-section { position: absolute; inset: 0; z-index: 10; display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center; padding: 0 24px; opacity: 0; pointer-events: none; transform: translateY(40px); transition: opacity 0.1s, transform 0.1s; }
+    .hero-section { position: absolute; inset: 0; z-index: 10; display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center; padding: 0 24px; opacity: 0; pointer-events: none; transform: translateY(40px) translateZ(0); will-change: opacity, transform; transition: none; }
     .hero-section h1 { font-size: clamp(40px, 8vw, 100px); font-weight: 200; line-height: 1.1; margin: 0; text-shadow: 0 2px 20px rgba(0,0,0,0.5); color: #fff; font-family: 'Libre Caslon Text', serif; }
     .hero-section p { color: rgba(255,255,255,0.7); font-size: 14px; letter-spacing: 0.4em; text-transform: uppercase; margin-bottom: 12px; }
     .hero-section .subtitle { color: rgba(255,255,255,0.6); font-size: clamp(14px, 1.5vw, 18px); font-weight: 300; max-width: 480px; letter-spacing: normal; text-transform: none; margin-top: 28px; }
@@ -269,8 +269,10 @@
     }
   }
 
+  let lastPointerEvents = [];
+
   function updateSections(p) {
-    sections.forEach(sec => {
+    sections.forEach((sec, idx) => {
       if(!sec.el) return;
       let opacity = 0;
       let ty = 40;
@@ -283,9 +285,16 @@
         const t = (p - sec.endFull) / (sec.endFade - sec.endFull);
         opacity = 1 - t; ty = -20 * t;
       }
-      sec.el.style.opacity = opacity;
-      sec.el.style.transform = `translateY(${ty}px)`;
-      sec.el.style.pointerEvents = opacity > 0.1 ? 'auto' : 'none';
+      
+      // Only apply styles to minimize layout thrashing
+      sec.el.style.opacity = opacity.toFixed(3);
+      sec.el.style.transform = `translateY(${ty.toFixed(1)}px) translateZ(0)`;
+      
+      const newPe = opacity > 0.1 ? 'auto' : 'none';
+      if (lastPointerEvents[idx] !== newPe) {
+        sec.el.style.pointerEvents = newPe;
+        lastPointerEvents[idx] = newPe;
+      }
     });
     if(scrollIndicator) scrollIndicator.style.opacity = Math.max(0, 1 - p * 10);
   }
