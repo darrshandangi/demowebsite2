@@ -148,20 +148,19 @@
 <body class="bg-paper-white selection:bg-soft-blush selection:text-white">
 <!-- TopNavBar -->
 <nav class="fixed top-0 left-0 w-full z-50 bg-paper-white border-b border-medical-gray h-20 flex items-center transition-all duration-300" id="main-nav">
-<div class="max-w-7xl mx-auto w-full px-margin-edge flex justify-between items-center">
-<a class="font-headline-lg text-headline-lg uppercase tracking-widest text-deep-plum" href="index.html">
-                CK Aesthetics
-            </a>
-<div class="hidden md:flex gap-8 items-center">
-<a href="services.html">Services</a>
-<a class="font-label-md text-label-md text-muted-taupe hover:text-deep-plum transition-opacity duration-300" href="about.html">About Us</a>
-<a class="font-label-md text-label-md text-muted-taupe hover:text-deep-plum transition-opacity duration-300" href="consultation.html">Consultation</a>
-<button onclick="window.location.href=\'consultation.html\'" class="bg-deep-plum text-paper-white px-8 py-3 font-label-md text-label-md uppercase tracking-wider hover:opacity-90 transition-opacity duration-300">
-                    Request Consultation
-                </button>
+<div class="flex justify-between items-center px-4 md:px-margin-edge h-20 max-w-7xl mx-auto w-full">
+<div class="font-headline-lg md:text-headline-lg text-xl uppercase tracking-widest text-deep-plum dark:text-primary-fixed-dim whitespace-nowrap">
+<span class="md:hidden">CK</span>
+<span class="hidden md:inline">CK Aesthetics</span>
 </div>
-<button class="md:hidden text-deep-plum p-2">
-<span class="material-symbols-outlined">menu</span>
+<div class="hidden md:flex gap-gutter items-center">
+<a class="text-deep-plum dark:text-primary-fixed font-bold border-b-2 border-soft-blush pb-1 font-label-md text-label-md" href="services.html">Services</a>
+<a class="text-muted-taupe dark:text-on-tertiary-container hover:text-deep-plum font-label-md text-label-md hover:opacity-90 transition-opacity duration-300" href="about.html">About Us</a>
+<a class="text-muted-taupe dark:text-on-tertiary-container hover:text-deep-plum font-label-md text-label-md hover:opacity-90 transition-opacity duration-300" href="consultation.html">Consultation</a>
+</div>
+<button onclick="window.location.href='consultation.html'" class="bg-deep-plum text-paper-white px-3 py-2 md:px-stack-sm md:py-2 text-[11px] md:font-label-md md:text-label-md uppercase tracking-wider scale-95 duration-200 ease-in-out hover:opacity-90 whitespace-nowrap ml-2">
+<span class="md:hidden">Book Now</span>
+<span class="hidden md:inline">Request Consultation</span>
 </button>
 </div>
 </nav>
