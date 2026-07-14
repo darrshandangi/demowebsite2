@@ -167,20 +167,51 @@
 <!-- Top Navigation -->
 <nav class="bg-paper-white dark:bg-inverse-surface border-b border-medical-gray dark:border-on-surface-variant docked full-width top-0 z-50 sticky">
 <div class="flex justify-between items-center px-4 md:px-margin-edge h-20 max-w-7xl mx-auto">
-<div class="font-headline-lg md:text-headline-lg text-xl uppercase tracking-widest text-deep-plum dark:text-primary-fixed-dim whitespace-nowrap">
+<a href="index.html" class="font-headline-lg md:text-headline-lg text-xl uppercase tracking-widest text-deep-plum dark:text-primary-fixed-dim whitespace-nowrap hover:opacity-80 transition-opacity">
 <span class="md:hidden">CK</span>
 <span class="hidden md:inline">CK Aesthetics</span>
-</div>
+</a>
 <div class="hidden md:flex gap-gutter items-center">
 <a class="text-muted-taupe dark:text-on-tertiary-container hover:text-deep-plum font-label-md text-label-md hover:opacity-90 transition-opacity duration-300" href="services.html">Services</a>
 <a class="text-muted-taupe dark:text-on-tertiary-container hover:text-deep-plum font-label-md text-label-md hover:opacity-90 transition-opacity duration-300" href="about.html">About Us</a>
 <a class="text-muted-taupe dark:text-on-tertiary-container hover:text-deep-plum font-label-md text-label-md hover:opacity-90 transition-opacity duration-300" href="consultation.html">Consultation</a>
 </div>
-<button onclick="window.location.href='consultation.html'" class="bg-deep-plum text-paper-white px-3 py-2 md:px-stack-sm md:py-2 text-[11px] md:font-label-md md:text-label-md uppercase tracking-wider scale-95 duration-200 ease-in-out hover:opacity-90 whitespace-nowrap ml-2">
-<span class="md:hidden">Book Now</span>
-<span class="hidden md:inline">Request Consultation</span>
+<div class="flex items-center gap-2">
+<button onclick="window.location.href='consultation.html'" class="hidden md:block bg-deep-plum text-paper-white px-stack-sm py-2 font-label-md text-label-md uppercase tracking-wider scale-95 duration-200 ease-in-out hover:opacity-90 whitespace-nowrap ml-2">
+Request Consultation
+</button>
+<button id="mobile-menu-btn" class="md:hidden text-deep-plum p-2 focus:outline-none">
+<span class="material-symbols-outlined text-2xl">menu</span>
 </button>
 </div>
+</div>
+<!-- Mobile Menu -->
+<div id="mobile-menu" class="hidden md:hidden absolute top-20 left-0 w-full bg-paper-white border-b border-medical-gray shadow-lg flex-col py-4 px-4 gap-4 z-40">
+<a href="index.html" class="text-deep-plum font-label-md text-lg hover:opacity-80">Home</a>
+<a href="services.html" class="text-deep-plum font-label-md text-lg hover:opacity-80">Services</a>
+<a href="about.html" class="text-deep-plum font-label-md text-lg hover:opacity-80">About Us</a>
+<a href="consultation.html" class="text-deep-plum font-label-md text-lg hover:opacity-80">Consultation</a>
+<button onclick="window.location.href='consultation.html'" class="bg-deep-plum text-paper-white py-3 font-label-md text-label-md uppercase tracking-wider mt-2 w-full">Book Now</button>
+</div>
+<script>
+document.addEventListener('DOMContentLoaded', () => {
+    const mobileBtn = document.getElementById('mobile-menu-btn');
+    const mobileMenu = document.getElementById('mobile-menu');
+    if(mobileBtn && mobileMenu) {
+        mobileBtn.addEventListener('click', () => {
+            if(mobileMenu.classList.contains('hidden')) {
+                mobileMenu.classList.remove('hidden');
+                mobileMenu.classList.add('flex');
+                mobileBtn.innerHTML = '<span class="material-symbols-outlined text-2xl">close</span>';
+            } else {
+                mobileMenu.classList.add('hidden');
+                mobileMenu.classList.remove('flex');
+                mobileBtn.innerHTML = '<span class="material-symbols-outlined text-2xl">menu</span>';
+            }
+        });
+    }
+});
+</script>
 </nav>
 
 <!-- Hero Section (Scroll Animation) -->
