@@ -164,10 +164,10 @@
 <div class="max-w-container mx-auto px-margin-desktop flex justify-between items-center h-20">
 <div class="font-display-lg text-headline-lg text-deep-plum">CK Aesthetics</div>
 <div class="hidden md:flex items-center gap-gutter">
-<a class="font-label-lg text-label-lg text-on-surface-variant font-medium hover:text-deep-plum transition-colors duration-300" href="#">Services</a>
-<a class="font-label-lg text-label-lg text-on-surface-variant font-medium hover:text-deep-plum transition-colors duration-300" href="#">About Us</a>
-<a class="font-label-lg text-label-lg text-on-surface-variant font-medium hover:text-deep-plum transition-colors duration-300" href="#">Consultation</a>
-<button onclick="window.location.href='https://squareup.com/appointments/book/L5CWQHE9Q1V00'" class="ml-4 px-6 py-3 bg-deep-plum text-paper-white font-label-lg text-label-lg uppercase cursor-pointer active:scale-95 transition-all tracking-widest cursor-pointer">Book Now</button>
+<a class="font-label-lg text-label-lg text-on-surface-variant font-medium hover:text-deep-plum transition-colors duration-300" href="services.html">Services</a>
+<a class="font-label-lg text-label-lg text-on-surface-variant font-medium hover:text-deep-plum transition-colors duration-300" href="about.html">About Us</a>
+<a class="font-label-lg text-label-lg text-on-surface-variant font-medium hover:text-deep-plum transition-colors duration-300" href="consultation.html">Consultation</a>
+<button onclick="window.location.href='https://squareup.com/appointments/book/L5CWQHE9Q1V00'"  class="ml-4 px-6 py-3 bg-deep-plum text-paper-white font-label-lg text-label-lg uppercase cursor-pointer active:scale-95 transition-all tracking-widest cursor-pointer">Book Now</button>
 </div>
 <button class="md:hidden material-symbols-outlined text-deep-plum text-3xl">menu</button>
 </div>
@@ -213,7 +213,7 @@
       <h1>Step Inside</h1>
       <div class="hero-divider"></div>
       <div class="subtitle">Experience high-quality skincare in an environment of absolute tranquility</div>
-      <button onclick="window.location.href='https://squareup.com/appointments/book/L5CWQHE9Q1V00'" class="hero-btn cursor-pointer">Book a Consultation</button>
+      <button onclick="window.location.href='https://squareup.com/appointments/book/L5CWQHE9Q1V00'"  class="hero-btn cursor-pointer">Book a Consultation</button>
     </div>
 
     <!-- Scroll Indicator -->
@@ -380,7 +380,7 @@
 <h3 class="font-headline-lg text-deep-plum mb-stack-md">Medical Weight Loss</h3>
 <p class="font-body-md text-on-surface-variant mb-stack-md max-w-md">Precision programs combining GLP-1 therapy (Semaglutide/Tirzepatide) with personalized metabolic coaching.</p>
 <div class="flex gap-gutter">
-<button class="bg-deep-plum text-paper-white px-8 py-3 font-label-lg uppercase tracking-widest hover:bg-deep-plum transition-all">Start Your Journey</button>
+<button onclick="window.location.href='https://squareup.com/appointments/book/L5CWQHE9Q1V00'"  class="bg-deep-plum text-paper-white px-8 py-3 font-label-lg uppercase tracking-widest hover:bg-deep-plum transition-all">Start Your Journey</button>
 <a class="flex items-center text-deep-plum font-label-lg underline underline-offset-4 hover:text-deep-plum transition-colors" href="#">Learn More</a>
 </div>
 </div>
@@ -617,8 +617,8 @@ document.addEventListener('DOMContentLoaded', () => {
     mobileMenu.innerHTML = `
         <a class="font-label-lg text-label-lg text-on-surface-variant font-medium py-3 border-b border-outline-variant/10 hover:text-primary transition-colors" href="services.html">Services</a>
         <a class="font-label-lg text-label-lg text-on-surface-variant font-medium py-3 border-b border-outline-variant/10 hover:text-primary transition-colors" href="about.html">About Us</a>
-        <a class="font-label-lg text-label-lg text-on-surface-variant font-medium py-3 border-b border-outline-variant/10 hover:text-primary transition-colors" href="https://squareup.com/appointments/book/L5CWQHE9Q1V00">Consultation</a>
-        <button onclick="window.location.href='https://squareup.com/appointments/book/L5CWQHE9Q1V00'" class="mt-4 px-6 py-3 bg-primary text-on-primary font-label-lg text-label-lg uppercase cursor-pointer active:scale-95 transition-all tracking-widest w-full">Book Now</button>
+        <a class="font-label-lg text-label-lg text-on-surface-variant font-medium py-3 border-b border-outline-variant/10 hover:text-primary transition-colors" href="consultation.html">Consultation</a>
+        <button onclick="window.location.href='https://squareup.com/appointments/book/L5CWQHE9Q1V00'"  class="mt-4 px-6 py-3 bg-primary text-on-primary font-label-lg text-label-lg uppercase cursor-pointer active:scale-95 transition-all tracking-widest w-full">Book Now</button>
     `;
     const nav = document.querySelector('nav');
     if(nav) nav.appendChild(mobileMenu);

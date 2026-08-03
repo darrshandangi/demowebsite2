@@ -131,12 +131,12 @@
 <div class="flex justify-between items-center px-margin-desktop py-unit max-w-container-max mx-auto">
 <span class="font-display-lg text-headline-md tracking-tight text-primary">CK Aesthetics</span>
 <div class="hidden md:flex gap-stack-lg">
-<a class="font-title-lg text-title-lg text-text-muted hover:text-primary transition-colors" href="#">Home</a>
-<a class="font-title-lg text-title-lg text-text-muted hover:text-primary transition-colors" href="#">Services</a>
+<a class="font-title-lg text-title-lg text-text-muted hover:text-primary transition-colors" href="index.html">Home</a>
+<a class="font-title-lg text-title-lg text-text-muted hover:text-primary transition-colors" href="services.html">Services</a>
 <a class="font-title-lg text-title-lg text-primary border-b-2 border-primary pb-1" href="#">About</a>
-<a class="font-title-lg text-title-lg text-text-muted hover:text-primary transition-colors" href="#">Consultation</a>
+<a class="font-title-lg text-title-lg text-text-muted hover:text-primary transition-colors" href="consultation.html">Consultation</a>
 </div>
-<button onclick="window.location.href='https://squareup.com/appointments/book/L5CWQHE9Q1V00'" class="bg-primary text-on-primary px-stack-md py-stack-sm rounded hover:opacity-90 transition-all font-label-lg text-label-lg uppercase cursor-pointer">Book Now</button>
+<button onclick="window.location.href='https://squareup.com/appointments/book/L5CWQHE9Q1V00'"  class="bg-primary text-on-primary px-stack-md py-stack-sm rounded hover:opacity-90 transition-all font-label-lg text-label-lg uppercase cursor-pointer">Book Now</button>
 </div>
 </nav>
 <main class="pt-24 overflow-x-hidden">
@@ -330,8 +330,8 @@ document.addEventListener('DOMContentLoaded', () => {
     mobileMenu.innerHTML = `
         <a class="font-label-lg text-label-lg text-on-surface-variant font-medium py-3 border-b border-outline-variant/10 hover:text-primary transition-colors" href="services.html">Services</a>
         <a class="font-label-lg text-label-lg text-on-surface-variant font-medium py-3 border-b border-outline-variant/10 hover:text-primary transition-colors" href="about.html">About Us</a>
-        <a class="font-label-lg text-label-lg text-on-surface-variant font-medium py-3 border-b border-outline-variant/10 hover:text-primary transition-colors" href="https://squareup.com/appointments/book/L5CWQHE9Q1V00">Consultation</a>
-        <button onclick="window.location.href='https://squareup.com/appointments/book/L5CWQHE9Q1V00'" class="mt-4 px-6 py-3 bg-primary text-on-primary font-label-lg text-label-lg uppercase cursor-pointer active:scale-95 transition-all tracking-widest w-full">Book Now</button>
+        <a class="font-label-lg text-label-lg text-on-surface-variant font-medium py-3 border-b border-outline-variant/10 hover:text-primary transition-colors" href="consultation.html">Consultation</a>
+        <button onclick="window.location.href='https://squareup.com/appointments/book/L5CWQHE9Q1V00'"  class="mt-4 px-6 py-3 bg-primary text-on-primary font-label-lg text-label-lg uppercase cursor-pointer active:scale-95 transition-all tracking-widest w-full">Book Now</button>
     `;
     const nav = document.querySelector('nav');
     if(nav) nav.appendChild(mobileMenu);
