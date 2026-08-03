@@ -601,4 +601,34 @@
 </script>
 
 
-</body></html>
+
+<script>
+document.addEventListener('DOMContentLoaded', () => {
+    const mobileBtn = document.querySelector('nav button.md\\:hidden');
+    const mobileMenu = document.createElement('div');
+    mobileMenu.className = 'md:hidden hidden flex-col absolute top-20 left-0 w-full bg-background/95 backdrop-blur-md border-b border-outline-variant/10 shadow-lg py-4 px-margin-mobile z-40';
+    mobileMenu.innerHTML = `
+        <a class="font-label-lg text-label-lg text-on-surface-variant font-medium py-3 border-b border-outline-variant/10 hover:text-primary transition-colors" href="services.html">Services</a>
+        <a class="font-label-lg text-label-lg text-on-surface-variant font-medium py-3 border-b border-outline-variant/10 hover:text-primary transition-colors" href="about.html">About Us</a>
+        <a class="font-label-lg text-label-lg text-on-surface-variant font-medium py-3 border-b border-outline-variant/10 hover:text-primary transition-colors" href="consultation.html">Consultation</a>
+        <button onclick="window.location.href='consultation.html'" class="mt-4 px-6 py-3 bg-primary text-on-primary font-label-lg text-label-lg uppercase cursor-pointer active:scale-95 transition-all tracking-widest w-full">Book Now</button>
+    `;
+    const nav = document.querySelector('nav');
+    if(nav) nav.appendChild(mobileMenu);
+
+    if(mobileBtn) {
+        mobileBtn.addEventListener('click', () => {
+            if(mobileMenu.classList.contains('hidden')) {
+                mobileMenu.classList.remove('hidden');
+                mobileMenu.classList.add('flex');
+                mobileBtn.innerHTML = 'close';
+            } else {
+                mobileMenu.classList.add('hidden');
+                mobileMenu.classList.remove('flex');
+                mobileBtn.innerHTML = 'menu';
+            }
+        });
+    }
+});
+</script>
+\n</body></html>
