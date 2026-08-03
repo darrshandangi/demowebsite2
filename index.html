@@ -71,6 +71,7 @@
                         "full": "9999px"
                     },
                     "spacing": {
+                        "stack-lg": "48px",
                         "stack-md": "32px",
                         "base": "8px",
                         "stack-sm": "16px",
@@ -166,7 +167,7 @@
 <a class="font-label-lg text-label-lg text-on-surface-variant font-medium hover:text-deep-plum transition-colors duration-300" href="#">Services</a>
 <a class="font-label-lg text-label-lg text-on-surface-variant font-medium hover:text-deep-plum transition-colors duration-300" href="#">About Us</a>
 <a class="font-label-lg text-label-lg text-on-surface-variant font-medium hover:text-deep-plum transition-colors duration-300" href="#">Consultation</a>
-<button class="ml-4 px-6 py-3 bg-deep-plum text-paper-white font-label-lg text-label-lg uppercase cursor-pointer active:scale-95 transition-all tracking-widest">Book Now</button>
+<button onclick="window.location.href='https://squareup.com/appointments/book/L5CWQHE9Q1V00'" class="ml-4 px-6 py-3 bg-deep-plum text-paper-white font-label-lg text-label-lg uppercase cursor-pointer active:scale-95 transition-all tracking-widest cursor-pointer">Book Now</button>
 </div>
 <button class="md:hidden material-symbols-outlined text-deep-plum text-3xl">menu</button>
 </div>
@@ -212,7 +213,7 @@
       <h1>Step Inside</h1>
       <div class="hero-divider"></div>
       <div class="subtitle">Experience high-quality skincare in an environment of absolute tranquility</div>
-      <button class="hero-btn" onclick="window.location.href='consultation.html'">Book a Consultation</button>
+      <button onclick="window.location.href='https://squareup.com/appointments/book/L5CWQHE9Q1V00'" class="hero-btn cursor-pointer">Book a Consultation</button>
     </div>
 
     <!-- Scroll Indicator -->
@@ -230,7 +231,7 @@
   const FRAME_COUNT = 300;
   const framePaths = [];
   for (let i = 1; i <= FRAME_COUNT; i++) {
-    framePaths.push(`frames/ck2/ezgif-frame-${i.toString().padStart(3, "0")}.jpg`);
+    framePaths.push(`frames/ck 3/ezgif-frame-${i.toString().padStart(3, "0")}.jpg`);
   }
 
   const imgRef = document.getElementById('hero-image');
@@ -341,8 +342,9 @@
 <div class="grid grid-cols-1 md:grid-cols-12 gap-gutter">
 <!-- Injectables (Cosmetic & Therapeutic) -->
 <div class="md:col-span-8 group relative overflow-hidden bento-card-hover rounded-lg h-[500px]">
+<a href="services.html" class="absolute inset-0 z-30 cursor-pointer"></a>
 <div class="absolute inset-0 z-0 scale-105 group-hover:scale-100 transition-transform duration-700">
-<img class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBPGzMTQB5szQTy3R0CRgTEi2aNxaxAW2UAcGgou76SB_qpOXnH1NK8loX87MHaW0O4dWVmD7IG-vwnFdzWfjcUPK5NrmrwhoKUxgnL_moXffR2MKihq0sLbQppmjfK0xwGrIlClJSVSLhk_xZHuV9GES7YUKyJIGsXa7vx0oo6XmUi9Vw4lgS9Fxi_PiogynJ7IXsMwLBdoG2YLvAB5R0deZjTAvWj9cpKxG6HLXAqsh9AWcfjfozQ8ozk_0qLXu6DnQcvG1BG2dc">
+<img class="w-full h-full object-cover" src="images/botox.png">
 </div>
 <div class="absolute inset-0 service-card-overlay z-10"></div>
 <div class="absolute bottom-0 left-0 p-stack-lg z-20 w-full">
@@ -356,8 +358,9 @@
 </div>
 <!-- Dermal Fillers -->
 <div class="md:col-span-4 group relative overflow-hidden bento-card-hover rounded-lg h-[500px]">
+<a href="services.html" class="absolute inset-0 z-30 cursor-pointer"></a>
 <div class="absolute inset-0 z-0 scale-105 group-hover:scale-100 transition-transform duration-700">
-<img class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida/AP1WRLvkDTa0LsKAfQlD2Bb6m1_BTSEN0bcRTwVp8T8C_7p2kL3NfHrIv1UEKLPlXpwX-KKg6Uzvfr6k7ngHr3fKuByekLMdjvPjkCZqMw3xjtTWocqN_FuAcWJrk4J9M3moQ7uSWBSBo6SyYYM3zqMeNdVYM7irPkyxU-UZ9Xo6Pm68mx5BRbs-mRLL-wZmvACRi8YpvBqwg58DOHiXhpakGo0Ds7cA4UQYRpfbnhoneoc4jBWwa7Nw_y3AScM">
+<img class="w-full h-full object-cover" src="images/fillers.png">
 </div>
 <div class="absolute inset-0 service-card-overlay z-10"></div>
 <div class="absolute bottom-0 left-0 p-stack-lg z-20 w-full">
@@ -370,6 +373,7 @@
 </div>
 <!-- Medical Weight Loss -->
 <div class="md:col-span-12 group relative overflow-hidden bento-card-hover bg-paper-white-container-low rounded-lg h-[400px]">
+<a href="services.html" class="absolute inset-0 z-30 cursor-pointer"></a>
 <div class="grid md:grid-cols-2 h-full">
 <div class="p-stack-lg flex flex-col justify-center">
 <span class="font-label-md text-label-md text-soft-blush uppercase tracking-widest mb-4 block">Holistic Wellness</span>
@@ -381,12 +385,13 @@
 </div>
 </div>
 <div class="relative overflow-hidden hidden md:block">
-<img class="absolute inset-0 w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida/AP1WRLsWSv8FkCGvL9u-a6Hk4cFPScwyqmZ1uTcphkuR3b6xKwuIUaOPqW5Chzbd2e0QkJ4E1M-F4rPTy9qQVMfFmhy8EPYVWPXCs-_iwAPXWzrxGn5_luA8e83q7c9h82B9t8HkfTftokyqz1lRCp33yltk1xC1Jd_QDGkvYOwOOhy_wy9TvX0CxC3ZI5e1gWxb0MZqnJTOwCbTHm2gubsSvqtY_MUWU27XLo7e_8cRkJ-2eL3mJSnMyabmhGQ">
+<img class="absolute inset-0 w-full h-full object-cover" src="images/glp.png">
 </div>
 </div>
 </div>
 <!-- Skin & Wellness Injections -->
 <div class="md:col-span-6 group relative overflow-hidden bento-card-hover rounded-lg h-[350px]">
+<a href="services.html" class="absolute inset-0 z-30 cursor-pointer"></a>
 <div class="absolute inset-0 z-0 scale-105 group-hover:scale-100 transition-transform duration-700">
 <img class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAW-szaWi749nIk1CxAJ15DC6TbTMHXHS9irWpwTm4jxoYsRTv4hV-b3JmG-w5maCpPZOpp7e_aEDTkmm2caa1MWweW-UoeFCjsjRNimxbz-EsllhqXMNSJuZQ9IEAmFqDC_4y2eP8o0WQLJKQPnMgKxcxDT7c9ygcfLSqde8assj3bMWO7W6O_k1sSJ349MRcWXd-GAk_ZfahiLvGsEds5kGQPTFNpN3bnPYL2TbYzAYm6vXhso0kDeSU5clCVSUfNl5KbJgf7L9Q">
 </div>
@@ -397,6 +402,7 @@
 </div>
 </div>
 <div class="md:col-span-6 group relative overflow-hidden bento-card-hover rounded-lg h-[350px]">
+<a href="services.html" class="absolute inset-0 z-30 cursor-pointer"></a>
 <div class="absolute inset-0 z-0 scale-105 group-hover:scale-100 transition-transform duration-700">
 <img class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBy2fw-voRZz5Y8tBaMgfhGCXPK39CsN63WCVbydkQ4Wbems6axRj2PH5vDT8wb0Ks3-U0Yyvvwu4SiFR2EpRVf5zbM6I2OKcQwkm_t8ejv9SsrDODIwt6J5LZpyItVrZgFB8kRxwrknVq_y-_Q-46RJApy4cjzkDUF5wXEfE0EXffRMLlnEF2IOxUn3icM92Adg-nmzfrxePpnh25mrhUiqr-Y3dRSfZ6gKIPQVNjrusZbMBUTlnjBnf7JkHLU5Q3If3jDZtnQAjg">
 </div>
@@ -413,6 +419,7 @@
 <div class="max-w-container mx-auto px-margin-desktop grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
 <div class="relative">
 <div class="aspect-[4/5] overflow-hidden rounded-lg shadow-xl">
+<a href="about.html" class="absolute inset-0 z-30 cursor-pointer"></a>
 <img class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida/AP1WRLuicFVhBJ66Egj4Jg7rhGqBxmlLaQLQe5rSfnrOpBtoNCCaCvYwKktxK0ol6x-TdgrDEkRV5-4Cy2TdSULG6W5uoP2DuRg_z7OBv_zN1Dq4pVtLbm36XkaXuI1rf5KXoY_YfSGUV8Z1opUx4f4Ft53jGMJRPjh0hRrAmpBhfsHHuodd7bx0ZP5rkYsrG8_-mQX5f3mEm05L8QFevZr5Y449tdTMrJqElRhNmk6PXjLcKA4yX1w0aIFbSQ">
 </div>
 <div class="absolute -bottom-8 -right-8 bg-deep-plum p-12 text-paper-white hidden lg:block rounded-lg shadow-2xl">
@@ -447,19 +454,19 @@
 </div>
 <div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5 gap-4">
 <div class="aspect-square bg-paper-white-container h-full relative group cursor-pointer overflow-hidden rounded">
-<img class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-500" data-alt="Close-up macro photography of glowing, hydrated skin reflecting soft, warm studio lighting." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDtjSu3OS_oBGXAneZwHjCnqjlnq2lV59mPNnYa4vcgHYEJdmQys-Qh0OY_h4_YI3e3nVL8nBRQTemZW-HLtkcFoqAmGhqF_-VHl1IetRSvtmztSA72vjTp579cTd75uUlIZCCMmwriNr4Ym1L2weHD5ltfXHPwABX_Y4I5tBBUPMHyDshjunJo77WZnypUJ_gnsfP21FcbRt85JGW77NVgyt7jjJpE9tnSRQWM6Sz4Lbr6tCgOQ9Q2DFm1Hu1Km8w_YQa6xWVPuoY">
+<img class="w-full h-full object-cover  transition-all duration-500" data-alt="Close-up macro photography of glowing, hydrated skin reflecting soft, warm studio lighting." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDtjSu3OS_oBGXAneZwHjCnqjlnq2lV59mPNnYa4vcgHYEJdmQys-Qh0OY_h4_YI3e3nVL8nBRQTemZW-HLtkcFoqAmGhqF_-VHl1IetRSvtmztSA72vjTp579cTd75uUlIZCCMmwriNr4Ym1L2weHD5ltfXHPwABX_Y4I5tBBUPMHyDshjunJo77WZnypUJ_gnsfP21FcbRt85JGW77NVgyt7jjJpE9tnSRQWM6Sz4Lbr6tCgOQ9Q2DFm1Hu1Km8w_YQa6xWVPuoY">
 </div>
 <div class="aspect-square bg-paper-white-container h-full relative group cursor-pointer overflow-hidden rounded">
-<img class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-500" data-alt="A minimalist and serene treatment room at CK Aesthetics." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCOcKXsa9Y4Kxp9pft6-PAv3w381dnbk1VJFXZHtWbZZ_RghAJ2bOF9xmNSm0hUEIo0mh--GkAyCTwx0Go3OEsKSIeULBFqOLbbUIltUhbzvbFi4A3-YTq4xP0GOwHzRnlpVobEjzYQkF2b13OukIlVyz-tftyzNN_o-MAV52NIeM1I9dCj6oKEUZDEENQp5ch3_DFQ5u1siStX9XnyasMbFVu-cFhPfxOBM4eJ_kgh8-hBWULL-d4oHQXjroJvWDQfHs-sAlowb4M">
+<img class="w-full h-full object-cover  transition-all duration-500" data-alt="A minimalist and serene treatment room at CK Aesthetics." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCOcKXsa9Y4Kxp9pft6-PAv3w381dnbk1VJFXZHtWbZZ_RghAJ2bOF9xmNSm0hUEIo0mh--GkAyCTwx0Go3OEsKSIeULBFqOLbbUIltUhbzvbFi4A3-YTq4xP0GOwHzRnlpVobEjzYQkF2b13OukIlVyz-tftyzNN_o-MAV52NIeM1I9dCj6oKEUZDEENQp5ch3_DFQ5u1siStX9XnyasMbFVu-cFhPfxOBM4eJ_kgh8-hBWULL-d4oHQXjroJvWDQfHs-sAlowb4M">
 </div>
 <div class="aspect-square bg-paper-white-container h-full relative group cursor-pointer overflow-hidden rounded">
-<img class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-500" data-alt="Cassie the aesthetician performing a precise dermal filler procedure." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBSdej8-ZmngCVVwV4XvFDNYGYqU2zKydxh1VZB6HHArhUMFNKzhwC9qxjMrkUTMMOJseoVAm9ThPnCC6na7-9QQGZomXXoG5mSVzDtsME1r1bUlD6jvLYl0Wz-p8ENjlTz10JmexUTP1VMwEf6mPOdkny_I2HNEHgAq28Q4AbFglSuWHihHQ1uU4r19g-gcJ-uRedfmfuGUeFP0MpFtxqeuJpQqw2R9cUUCl-4-BRxQSkxzmAEBRcFyMbycb9VwjHe5w5AwMuaNQc">
+<img class="w-full h-full object-cover  transition-all duration-500" data-alt="Cassie the aesthetician performing a precise dermal filler procedure." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBSdej8-ZmngCVVwV4XvFDNYGYqU2zKydxh1VZB6HHArhUMFNKzhwC9qxjMrkUTMMOJseoVAm9ThPnCC6na7-9QQGZomXXoG5mSVzDtsME1r1bUlD6jvLYl0Wz-p8ENjlTz10JmexUTP1VMwEf6mPOdkny_I2HNEHgAq28Q4AbFglSuWHihHQ1uU4r19g-gcJ-uRedfmfuGUeFP0MpFtxqeuJpQqw2R9cUUCl-4-BRxQSkxzmAEBRcFyMbycb9VwjHe5w5AwMuaNQc">
 </div>
 <div class="aspect-square bg-paper-white-container h-full relative group cursor-pointer overflow-hidden rounded">
-<img class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-500" data-alt="High-end clinical serum on stone." src="https://lh3.googleusercontent.com/aida-public/AB6AXuB5IMp1IVXQyurHVR0Krk7_23vml7ER3bBdHBzRBCGyB25zNHFDkxB7UN78coSd1d9LWo2UEqiSJPXzMlsHjaJC1uEEc0nIJNgNG-XKjxAFwhVfP4k6cux4tqjW09eXQ2zfr7GrEoPBTpQwsg2qag6Zx5lzCxu_I1ymG0kpdASG6Rxzi__4Qyk5PzL25jhhpLDOcinPFOwAoAe6H6uHoZu9THvm2eGzxrRCTZTvZ6qVaSWUWsxoj4jrcnM7QlbQgXgxH5c9ZQn7Sgw">
+<img class="w-full h-full object-cover  transition-all duration-500" data-alt="High-end clinical serum on stone." src="https://lh3.googleusercontent.com/aida-public/AB6AXuB5IMp1IVXQyurHVR0Krk7_23vml7ER3bBdHBzRBCGyB25zNHFDkxB7UN78coSd1d9LWo2UEqiSJPXzMlsHjaJC1uEEc0nIJNgNG-XKjxAFwhVfP4k6cux4tqjW09eXQ2zfr7GrEoPBTpQwsg2qag6Zx5lzCxu_I1ymG0kpdASG6Rxzi__4Qyk5PzL25jhhpLDOcinPFOwAoAe6H6uHoZu9THvm2eGzxrRCTZTvZ6qVaSWUWsxoj4jrcnM7QlbQgXgxH5c9ZQn7Sgw">
 </div>
 <div class="aspect-square bg-paper-white-container h-full relative group cursor-pointer overflow-hidden rounded hidden lg:block">
-<img class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-500" data-alt="Woman by a window reflecting tranquility." src="https://lh3.googleusercontent.com/aida-public/AB6AXuA-4SmC4_PJryhb6L9dq_A3FlsKvhFgzNDsyawFKINwSUACaD7c81CxwuUTBGWF9KPr4sJXiC65MrOakxIAT1nUi_V8kgfC5RA9dPX4woG3R8A0ieBM8qWmEUCNqVdAA1KhtZW5HieAk7bVRDr9Otc10hKB_X1rJiNW-de_BHOi8h4yz7m6cTj7g0deayOuuK2Bwn_zKgSIjE7viDUI3ji-iC1Y85rkPMXk8GJHZVtlXuT7OL3cJ7ORFXLnC8UZU8rfSiijc_XSC0U">
+<img class="w-full h-full object-cover  transition-all duration-500" data-alt="Woman by a window reflecting tranquility." src="https://lh3.googleusercontent.com/aida-public/AB6AXuA-4SmC4_PJryhb6L9dq_A3FlsKvhFgzNDsyawFKINwSUACaD7c81CxwuUTBGWF9KPr4sJXiC65MrOakxIAT1nUi_V8kgfC5RA9dPX4woG3R8A0ieBM8qWmEUCNqVdAA1KhtZW5HieAk7bVRDr9Otc10hKB_X1rJiNW-de_BHOi8h4yz7m6cTj7g0deayOuuK2Bwn_zKgSIjE7viDUI3ji-iC1Y85rkPMXk8GJHZVtlXuT7OL3cJ7ORFXLnC8UZU8rfSiijc_XSC0U">
 </div>
 </div>
 </section>
@@ -533,7 +540,7 @@
 <div class="bg-on-primary/5 p-gutter rounded-lg">
 <h4 class="font-headline-md mb-stack-sm italic">Find Us In San Antonio</h4>
 <div class="w-full h-48 bg-paper-white-container-highest/20 overflow-hidden rounded">
-<img class="w-full h-full object-cover opacity-50 grayscale contrast-125" data-location="San Antonio" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA9PYIlBxibVz5vd-h4GhsX80k_7fUda2SY4jkk8l4ZEAU4R4Q1TNMs-0tTJ5Y_MIZUmEM8Mn8vf2r-wMCuLZ38K_NL9MLcCwPEXgUPNS8QeUfwHJM67tfGT32P2RJ7r4kgTgZfxPXAz_ItnpUPiQX66xzLQEvAGgqJYXgpd6V5UDVhlJG5K4X_8S_HTRv9svYBtJApvgxTFgqYh0-RUw0HZvyhHvG0F9pksR8r5zpniteK2SXRsuI_sp9WmZn4DKsv7M9uGcZjsCA">
+<img class="w-full h-full object-cover " data-location="San Antonio" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA9PYIlBxibVz5vd-h4GhsX80k_7fUda2SY4jkk8l4ZEAU4R4Q1TNMs-0tTJ5Y_MIZUmEM8Mn8vf2r-wMCuLZ38K_NL9MLcCwPEXgUPNS8QeUfwHJM67tfGT32P2RJ7r4kgTgZfxPXAz_ItnpUPiQX66xzLQEvAGgqJYXgpd6V5UDVhlJG5K4X_8S_HTRv9svYBtJApvgxTFgqYh0-RUw0HZvyhHvG0F9pksR8r5zpniteK2SXRsuI_sp9WmZn4DKsv7M9uGcZjsCA">
 </div>
 </div>
 </div>
@@ -610,8 +617,8 @@ document.addEventListener('DOMContentLoaded', () => {
     mobileMenu.innerHTML = `
         <a class="font-label-lg text-label-lg text-on-surface-variant font-medium py-3 border-b border-outline-variant/10 hover:text-primary transition-colors" href="services.html">Services</a>
         <a class="font-label-lg text-label-lg text-on-surface-variant font-medium py-3 border-b border-outline-variant/10 hover:text-primary transition-colors" href="about.html">About Us</a>
-        <a class="font-label-lg text-label-lg text-on-surface-variant font-medium py-3 border-b border-outline-variant/10 hover:text-primary transition-colors" href="consultation.html">Consultation</a>
-        <button onclick="window.location.href='consultation.html'" class="mt-4 px-6 py-3 bg-primary text-on-primary font-label-lg text-label-lg uppercase cursor-pointer active:scale-95 transition-all tracking-widest w-full">Book Now</button>
+        <a class="font-label-lg text-label-lg text-on-surface-variant font-medium py-3 border-b border-outline-variant/10 hover:text-primary transition-colors" href="https://squareup.com/appointments/book/L5CWQHE9Q1V00">Consultation</a>
+        <button onclick="window.location.href='https://squareup.com/appointments/book/L5CWQHE9Q1V00'" class="mt-4 px-6 py-3 bg-primary text-on-primary font-label-lg text-label-lg uppercase cursor-pointer active:scale-95 transition-all tracking-widest w-full">Book Now</button>
     `;
     const nav = document.querySelector('nav');
     if(nav) nav.appendChild(mobileMenu);
