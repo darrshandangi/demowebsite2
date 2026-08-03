@@ -2,112 +2,109 @@
 <meta charset="utf-8">
 <meta content="width=device-width, initial-scale=1.0" name="viewport">
 <title>About CK Aesthetics | Meet Cassie</title>
-<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries&v=cachebust2"></script>
 <link href="https://fonts.googleapis.com/css2?family=Libre+Caslon+Text:wght@400;700&amp;family=Manrope:wght@300;400;600;700&amp;display=swap" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
 <script id="tailwind-config">
-      tailwind.config = {
-        darkMode: "class",
-        theme: {
-          extend: {
-            "colors": {
-                    "surface-tint": "#775464",
-                    "tertiary": "#392f29",
-                    "inverse-surface": "#30302f",
-                    "secondary-container": "#ffd7c7",
-                    "tertiary-container": "#51453e",
-                    "text-muted": "#8B7D75",
-                    "surface-container-low": "#f5f3f1",
-                    "primary-container": "#5e3e4d",
-                    "inverse-primary": "#e6bbcd",
-                    "on-primary-fixed": "#2d1320",
-                    "primary-fixed-dim": "#e6bbcd",
-                    "on-background": "#1b1c1b",
-                    "error": "#ba1a1a",
-                    "surface-bright": "#FDFDFD",
-                    "on-tertiary-fixed-variant": "#50443e",
-                    "surface-dim": "#dbdad8",
-                    "surface-container-high": "#eae8e6",
-                    "background": "#FDFDFD",
-                    "surface": "#FDFDFD",
-                    "on-surface-variant": "#4e4448",
-                    "accent-warm": "#C5A192",
-                    "on-secondary-container": "#7a5c4f",
-                    "on-secondary": "#ffffff",
-                    "surface-container-lowest": "#ffffff",
-                    "secondary": "#75584b",
-                    "text-main": "#5E3E4D",
-                    "on-primary-fixed-variant": "#5d3d4c",
-                    "surface-container-highest": "#e4e2e0",
-                    "surface-container": "#efedec",
-                    "error-container": "#ffdad6",
-                    "primary-fixed": "#ffd8e8",
-                    "tertiary-fixed": "#f1dfd6",
-                    "on-secondary-fixed": "#2b160d",
-                    "on-tertiary-fixed": "#231a14",
-                    "on-secondary-fixed-variant": "#5b4135",
-                    "primary": "#5E3E4D",
-                    "surface-variant": "#e4e2e0",
-                    "outline": "#EDEDED",
-                    "on-primary-container": "#d5abbc",
-                    "on-error": "#ffffff",
-                    "tertiary-fixed-dim": "#d4c3ba",
-                    "secondary-fixed": "#ffdbcc",
-                    "on-surface": "#1b1c1b",
-                    "outline-variant": "#EDEDED",
-                    "on-error-container": "#93000a",
-                    "surface-pure": "#FDFDFD",
-                    "on-primary": "#ffffff",
-                    "inverse-on-surface": "#f2f0ee",
-                    "on-tertiary": "#ffffff",
-                    "secondary-fixed-dim": "#e5beaf",
-                    "on-tertiary-container": "#c3b3aa"
-            },
-            "borderRadius": {
-                    "DEFAULT": "0.125rem",
-                    "lg": "0.25rem",
-                    "xl": "0.5rem",
-                    "full": "0.75rem"
-            },
-            "spacing": {
-                    "section-gap": "120px",
-                    "margin-mobile": "20px",
-                    "gutter": "24px",
-                    "unit": "8px",
-                    "stack-sm": "12px",
-                    "stack-lg": "48px",
-                    "margin-desktop": "64px",
-                    "stack-md": "24px",
-                    "container-max": "1280px"
-            },
-            "fontFamily": {
-                    "title-lg": ["Manrope"],
-                    "body-lg": ["Manrope"],
-                    "display-lg-mobile": ["Libre Caslon Text"],
-                    "body-md": ["Manrope"],
-                    "headline-md": ["Libre Caslon Text"],
-                    "headline-lg-mobile": ["Libre Caslon Text"],
-                    "label-lg": ["Manrope"],
-                    "label-md": ["Manrope"],
-                    "headline-lg": ["Libre Caslon Text"],
-                    "display-lg": ["Libre Caslon Text"]
-            },
-            "fontSize": {
-                    "title-lg": ["20px", {"lineHeight": "28px", "letterSpacing": "0.02em", "fontWeight": "600"}],
-                    "body-lg": ["18px", {"lineHeight": "32px", "fontWeight": "400"}],
-                    "display-lg-mobile": ["40px", {"lineHeight": "48px", "letterSpacing": "-0.01em", "fontWeight": "400"}],
-                    "body-md": ["16px", {"lineHeight": "28px", "fontWeight": "400"}],
-                    "headline-md": ["32px", {"lineHeight": "40px", "fontWeight": "400"}],
-                    "headline-lg-mobile": ["32px", {"lineHeight": "40px", "fontWeight": "400"}],
-                    "label-lg": ["14px", {"lineHeight": "20px", "letterSpacing": "0.1em", "fontWeight": "700"}],
-                    "label-md": ["12px", {"lineHeight": "16px", "letterSpacing": "0.05em", "fontWeight": "600"}],
-                    "headline-lg": ["48px", {"lineHeight": "56px", "fontWeight": "400"}],
-                    "display-lg": ["64px", {"lineHeight": "72px", "letterSpacing": "-0.02em", "fontWeight": "400"}]
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "surface-container": "#efedec",
+                        "secondary-fixed": "#ffdbcc",
+                        "primary-fixed": "#ffd8e8",
+                        "deep-plum": "#5E3E4D",
+                        "tertiary-fixed": "#f1dfd6",
+                        "primary-fixed-dim": "#e6bbcd",
+                        "error": "#ba1a1a",
+                        "on-secondary-container": "#7a5c4f",
+                        "paper-white": "#FDFDFD",
+                        "tertiary": "#392f29",
+                        "surface-container-high": "#eae8e6",
+                        "on-secondary-fixed-variant": "#5b4135",
+                        "on-primary": "#ffffff",
+                        "background": "#fbf9f7",
+                        "on-secondary-fixed": "#2b160d",
+                        "surface-dim": "#dbdad8",
+                        "inverse-primary": "#e6bbcd",
+                        "surface-tint": "#775464",
+                        "soft-blush": "#C5A192",
+                        "primary": "#452836",
+                        "on-surface": "#1b1c1b",
+                        "surface-container-highest": "#e4e2e0",
+                        "surface-container-lowest": "#ffffff",
+                        "tertiary-fixed-dim": "#d4c3ba",
+                        "secondary-fixed-dim": "#e5beaf",
+                        "inverse-surface": "#30302f",
+                        "on-tertiary-fixed": "#231a14",
+                        "surface-bright": "#fbf9f7",
+                        "on-tertiary-container": "#c3b3aa",
+                        "primary-container": "#5e3e4d",
+                        "error-container": "#ffdad6",
+                        "on-background": "#1b1c1b",
+                        "secondary": "#75584b",
+                        "on-secondary": "#ffffff",
+                        "on-primary-fixed": "#2d1320",
+                        "surface-variant": "#e4e2e0",
+                        "surface": "#fbf9f7",
+                        "on-tertiary-fixed-variant": "#50443e",
+                        "tertiary-container": "#51453e",
+                        "on-error-container": "#93000a",
+                        "on-error": "#ffffff",
+                        "outline": "#807478",
+                        "muted-taupe": "#8B7D75",
+                        "outline-variant": "#d2c3c7",
+                        "secondary-container": "#ffd7c7",
+                        "on-surface-variant": "#4e4448",
+                        "on-primary-fixed-variant": "#5d3d4c",
+                        "on-primary-container": "#d5abbc",
+                        "medical-gray": "#EDEDED",
+                        "on-tertiary": "#ffffff",
+                        "surface-container-low": "#f5f3f1",
+                        "inverse-on-surface": "#f2f0ee"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "stack-md": "32px",
+                        "base": "8px",
+                        "stack-sm": "16px",
+                        "section-mobile": "64px",
+                        "gutter": "24px",
+                        "margin-edge": "40px",
+                        "section-desktop": "120px"
+                    },
+                    "fontFamily": {
+                        "display-lg": ["Libre Caslon Text"],
+                        "headline-xl": ["Libre Caslon Text"],
+                        "headline-lg": ["Libre Caslon Text"],
+                        "headline-md": ["Libre Caslon Text"],
+                        "body-lg": ["Manrope"],
+                        "body-md": ["Manrope"],
+                        "label-md": ["Manrope"],
+                        "label-sm": ["Manrope"]
+                    },
+                    "fontSize": {
+                        "display-lg-mobile": ["40px", {"lineHeight": "48px", "fontWeight": "400"}],
+                        "display-lg": ["64px", {"lineHeight": "72px", "letterSpacing": "-0.02em", "fontWeight": "400"}],
+                        "headline-md": ["24px", {"lineHeight": "32px", "fontWeight": "400"}],
+                        "body-md": ["16px", {"lineHeight": "24px", "fontWeight": "400"}],
+                        "headline-lg": ["32px", {"lineHeight": "40px", "fontWeight": "400"}],
+                        "label-md": ["14px", {"lineHeight": "20px", "letterSpacing": "0.05em", "fontWeight": "600"}],
+                        "label-sm": ["12px", {"lineHeight": "16px", "letterSpacing": "0.02em", "fontWeight": "500"}],
+                        "body-lg": ["18px", {"lineHeight": "28px", "fontWeight": "400"}],
+                        "headline-xl": ["48px", {"lineHeight": "56px", "fontWeight": "400"}],
+                        "headline-xl-mobile": ["32px", {"lineHeight": "40px", "fontWeight": "400"}]
+                    }
+                }
             }
-          },
-        },
-      }
+        }
     </script>
 <style>
         .material-symbols-outlined {
@@ -118,62 +115,62 @@
         }
     </style>
 </head>
-<body class="bg-background text-on-surface antialiased">
+<body class="bg-paper-white text-on-surface antialiased">
 <!-- TopNavBar -->
-<nav class="fixed top-0 w-full z-50 bg-surface/90 backdrop-blur-md">
+<nav class="fixed top-0 w-full z-50 bg-paper-white/90 backdrop-blur-md">
 <div class="flex justify-between items-center px-margin-desktop py-unit max-w-container-max mx-auto">
-<span class="font-display-lg text-headline-md tracking-tight text-primary">CK Aesthetics</span>
+<span class="font-display-lg text-headline-md tracking-tight text-deep-plum">CK Aesthetics</span>
 <div class="hidden md:flex gap-stack-lg">
-<a class="font-title-lg text-title-lg text-text-muted hover:text-primary transition-colors" href="#">Home</a>
-<a class="font-title-lg text-title-lg text-text-muted hover:text-primary transition-colors" href="#">Services</a>
-<a class="font-title-lg text-title-lg text-primary border-b-2 border-primary pb-1" href="#">About</a>
-<a class="font-title-lg text-title-lg text-text-muted hover:text-primary transition-colors" href="#">Consultation</a>
+<a class="font-title-lg text-title-lg text-text-muted-taupe hover:text-deep-plum transition-colors" href="#">Home</a>
+<a class="font-title-lg text-title-lg text-text-muted-taupe hover:text-deep-plum transition-colors" href="#">Services</a>
+<a class="font-title-lg text-title-lg text-deep-plum border-b-2 border-primary pb-1" href="#">About</a>
+<a class="font-title-lg text-title-lg text-text-muted-taupe hover:text-deep-plum transition-colors" href="#">Consultation</a>
 </div>
-<button class="bg-primary text-on-primary px-stack-md py-stack-sm rounded hover:opacity-90 transition-all font-label-lg text-label-lg uppercase">Book Now</button>
+<button class="bg-deep-plum text-paper-white px-stack-md py-stack-sm rounded hover:opacity-90 transition-all font-label-lg text-label-lg uppercase">Book Now</button>
 </div>
 </nav>
 <main class="pt-24 overflow-x-hidden">
 <!-- Hero Section -->
 <section class="max-w-container-max mx-auto px-margin-desktop py-section-gap flex flex-col md:flex-row items-center gap-stack-lg relative">
 <div class="w-full md:w-1/2 z-10 transition-all duration-1000 opacity-100 translate-y-0" data-aos="fade-up">
-<span class="font-label-lg text-label-lg text-accent-warm uppercase mb-stack-sm block tracking-widest">Our Founder</span>
-<h1 class="font-display-lg text-display-lg mb-stack-md leading-tight text-primary">The Visionary Behind the Science</h1>
+<span class="font-label-lg text-label-lg text-soft-blush uppercase mb-stack-sm block tracking-widest">Our Founder</span>
+<h1 class="font-display-lg text-display-lg mb-stack-md leading-tight text-deep-plum">The Visionary Behind the Science</h1>
 <p class="font-body-lg text-body-lg text-on-surface-variant max-w-xl">
                     Bridging the gap between clinical precision and holistic care, CK Aesthetics represents a new era of results-driven skincare.
                 </p>
 <div class="mt-stack-lg flex items-center gap-stack-md">
-<div class="h-[1px] w-12 bg-accent-warm"></div>
-<span class="font-body-md text-body-md text-text-muted italic">Est. 2021</span>
+<div class="h-[1px] w-12 bg-soft-blush"></div>
+<span class="font-body-md text-body-md text-text-muted-taupe italic">Est. 2021</span>
 </div>
 </div>
 <div class="w-full md:w-1/2 relative">
-<div class="aspect-[4/5] bg-surface-container overflow-hidden editorial-shadow rounded-lg group">
+<div class="aspect-[4/5] bg-paper-white-container overflow-hidden editorial-shadow rounded-lg group">
 <img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" src="https://lh3.googleusercontent.com/aida/AP1WRLuicFVhBJ66Egj4Jg7rhGqBxmlLaQLQe5rSfnrOpBtoNCCaCvYwKktxK0ol6x-TdgrDEkRV5-4Cy2TdSULG6W5uoP2DuRg_z7OBv_zN1Dq4pVtLbm36XkaXuI1rf5KXoY_YfSGUV8Z1opUx4f4Ft53jGMJRPjh0hRrAmpBhfsHHuodd7bx0ZP5rkYsrG8_-mQX5f3mEm05L8QFevZr5Y449tdTMrJqElRhNmk6PXjLcKA4yX1w0aIFbSQ">
 </div>
 <!-- Decorative element -->
-<div class="absolute -bottom-8 -right-8 w-64 h-64 bg-surface-container-high -z-10 rounded-full opacity-50"></div>
+<div class="absolute -bottom-8 -right-8 w-64 h-64 bg-paper-white-container-high -z-10 rounded-full opacity-50"></div>
 </div>
 </section>
 <!-- Biography Section -->
-<section class="bg-surface-container-low py-section-gap">
+<section class="bg-paper-white-container-low py-section-gap">
 <div class="max-w-container-max mx-auto px-margin-desktop">
 <div class="grid grid-cols-1 md:grid-cols-12 gap-stack-lg">
 <div class="md:col-span-4">
-<h2 class="font-headline-lg text-headline-lg text-primary sticky top-32">Meet<br>Claudia</h2>
+<h2 class="font-headline-lg text-headline-lg text-deep-plum sticky top-32">Meet<br>Claudia</h2>
 </div>
 <div class="md:col-span-8 space-y-stack-md">
 <p class="font-body-lg text-body-lg leading-relaxed text-on-surface"><span id="docs-internal-guid-69130493-7fff-ebb9-9501-be611c889cd6" class=""><p dir="ltr" style="line-height:1.38;background-color:#ffffff;margin-top:10pt;margin-bottom:0pt;padding:0pt 0pt 10pt 0pt;" class=""><span style="font-size: 11pt; font-family: Arial, sans-serif; color: rgb(34, 34, 34); font-variant: normal; vertical-align: baseline; white-space: pre-wrap;" class="">I’m Claudia Kalotay, PA-C, owner of the medical spa and a board-certified Physician Assistant with over 20 years of experience. I completed my training through the MEDEX Northwest Physician Assistant Program at the University of Washington.</span></p><p dir="ltr" style="line-height:1.38;background-color:#ffffff;margin-top:0pt;margin-bottom:0pt;padding:0pt 0pt 10pt 0pt;" class=""><span style="font-size: 11pt; font-family: Arial, sans-serif; color: rgb(34, 34, 34); font-variant: normal; vertical-align: baseline; white-space: pre-wrap;" class="">As a locally owned practice, our medical spa is dedicated to providing personalized, evidence-based aesthetic care in a safe and welcoming environment. The practice is medically overseen by a local surgeon/physician to ensure the highest standards of patient care.</span></p><p dir="ltr" style="line-height:1.38;background-color:#ffffff;margin-top:0pt;margin-bottom:0pt;padding:0pt 0pt 10pt 0pt;" class=""><span style="font-size: 11pt; font-family: Arial, sans-serif; color: rgb(34, 34, 34); font-variant: normal; vertical-align: baseline; white-space: pre-wrap;" class="">I specialize in facial aesthetic treatments, including injectable therapies designed to enhance your natural beauty and help eliminate wrinkles and aging. In addition to beauty enhancements, I also use injectables to relieve TMJ, muscle tension, and shoulder and neck discomfort when appropriate. I also provide weight loss education, medication and guidance to support your overall health and wellness goals.</span></p><p dir="ltr" style="line-height:1.38;background-color:#ffffff;margin-top:0pt;margin-bottom:10pt;" class=""><span style="font-size: 11pt; font-family: Arial, sans-serif; color: rgb(34, 34, 34); font-variant: normal; vertical-align: baseline; white-space: pre-wrap;" class="">My philosophy is simple: to help you look refreshed, feel confident, and achieve natural-looking results through honest, individualized care. </span></p><div><span style="font-size: 11pt; font-family: Arial, sans-serif; color: rgb(34, 34, 34); font-variant: normal; vertical-align: baseline; white-space: pre-wrap;"><br></span></div></span></p>
 
 <div class="grid grid-cols-2 gap-stack-md pt-stack-md">
-<div class="p-stack-md bg-surface-pure rounded shadow-sm border border-tertiary/10">
-<span class="material-symbols-outlined text-accent-warm block mb-stack-sm" style="font-variation-settings: &quot;wght&quot; 300;">verified</span>
-<span class="font-title-lg text-title-lg block text-primary">Certified Expertise</span>
-<span class="font-body-md text-body-md text-text-muted">Medical Grade Standards</span>
+<div class="p-stack-md bg-paper-white-pure rounded shadow-sm border border-tertiary/10">
+<span class="material-symbols-outlined text-soft-blush block mb-stack-sm" style="font-variation-settings: &quot;wght&quot; 300;">verified</span>
+<span class="font-title-lg text-title-lg block text-deep-plum">Certified Expertise</span>
+<span class="font-body-md text-body-md text-text-muted-taupe">Medical Grade Standards</span>
 </div>
-<div class="p-stack-md bg-surface-pure rounded shadow-sm border border-tertiary/10">
-<span class="material-symbols-outlined text-accent-warm block mb-stack-sm" style="font-variation-settings: &quot;wght&quot; 300;">spa</span>
-<span class="font-title-lg text-title-lg block text-primary">Results Driven</span>
-<span class="font-body-md text-body-md text-text-muted">Scientifically Proven</span>
+<div class="p-stack-md bg-paper-white-pure rounded shadow-sm border border-tertiary/10">
+<span class="material-symbols-outlined text-soft-blush block mb-stack-sm" style="font-variation-settings: &quot;wght&quot; 300;">spa</span>
+<span class="font-title-lg text-title-lg block text-deep-plum">Results Driven</span>
+<span class="font-body-md text-body-md text-text-muted-taupe">Scientifically Proven</span>
 </div>
 </div>
 </div>
@@ -183,11 +180,11 @@
 <!-- Mission & Values (Bento-inspired layout) -->
 <section class="py-section-gap max-w-container-max mx-auto px-margin-desktop">
 <div class="text-center mb-stack-lg">
-<span class="font-label-lg text-label-lg text-accent-warm uppercase tracking-widest">Our Mission</span>
-<h2 class="font-headline-lg text-headline-lg text-primary mt-unit">Precision. Compassion. Naturality.</h2>
+<span class="font-label-lg text-label-lg text-soft-blush uppercase tracking-widest">Our Mission</span>
+<h2 class="font-headline-lg text-headline-lg text-deep-plum mt-unit">Precision. Compassion. Naturality.</h2>
 </div>
 <div class="grid grid-cols-1 md:grid-cols-3 gap-gutter">
-<div class="md:col-span-2 bg-primary text-on-primary p-12 rounded-xl flex flex-col justify-between min-h-[400px]">
+<div class="md:col-span-2 bg-deep-plum text-paper-white p-12 rounded-xl flex flex-col justify-between min-h-[400px]">
 <div>
 <span class="material-symbols-outlined text-4xl mb-stack-md" style="font-variation-settings: &quot;wght&quot; 200;">biotech</span>
 <h3 class="font-headline-md text-headline-md mb-stack-sm">The Clinical Edge</h3>
@@ -198,21 +195,21 @@
 <div class="h-[1px] flex-grow bg-on-primary/20"></div>
 </div>
 </div>
-<div class="bg-surface-pure border border-tertiary/10 p-12 rounded-xl flex flex-col justify-between hover:bg-surface-container-low transition-colors duration-300">
+<div class="bg-paper-white-pure border border-tertiary/10 p-12 rounded-xl flex flex-col justify-between hover:bg-paper-white-container-low transition-colors duration-300">
 <div>
-<span class="material-symbols-outlined text-accent-warm text-4xl mb-stack-md" style="font-variation-settings: &quot;wght&quot; 200;">favorite</span>
-<h3 class="font-headline-md text-headline-md text-primary mb-stack-sm">Compassion</h3>
+<span class="material-symbols-outlined text-soft-blush text-4xl mb-stack-md" style="font-variation-settings: &quot;wght&quot; 200;">favorite</span>
+<h3 class="font-headline-md text-headline-md text-deep-plum mb-stack-sm">Compassion</h3>
 <p class="font-body-md text-body-md text-on-surface-variant">Your journey is personal. We listen first, treating each client with the empathy and care they deserve.</p>
 </div>
 </div>
-<div class="bg-surface-pure border border-tertiary/10 p-12 rounded-xl flex flex-col justify-between hover:bg-surface-container-low transition-colors duration-300">
+<div class="bg-paper-white-pure border border-tertiary/10 p-12 rounded-xl flex flex-col justify-between hover:bg-paper-white-container-low transition-colors duration-300">
 <div>
-<span class="material-symbols-outlined text-accent-warm text-4xl mb-stack-md" style="font-variation-settings: &quot;wght&quot; 200;">nature</span>
-<h3 class="font-headline-md text-headline-md text-primary mb-stack-sm">Natural Results</h3>
+<span class="material-symbols-outlined text-soft-blush text-4xl mb-stack-md" style="font-variation-settings: &quot;wght&quot; 200;">nature</span>
+<h3 class="font-headline-md text-headline-md text-deep-plum mb-stack-sm">Natural Results</h3>
 <p class="font-body-md text-body-md text-on-surface-variant">We believe in enhancing your natural beauty, not masking it. Subtlety is our signature.</p>
 </div>
 </div>
-<div class="md:col-span-2 bg-secondary-container p-12 rounded-xl flex flex-col md:flex-row gap-stack-lg items-center overflow-hidden">
+<div class="md:col-span-2 bg-deep-plum-container p-12 rounded-xl flex flex-col md:flex-row gap-stack-lg items-center overflow-hidden">
 <div class="flex-1">
 <h3 class="font-headline-md text-headline-md text-on-secondary-container mb-stack-sm">Accessible Excellence</h3>
 <p class="font-body-md text-body-md text-on-secondary-container/80">Affordable pricing without compromising on the quality of ingredients or professional standards.</p>
@@ -228,33 +225,33 @@
 
 </div>
 <div class="max-w-container-max mx-auto px-margin-desktop">
-<div class="bg-surface-pure/60 backdrop-blur-xl p-stack-lg md:p-16 rounded-3xl border border-white/40 editorial-shadow max-w-4xl mx-auto">
-<h2 class="font-headline-lg text-headline-lg text-primary mb-stack-lg text-center">Practice Philosophy</h2>
+<div class="bg-paper-white-pure/60 backdrop-blur-xl p-stack-lg md:p-16 rounded-3xl border border-white/40 editorial-shadow max-w-4xl mx-auto">
+<h2 class="font-headline-lg text-headline-lg text-deep-plum mb-stack-lg text-center">Practice Philosophy</h2>
 <div class="space-y-12">
 <div class="flex flex-col md:flex-row gap-stack-md">
 <div class="flex-shrink-0">
-<span class="font-display-lg text-display-lg text-accent-warm/40">01</span>
+<span class="font-display-lg text-display-lg text-soft-blush/40">01</span>
 </div>
 <div>
-<h4 class="font-title-lg text-title-lg text-primary mb-2">Science-Led, Soul-Driven</h4>
+<h4 class="font-title-lg text-title-lg text-deep-plum mb-2">Science-Led, Soul-Driven</h4>
 <p class="font-body-md text-body-md text-on-surface-variant">We reject "trend-based" skincare. Every recommendation at CK Aesthetics is backed by dermatological science and adjusted for your specific skin physiology.</p>
 </div>
 </div>
 <div class="flex flex-col md:flex-row gap-stack-md">
 <div class="flex-shrink-0">
-<span class="font-display-lg text-display-lg text-accent-warm/40">02</span>
+<span class="font-display-lg text-display-lg text-soft-blush/40">02</span>
 </div>
 <div>
-<h4 class="font-title-lg text-title-lg text-primary mb-2">The Long-Term View</h4>
+<h4 class="font-title-lg text-title-lg text-deep-plum mb-2">The Long-Term View</h4>
 <p class="font-body-md text-body-md text-on-surface-variant">Aesthetics is a marathon, not a sprint. We focus on long-term skin health and cellular regeneration over temporary "quick fixes" that don't last.</p>
 </div>
 </div>
 <div class="flex flex-col md:flex-row gap-stack-md">
 <div class="flex-shrink-0">
-<span class="font-display-lg text-display-lg text-accent-warm/40">03</span>
+<span class="font-display-lg text-display-lg text-soft-blush/40">03</span>
 </div>
 <div>
-<h4 class="font-title-lg text-title-lg text-primary mb-2">Radical Transparency</h4>
+<h4 class="font-title-lg text-title-lg text-deep-plum mb-2">Radical Transparency</h4>
 <p class="font-body-md text-body-md text-on-surface-variant">No hidden costs, no unnecessary upsells. We provide honest consultations where we discuss exactly what you need—and what you don't.</p>
 </div>
 </div>
@@ -264,31 +261,31 @@
 </section>
 <!-- CTA -->
 <section class="py-section-gap text-center px-margin-mobile">
-<h2 class="font-headline-lg text-headline-lg text-primary mb-stack-md">Begin Your Transformation</h2>
-<p class="font-body-lg text-body-lg text-text-muted mb-stack-lg max-w-xl mx-auto">Discover the intersection of science and beauty with a personalized consultation.</p>
+<h2 class="font-headline-lg text-headline-lg text-deep-plum mb-stack-md">Begin Your Transformation</h2>
+<p class="font-body-lg text-body-lg text-text-muted-taupe mb-stack-lg max-w-xl mx-auto">Discover the intersection of science and beauty with a personalized consultation.</p>
 <div class="flex flex-col sm:flex-row justify-center gap-4">
-<button class="bg-primary text-on-primary px-10 py-5 rounded-full font-label-lg text-label-lg uppercase tracking-widest hover:scale-105 transition-transform duration-300">Book A Consultation</button>
-<button class="border border-primary text-primary px-10 py-5 rounded-full font-label-lg text-label-lg uppercase tracking-widest hover:bg-primary/5 transition-colors duration-300">View Services</button>
+<button class="bg-deep-plum text-paper-white px-10 py-5 rounded-full font-label-lg text-label-lg uppercase tracking-widest hover:scale-105 transition-transform duration-300">Book A Consultation</button>
+<button class="border border-primary text-deep-plum px-10 py-5 rounded-full font-label-lg text-label-lg uppercase tracking-widest hover:bg-deep-plum/5 transition-colors duration-300">View Services</button>
 </div>
 </section>
 </main>
 <!-- Footer -->
-<footer class="bg-surface-container-low w-full py-stack-lg border-t border-tertiary/5">
+<footer class="bg-paper-white-container-low w-full py-stack-lg border-t border-tertiary/5">
 <div class="flex flex-col md:flex-row justify-between items-center px-margin-desktop gap-stack-md max-w-container-max mx-auto">
 <div class="flex flex-col items-center md:items-start">
-<span class="font-headline-md text-headline-md text-primary mb-unit">CK Aesthetics</span>
+<span class="font-headline-md text-headline-md text-deep-plum mb-unit">CK Aesthetics</span>
 <span class="font-body-md text-body-md text-on-surface-variant">© 2024 CK Aesthetics. All rights reserved.</span>
 </div>
 <div class="flex gap-stack-lg">
-<a class="font-body-md text-body-md text-on-surface-variant hover:text-primary transition-colors" href="#">Privacy Policy</a>
-<a class="font-body-md text-body-md text-on-surface-variant hover:text-primary transition-colors" href="#">Terms of Service</a>
-<a class="font-body-md text-body-md text-on-surface-variant hover:text-primary transition-colors" href="#">Contact</a>
+<a class="font-body-md text-body-md text-on-surface-variant hover:text-deep-plum transition-colors" href="#">Privacy Policy</a>
+<a class="font-body-md text-body-md text-on-surface-variant hover:text-deep-plum transition-colors" href="#">Terms of Service</a>
+<a class="font-body-md text-body-md text-on-surface-variant hover:text-deep-plum transition-colors" href="#">Contact</a>
 </div>
 <div class="flex gap-4">
-<a class="w-10 h-10 rounded-full bg-surface-pure flex items-center justify-center text-primary hover:bg-primary hover:text-on-primary transition-all shadow-sm" href="#">
+<a class="w-10 h-10 rounded-full bg-paper-white-pure flex items-center justify-center text-deep-plum hover:bg-deep-plum hover:text-paper-white transition-all shadow-sm" href="#">
 <span class="material-symbols-outlined" style="font-variation-settings: &quot;wght&quot; 300;">public</span>
 </a>
-<a class="w-10 h-10 rounded-full bg-surface-pure flex items-center justify-center text-primary hover:bg-primary hover:text-on-primary transition-all shadow-sm" href="#">
+<a class="w-10 h-10 rounded-full bg-paper-white-pure flex items-center justify-center text-deep-plum hover:bg-deep-plum hover:text-paper-white transition-all shadow-sm" href="#">
 <span class="material-symbols-outlined" style="font-variation-settings: &quot;wght&quot; 300;">alternate_email</span>
 </a>
 </div>

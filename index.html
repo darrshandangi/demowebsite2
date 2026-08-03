@@ -4,195 +4,107 @@
 <title>CK Aesthetics | Modern Science Meets Timeless Beauty</title>
 <link href="https://fonts.googleapis.com/css2?family=Libre+Caslon+Text:ital,wght@0,400;0,700;1,400&amp;family=Manrope:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
-<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries&v=cachebust2"></script>
 <script id="tailwind-config">
-  tailwind.config = {
-    darkMode: "class",
-    theme: {
-      extend: {
-        "colors": {
-                "text-muted": "#8B7D75",
-                "secondary": "#75584b",
-                "inverse-on-surface": "#f2f0ee",
-                "surface-container-high": "#eae8e6",
-                "outline-variant": "#EDEDED",
-                "secondary-fixed": "#ffdbcc",
-                "primary": "#5E3E4D",
-                "surface-dim": "#dbdad8",
-                "on-secondary-fixed": "#2b160d",
-                "primary-fixed-dim": "#e6bbcd",
-                "on-primary": "#ffffff",
-                "error-container": "#ffdad6",
-                "on-primary-fixed": "#2d1320",
-                "inverse-surface": "#30302f",
-                "on-tertiary-fixed-variant": "#50443e",
-                "surface-container-highest": "#e4e2e0",
-                "surface-variant": "#e4e2e0",
-                "text-main": "#5E3E4D",
-                "outline": "#EDEDED",
-                "on-primary-fixed-variant": "#5d3d4c",
-                "secondary-container": "#ffd7c7",
-                "surface-container-low": "#f5f3f1",
-                "surface-pure": "#FDFDFD",
-                "tertiary": "#392f29",
-                "on-surface-variant": "#4e4448",
-                "tertiary-fixed": "#f1dfd6",
-                "on-secondary-fixed-variant": "#5b4135",
-                "on-background": "#1b1c1b",
-                "on-tertiary": "#ffffff",
-                "accent-warm": "#C5A192",
-                "on-secondary-container": "#7a5c4f",
-                "on-secondary": "#ffffff",
-                "on-error-container": "#93000a",
-                "primary-container": "#5e3e4d",
-                "background": "#FDFDFD",
-                "on-tertiary-container": "#c3b3aa",
-                "inverse-primary": "#e6bbcd",
-                "primary-fixed": "#ffd8e8",
-                "tertiary-container": "#51453e",
-                "surface-bright": "#FDFDFD",
-                "surface-container": "#efedec",
-                "surface-tint": "#775464",
-                "surface-container-lowest": "#ffffff",
-                "error": "#ba1a1a",
-                "surface": "#FDFDFD",
-                "on-error": "#ffffff",
-                "tertiary-fixed-dim": "#d4c3ba",
-                "on-primary-container": "#d5abbc",
-                "on-tertiary-fixed": "#231a14",
-                "on-surface": "#1b1c1b",
-                "secondary-fixed-dim": "#e5beaf"
-        },
-        "borderRadius": {
-                "DEFAULT": "0.125rem",
-                "lg": "0.25rem",
-                "xl": "0.5rem",
-                "full": "0.75rem"
-        },
-        "spacing": {
-                "stack-sm": "12px",
-                "stack-lg": "48px",
-                "unit": "8px",
-                "margin-desktop": "64px",
-                "stack-md": "24px",
-                "gutter": "24px",
-                "section-gap": "120px",
-                "margin-mobile": "20px",
-                "container-max": "1280px"
-        },
-        "fontFamily": {
-                "label-md": [
-                        "Manrope"
-                ],
-                "headline-md": [
-                        "Libre Caslon Text"
-                ],
-                "display-lg-mobile": [
-                        "Libre Caslon Text"
-                ],
-                "label-lg": [
-                        "Manrope"
-                ],
-                "headline-lg": [
-                        "Libre Caslon Text"
-                ],
-                "display-lg": [
-                        "Libre Caslon Text"
-                ],
-                "body-lg": [
-                        "Manrope"
-                ],
-                "title-lg": [
-                        "Manrope"
-                ],
-                "headline-lg-mobile": [
-                        "Libre Caslon Text"
-                ],
-                "body-md": [
-                        "Manrope"
-                ]
-        },
-        "fontSize": {
-                "label-md": [
-                        "12px",
-                        {
-                                "lineHeight": "16px",
-                                "letterSpacing": "0.05em",
-                                "fontWeight": "600"
-                        }
-                ],
-                "headline-md": [
-                        "32px",
-                        {
-                                "lineHeight": "40px",
-                                "fontWeight": "400"
-                        }
-                ],
-                "display-lg-mobile": [
-                        "40px",
-                        {
-                                "lineHeight": "48px",
-                                "letterSpacing": "-0.01em",
-                                "fontWeight": "400"
-                        }
-                ],
-                "label-lg": [
-                        "14px",
-                        {
-                                "lineHeight": "20px",
-                                "letterSpacing": "0.1em",
-                                "fontWeight": "700"
-                        }
-                ],
-                "headline-lg": [
-                        "48px",
-                        {
-                                "lineHeight": "56px",
-                                "fontWeight": "400"
-                        }
-                ],
-                "display-lg": [
-                        "64px",
-                        {
-                                "lineHeight": "72px",
-                                "letterSpacing": "-0.02em",
-                                "fontWeight": "400"
-                        }
-                ],
-                "body-lg": [
-                        "18px",
-                        {
-                                "lineHeight": "32px",
-                                "fontWeight": "400"
-                        }
-                ],
-                "title-lg": [
-                        "20px",
-                        {
-                                "lineHeight": "28px",
-                                "letterSpacing": "0.02em",
-                                "fontWeight": "600"
-                        }
-                ],
-                "headline-lg-mobile": [
-                        "32px",
-                        {
-                                "lineHeight": "40px",
-                                "fontWeight": "400"
-                        }
-                ],
-                "body-md": [
-                        "16px",
-                        {
-                                "lineHeight": "28px",
-                                "fontWeight": "400"
-                        }
-                ]
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "surface-container": "#efedec",
+                        "secondary-fixed": "#ffdbcc",
+                        "primary-fixed": "#ffd8e8",
+                        "deep-plum": "#5E3E4D",
+                        "tertiary-fixed": "#f1dfd6",
+                        "primary-fixed-dim": "#e6bbcd",
+                        "error": "#ba1a1a",
+                        "on-secondary-container": "#7a5c4f",
+                        "paper-white": "#FDFDFD",
+                        "tertiary": "#392f29",
+                        "surface-container-high": "#eae8e6",
+                        "on-secondary-fixed-variant": "#5b4135",
+                        "on-primary": "#ffffff",
+                        "background": "#fbf9f7",
+                        "on-secondary-fixed": "#2b160d",
+                        "surface-dim": "#dbdad8",
+                        "inverse-primary": "#e6bbcd",
+                        "surface-tint": "#775464",
+                        "soft-blush": "#C5A192",
+                        "primary": "#452836",
+                        "on-surface": "#1b1c1b",
+                        "surface-container-highest": "#e4e2e0",
+                        "surface-container-lowest": "#ffffff",
+                        "tertiary-fixed-dim": "#d4c3ba",
+                        "secondary-fixed-dim": "#e5beaf",
+                        "inverse-surface": "#30302f",
+                        "on-tertiary-fixed": "#231a14",
+                        "surface-bright": "#fbf9f7",
+                        "on-tertiary-container": "#c3b3aa",
+                        "primary-container": "#5e3e4d",
+                        "error-container": "#ffdad6",
+                        "on-background": "#1b1c1b",
+                        "secondary": "#75584b",
+                        "on-secondary": "#ffffff",
+                        "on-primary-fixed": "#2d1320",
+                        "surface-variant": "#e4e2e0",
+                        "surface": "#fbf9f7",
+                        "on-tertiary-fixed-variant": "#50443e",
+                        "tertiary-container": "#51453e",
+                        "on-error-container": "#93000a",
+                        "on-error": "#ffffff",
+                        "outline": "#807478",
+                        "muted-taupe": "#8B7D75",
+                        "outline-variant": "#d2c3c7",
+                        "secondary-container": "#ffd7c7",
+                        "on-surface-variant": "#4e4448",
+                        "on-primary-fixed-variant": "#5d3d4c",
+                        "on-primary-container": "#d5abbc",
+                        "medical-gray": "#EDEDED",
+                        "on-tertiary": "#ffffff",
+                        "surface-container-low": "#f5f3f1",
+                        "inverse-on-surface": "#f2f0ee"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "stack-md": "32px",
+                        "base": "8px",
+                        "stack-sm": "16px",
+                        "section-mobile": "64px",
+                        "gutter": "24px",
+                        "margin-edge": "40px",
+                        "section-desktop": "120px"
+                    },
+                    "fontFamily": {
+                        "display-lg": ["Libre Caslon Text"],
+                        "headline-xl": ["Libre Caslon Text"],
+                        "headline-lg": ["Libre Caslon Text"],
+                        "headline-md": ["Libre Caslon Text"],
+                        "body-lg": ["Manrope"],
+                        "body-md": ["Manrope"],
+                        "label-md": ["Manrope"],
+                        "label-sm": ["Manrope"]
+                    },
+                    "fontSize": {
+                        "display-lg-mobile": ["40px", {"lineHeight": "48px", "fontWeight": "400"}],
+                        "display-lg": ["64px", {"lineHeight": "72px", "letterSpacing": "-0.02em", "fontWeight": "400"}],
+                        "headline-md": ["24px", {"lineHeight": "32px", "fontWeight": "400"}],
+                        "body-md": ["16px", {"lineHeight": "24px", "fontWeight": "400"}],
+                        "headline-lg": ["32px", {"lineHeight": "40px", "fontWeight": "400"}],
+                        "label-md": ["14px", {"lineHeight": "20px", "letterSpacing": "0.05em", "fontWeight": "600"}],
+                        "label-sm": ["12px", {"lineHeight": "16px", "letterSpacing": "0.02em", "fontWeight": "500"}],
+                        "body-lg": ["18px", {"lineHeight": "28px", "fontWeight": "400"}],
+                        "headline-xl": ["48px", {"lineHeight": "56px", "fontWeight": "400"}],
+                        "headline-xl-mobile": ["32px", {"lineHeight": "40px", "fontWeight": "400"}]
+                    }
+                }
+            }
         }
-},
-    },
-  }
-</script>
+    </script>
 <style>
         .material-symbols-outlined {
             font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24;
@@ -245,18 +157,18 @@
     }
     </style>
 </head>
-<body class="bg-background text-on-background font-body-md overflow-x-hidden">
+<body class="bg-paper-white text-on-background font-body-md overflow-x-hidden">
 <!-- TopNavBar -->
-<nav class="w-full top-0 sticky z-50 bg-background/80 backdrop-blur-md border-b border-outline-variant/10">
+<nav class="w-full top-0 sticky z-50 bg-paper-white/80 backdrop-blur-md border-b border-medical-gray/10">
 <div class="max-w-container mx-auto px-margin-desktop flex justify-between items-center h-20">
-<div class="font-display-lg text-headline-lg text-primary">CK Aesthetics</div>
+<div class="font-display-lg text-headline-lg text-deep-plum">CK Aesthetics</div>
 <div class="hidden md:flex items-center gap-gutter">
-<a class="font-label-lg text-label-lg text-on-surface-variant font-medium hover:text-primary transition-colors duration-300" href="#">Services</a>
-<a class="font-label-lg text-label-lg text-on-surface-variant font-medium hover:text-primary transition-colors duration-300" href="#">About Us</a>
-<a class="font-label-lg text-label-lg text-on-surface-variant font-medium hover:text-primary transition-colors duration-300" href="#">Consultation</a>
-<button class="ml-4 px-6 py-3 bg-primary text-on-primary font-label-lg text-label-lg uppercase cursor-pointer active:scale-95 transition-all tracking-widest">Book Now</button>
+<a class="font-label-lg text-label-lg text-on-surface-variant font-medium hover:text-deep-plum transition-colors duration-300" href="#">Services</a>
+<a class="font-label-lg text-label-lg text-on-surface-variant font-medium hover:text-deep-plum transition-colors duration-300" href="#">About Us</a>
+<a class="font-label-lg text-label-lg text-on-surface-variant font-medium hover:text-deep-plum transition-colors duration-300" href="#">Consultation</a>
+<button class="ml-4 px-6 py-3 bg-deep-plum text-paper-white font-label-lg text-label-lg uppercase cursor-pointer active:scale-95 transition-all tracking-widest">Book Now</button>
 </div>
-<button class="md:hidden material-symbols-outlined text-primary text-3xl">menu</button>
+<button class="md:hidden material-symbols-outlined text-deep-plum text-3xl">menu</button>
 </div>
 </nav>
 <div id="scroll-container">
@@ -423,8 +335,8 @@
 <!-- Section 1: Our Expertise -->
 <section class="py-section-gap max-w-container mx-auto px-margin-desktop transition-all duration-1000 opacity-100">
 <div class="mb-stack-lg text-center">
-<span class="font-label-lg text-label-lg text-text-muted uppercase tracking-[0.2em] mb-2 block">Our Expertise</span>
-<h2 class="font-display-lg text-display-lg text-primary">Choose Your Service</h2>
+<span class="font-label-lg text-label-lg text-text-muted-taupe uppercase tracking-[0.2em] mb-2 block">Our Expertise</span>
+<h2 class="font-display-lg text-display-lg text-deep-plum">Choose Your Service</h2>
 </div>
 <div class="grid grid-cols-1 md:grid-cols-12 gap-gutter">
 <!-- Injectables (Cosmetic & Therapeutic) -->
@@ -434,11 +346,11 @@
 </div>
 <div class="absolute inset-0 service-card-overlay z-10"></div>
 <div class="absolute bottom-0 left-0 p-stack-lg z-20 w-full">
-<h3 class="font-headline-lg text-on-primary mb-stack-sm">Injectables</h3>
-<p class="text-on-primary/80 mb-stack-md font-body-md">Botox, Dysport, and Therapeutic relief for migraines and TMJ.</p>
+<h3 class="font-headline-lg text-paper-white mb-stack-sm">Injectables</h3>
+<p class="text-paper-white/80 mb-stack-md font-body-md">Botox, Dysport, and Therapeutic relief for migraines and TMJ.</p>
 <div class="flex flex-wrap gap-4">
-<a class="inline-flex items-center gap-2 bg-on-primary text-primary px-4 py-2 font-label-md text-label-md hover:bg-accent-warm hover:text-white transition-all uppercase tracking-widest" href="#">Cosmetic <span class="material-symbols-outlined text-sm">chevron_right</span></a>
-<a class="inline-flex items-center gap-2 bg-background/20 backdrop-blur-sm text-on-primary border border-on-primary/30 px-4 py-2 font-label-md text-label-md hover:bg-on-primary hover:text-primary transition-all uppercase tracking-widest" href="#">Therapeutic <span class="material-symbols-outlined text-sm">chevron_right</span></a>
+<a class="inline-flex items-center gap-2 bg-on-primary text-deep-plum px-4 py-2 font-label-md text-label-md hover:bg-soft-blush hover:text-white transition-all uppercase tracking-widest" href="#">Cosmetic <span class="material-symbols-outlined text-sm">chevron_right</span></a>
+<a class="inline-flex items-center gap-2 bg-paper-white/20 backdrop-blur-sm text-paper-white border border-on-primary/30 px-4 py-2 font-label-md text-label-md hover:bg-on-primary hover:text-deep-plum transition-all uppercase tracking-widest" href="#">Therapeutic <span class="material-symbols-outlined text-sm">chevron_right</span></a>
 </div>
 </div>
 </div>
@@ -449,23 +361,23 @@
 </div>
 <div class="absolute inset-0 service-card-overlay z-10"></div>
 <div class="absolute bottom-0 left-0 p-stack-lg z-20 w-full">
-<h3 class="font-headline-md text-on-primary mb-stack-sm">Dermal Fillers</h3>
+<h3 class="font-headline-md text-paper-white mb-stack-sm">Dermal Fillers</h3>
 <ul class="space-y-2">
-<li class=""><a class="text-on-primary/80 hover:text-on-primary font-body-md transition-colors flex items-center justify-between border-b border-on-primary/20 pb-2" href="#">Lips &amp; Contouring <span class="material-symbols-outlined">arrow_forward</span></a></li>
-<li class=""><a class="text-on-primary/80 hover:text-on-primary font-body-md transition-colors flex items-center justify-between border-b border-on-primary/20 pb-2" href="#">Jawline Sculpting <span class="material-symbols-outlined">arrow_forward</span></a></li>
+<li class=""><a class="text-paper-white/80 hover:text-paper-white font-body-md transition-colors flex items-center justify-between border-b border-on-primary/20 pb-2" href="#">Lips &amp; Contouring <span class="material-symbols-outlined">arrow_forward</span></a></li>
+<li class=""><a class="text-paper-white/80 hover:text-paper-white font-body-md transition-colors flex items-center justify-between border-b border-on-primary/20 pb-2" href="#">Jawline Sculpting <span class="material-symbols-outlined">arrow_forward</span></a></li>
 </ul>
 </div>
 </div>
 <!-- Medical Weight Loss -->
-<div class="md:col-span-12 group relative overflow-hidden bento-card-hover bg-surface-container-low rounded-lg h-[400px]">
+<div class="md:col-span-12 group relative overflow-hidden bento-card-hover bg-paper-white-container-low rounded-lg h-[400px]">
 <div class="grid md:grid-cols-2 h-full">
 <div class="p-stack-lg flex flex-col justify-center">
-<span class="font-label-md text-label-md text-accent-warm uppercase tracking-widest mb-4 block">Holistic Wellness</span>
-<h3 class="font-headline-lg text-primary mb-stack-md">Medical Weight Loss</h3>
+<span class="font-label-md text-label-md text-soft-blush uppercase tracking-widest mb-4 block">Holistic Wellness</span>
+<h3 class="font-headline-lg text-deep-plum mb-stack-md">Medical Weight Loss</h3>
 <p class="font-body-md text-on-surface-variant mb-stack-md max-w-md">Precision programs combining GLP-1 therapy (Semaglutide/Tirzepatide) with personalized metabolic coaching.</p>
 <div class="flex gap-gutter">
-<button class="bg-primary text-on-primary px-8 py-3 font-label-lg uppercase tracking-widest hover:bg-secondary transition-all">Start Your Journey</button>
-<a class="flex items-center text-primary font-label-lg underline underline-offset-4 hover:text-secondary transition-colors" href="#">Learn More</a>
+<button class="bg-deep-plum text-paper-white px-8 py-3 font-label-lg uppercase tracking-widest hover:bg-deep-plum transition-all">Start Your Journey</button>
+<a class="flex items-center text-deep-plum font-label-lg underline underline-offset-4 hover:text-deep-plum transition-colors" href="#">Learn More</a>
 </div>
 </div>
 <div class="relative overflow-hidden hidden md:block">
@@ -480,8 +392,8 @@
 </div>
 <div class="absolute inset-0 service-card-overlay z-10"></div>
 <div class="absolute bottom-0 left-0 p-stack-lg z-20 w-full">
-<h3 class="font-headline-md text-on-primary">Skin Treatments</h3>
-<p class="text-on-primary/80 font-body-md">Microneedling, PRP, and Professional Chemical Peels.</p>
+<h3 class="font-headline-md text-paper-white">Skin Treatments</h3>
+<p class="text-paper-white/80 font-body-md">Microneedling, PRP, and Professional Chemical Peels.</p>
 </div>
 </div>
 <div class="md:col-span-6 group relative overflow-hidden bento-card-hover rounded-lg h-[350px]">
@@ -490,34 +402,34 @@
 </div>
 <div class="absolute inset-0 service-card-overlay z-10"></div>
 <div class="absolute bottom-0 left-0 p-stack-lg z-20 w-full">
-<h3 class="font-headline-md text-on-primary">Wellness Injections</h3>
-<p class="text-on-primary/80 font-body-md">B12 and NAD+ for energy, repair, and anti-aging.</p>
+<h3 class="font-headline-md text-paper-white">Wellness Injections</h3>
+<p class="text-paper-white/80 font-body-md">B12 and NAD+ for energy, repair, and anti-aging.</p>
 </div>
 </div>
 </div>
 </section>
 <!-- Section 2: Meet Your Aesthetician: Cassie -->
-<section class="py-section-gap bg-surface-container-low transition-all duration-1000 opacity-100">
+<section class="py-section-gap bg-paper-white-container-low transition-all duration-1000 opacity-100">
 <div class="max-w-container mx-auto px-margin-desktop grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
 <div class="relative">
 <div class="aspect-[4/5] overflow-hidden rounded-lg shadow-xl">
 <img class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida/AP1WRLuicFVhBJ66Egj4Jg7rhGqBxmlLaQLQe5rSfnrOpBtoNCCaCvYwKktxK0ol6x-TdgrDEkRV5-4Cy2TdSULG6W5uoP2DuRg_z7OBv_zN1Dq4pVtLbm36XkaXuI1rf5KXoY_YfSGUV8Z1opUx4f4Ft53jGMJRPjh0hRrAmpBhfsHHuodd7bx0ZP5rkYsrG8_-mQX5f3mEm05L8QFevZr5Y449tdTMrJqElRhNmk6PXjLcKA4yX1w0aIFbSQ">
 </div>
-<div class="absolute -bottom-8 -right-8 bg-primary p-12 text-on-primary hidden lg:block rounded-lg shadow-2xl">
+<div class="absolute -bottom-8 -right-8 bg-deep-plum p-12 text-paper-white hidden lg:block rounded-lg shadow-2xl">
 <span class="font-display-lg text-4xl block mb-2 italic">Est. 2021</span>
 <p class="font-label-md text-label-md opacity-80 uppercase tracking-widest">A Legacy of Care</p>
 </div>
 </div>
 <div class="flex flex-col">
-<span class="font-label-lg text-label-lg text-text-muted uppercase tracking-[0.2em] mb-4 block">Founder &amp; Visionary</span>
-<h2 class="font-display-lg text-display-lg text-primary mb-stack-md">Meet Your Provider: Claudia</h2>
-<div class="w-20 h-1 bg-accent-warm mb-stack-md"></div>
+<span class="font-label-lg text-label-lg text-text-muted-taupe uppercase tracking-[0.2em] mb-4 block">Founder &amp; Visionary</span>
+<h2 class="font-display-lg text-display-lg text-deep-plum mb-stack-md">Meet Your Provider: Claudia</h2>
+<div class="w-20 h-1 bg-soft-blush mb-stack-md"></div>
 <p class="font-body-lg text-on-surface-variant mb-stack-md italic leading-relaxed">
                     "I am a Certified Medical Aesthetician of 3 and 1/2 years and owner of CK Aesthetics. I started my business because of the need I saw in the industry for quality results-driven skincare products and services at affordable prices. I believe that everyone deserves to feel confident in their own skin, and my mission is to provide personalized treatments that enhance your natural beauty while maintaining the health and integrity of your skin."
                 </p>
 <div class="flex gap-gutter mt-stack-md">
-<button class="bg-primary text-on-primary px-8 py-4 font-label-lg text-label-lg uppercase hover:bg-secondary transition-all flex items-center gap-2 tracking-widest">Meet Cassie <span class="material-symbols-outlined">face</span></button>
-<button class="border border-primary text-primary px-8 py-4 font-label-lg text-label-lg uppercase hover:bg-primary hover:text-white transition-all tracking-widest">Consultation</button>
+<button class="bg-deep-plum text-paper-white px-8 py-4 font-label-lg text-label-lg uppercase hover:bg-deep-plum transition-all flex items-center gap-2 tracking-widest">Meet Cassie <span class="material-symbols-outlined">face</span></button>
+<button class="border border-primary text-deep-plum px-8 py-4 font-label-lg text-label-lg uppercase hover:bg-deep-plum hover:text-white transition-all tracking-widest">Consultation</button>
 </div>
 </div>
 </div>
@@ -526,56 +438,56 @@
 <section class="py-section-gap max-w-container mx-auto px-margin-desktop overflow-hidden transition-all duration-1000 opacity-100">
 <div class="flex flex-col md:flex-row justify-between items-end mb-stack-lg">
 <div>
-<span class="font-label-lg text-label-lg text-text-muted uppercase tracking-[0.2em] mb-2 block">Social Community</span>
-<h2 class="font-display-lg text-display-lg text-primary">The Latest From Instagram</h2>
+<span class="font-label-lg text-label-lg text-text-muted-taupe uppercase tracking-[0.2em] mb-2 block">Social Community</span>
+<h2 class="font-display-lg text-display-lg text-deep-plum">The Latest From Instagram</h2>
 </div>
-<a class="flex items-center gap-2 font-label-lg text-label-lg text-primary hover:text-accent-warm transition-colors mb-2 tracking-widest" href="#">
+<a class="flex items-center gap-2 font-label-lg text-label-lg text-deep-plum hover:text-soft-blush transition-colors mb-2 tracking-widest" href="#">
 <span class="material-symbols-outlined">photo_camera</span> Follow @CKAesthetics
             </a>
 </div>
 <div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5 gap-4">
-<div class="aspect-square bg-surface-container h-full relative group cursor-pointer overflow-hidden rounded">
+<div class="aspect-square bg-paper-white-container h-full relative group cursor-pointer overflow-hidden rounded">
 <img class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-500" data-alt="Close-up macro photography of glowing, hydrated skin reflecting soft, warm studio lighting." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDtjSu3OS_oBGXAneZwHjCnqjlnq2lV59mPNnYa4vcgHYEJdmQys-Qh0OY_h4_YI3e3nVL8nBRQTemZW-HLtkcFoqAmGhqF_-VHl1IetRSvtmztSA72vjTp579cTd75uUlIZCCMmwriNr4Ym1L2weHD5ltfXHPwABX_Y4I5tBBUPMHyDshjunJo77WZnypUJ_gnsfP21FcbRt85JGW77NVgyt7jjJpE9tnSRQWM6Sz4Lbr6tCgOQ9Q2DFm1Hu1Km8w_YQa6xWVPuoY">
 </div>
-<div class="aspect-square bg-surface-container h-full relative group cursor-pointer overflow-hidden rounded">
+<div class="aspect-square bg-paper-white-container h-full relative group cursor-pointer overflow-hidden rounded">
 <img class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-500" data-alt="A minimalist and serene treatment room at CK Aesthetics." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCOcKXsa9Y4Kxp9pft6-PAv3w381dnbk1VJFXZHtWbZZ_RghAJ2bOF9xmNSm0hUEIo0mh--GkAyCTwx0Go3OEsKSIeULBFqOLbbUIltUhbzvbFi4A3-YTq4xP0GOwHzRnlpVobEjzYQkF2b13OukIlVyz-tftyzNN_o-MAV52NIeM1I9dCj6oKEUZDEENQp5ch3_DFQ5u1siStX9XnyasMbFVu-cFhPfxOBM4eJ_kgh8-hBWULL-d4oHQXjroJvWDQfHs-sAlowb4M">
 </div>
-<div class="aspect-square bg-surface-container h-full relative group cursor-pointer overflow-hidden rounded">
+<div class="aspect-square bg-paper-white-container h-full relative group cursor-pointer overflow-hidden rounded">
 <img class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-500" data-alt="Cassie the aesthetician performing a precise dermal filler procedure." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBSdej8-ZmngCVVwV4XvFDNYGYqU2zKydxh1VZB6HHArhUMFNKzhwC9qxjMrkUTMMOJseoVAm9ThPnCC6na7-9QQGZomXXoG5mSVzDtsME1r1bUlD6jvLYl0Wz-p8ENjlTz10JmexUTP1VMwEf6mPOdkny_I2HNEHgAq28Q4AbFglSuWHihHQ1uU4r19g-gcJ-uRedfmfuGUeFP0MpFtxqeuJpQqw2R9cUUCl-4-BRxQSkxzmAEBRcFyMbycb9VwjHe5w5AwMuaNQc">
 </div>
-<div class="aspect-square bg-surface-container h-full relative group cursor-pointer overflow-hidden rounded">
+<div class="aspect-square bg-paper-white-container h-full relative group cursor-pointer overflow-hidden rounded">
 <img class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-500" data-alt="High-end clinical serum on stone." src="https://lh3.googleusercontent.com/aida-public/AB6AXuB5IMp1IVXQyurHVR0Krk7_23vml7ER3bBdHBzRBCGyB25zNHFDkxB7UN78coSd1d9LWo2UEqiSJPXzMlsHjaJC1uEEc0nIJNgNG-XKjxAFwhVfP4k6cux4tqjW09eXQ2zfr7GrEoPBTpQwsg2qag6Zx5lzCxu_I1ymG0kpdASG6Rxzi__4Qyk5PzL25jhhpLDOcinPFOwAoAe6H6uHoZu9THvm2eGzxrRCTZTvZ6qVaSWUWsxoj4jrcnM7QlbQgXgxH5c9ZQn7Sgw">
 </div>
-<div class="aspect-square bg-surface-container h-full relative group cursor-pointer overflow-hidden rounded hidden lg:block">
+<div class="aspect-square bg-paper-white-container h-full relative group cursor-pointer overflow-hidden rounded hidden lg:block">
 <img class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-500" data-alt="Woman by a window reflecting tranquility." src="https://lh3.googleusercontent.com/aida-public/AB6AXuA-4SmC4_PJryhb6L9dq_A3FlsKvhFgzNDsyawFKINwSUACaD7c81CxwuUTBGWF9KPr4sJXiC65MrOakxIAT1nUi_V8kgfC5RA9dPX4woG3R8A0ieBM8qWmEUCNqVdAA1KhtZW5HieAk7bVRDr9Otc10hKB_X1rJiNW-de_BHOi8h4yz7m6cTj7g0deayOuuK2Bwn_zKgSIjE7viDUI3ji-iC1Y85rkPMXk8GJHZVtlXuT7OL3cJ7ORFXLnC8UZU8rfSiijc_XSC0U">
 </div>
 </div>
 </section>
 <!-- Section 4 & 5: Contact & Info -->
-<section class="bg-primary text-on-primary transition-all duration-1000 opacity-100">
+<section class="bg-deep-plum text-paper-white transition-all duration-1000 opacity-100">
 <div class="max-w-container mx-auto px-margin-desktop grid grid-cols-1 lg:grid-cols-2">
 <!-- Contact Form -->
 <div class="py-section-gap pr-0 lg:pr-stack-lg border-b lg:border-b-0 lg:border-r border-on-primary/10">
 <h2 class="font-display-lg text-display-lg-mobile md:text-display-lg mb-4">How Can We Help?</h2>
-<p class="font-body-md text-on-primary/70 mb-stack-lg">It's easy to get in touch with us! Fill out the fields below and we'll respond promptly to your inquiries.</p>
+<p class="font-body-md text-paper-white/70 mb-stack-lg">It's easy to get in touch with us! Fill out the fields below and we'll respond promptly to your inquiries.</p>
 <form class="space-y-6">
 <div class="grid grid-cols-1 md:grid-cols-2 gap-gutter">
 <div>
 <label class="block font-label-md text-label-md uppercase mb-2 opacity-60">First Name*</label>
-<input class="w-full bg-transparent border-0 border-b border-on-primary/30 focus:ring-0 focus:border-on-primary transition-colors py-2 text-on-primary placeholder:text-on-primary/20" type="text">
+<input class="w-full bg-transparent border-0 border-b border-on-primary/30 focus:ring-0 focus:border-on-primary transition-colors py-2 text-paper-white placeholder:text-paper-white/20" type="text">
 </div>
 <div>
 <label class="block font-label-md text-label-md uppercase mb-2 opacity-60">Last Name*</label>
-<input class="w-full bg-transparent border-0 border-b border-on-primary/30 focus:ring-0 focus:border-on-primary transition-colors py-2 text-on-primary placeholder:text-on-primary/20" type="text">
+<input class="w-full bg-transparent border-0 border-b border-on-primary/30 focus:ring-0 focus:border-on-primary transition-colors py-2 text-paper-white placeholder:text-paper-white/20" type="text">
 </div>
 </div>
 <div>
 <label class="block font-label-md text-label-md uppercase mb-2 opacity-60">Email Address*</label>
-<input class="w-full bg-transparent border-0 border-b border-on-primary/30 focus:ring-0 focus:border-on-primary transition-colors py-2 text-on-primary placeholder:text-on-primary/20" type="email">
+<input class="w-full bg-transparent border-0 border-b border-on-primary/30 focus:ring-0 focus:border-on-primary transition-colors py-2 text-paper-white placeholder:text-paper-white/20" type="email">
 </div>
 <div>
 <label class="block font-label-md text-label-md uppercase mb-2 opacity-60">Service of Interest*</label>
-<select class="w-full bg-transparent border-0 border-b border-on-primary/30 focus:ring-0 focus:border-on-primary transition-colors py-2 text-on-primary [&amp;&gt;option]:text-primary">
+<select class="w-full bg-transparent border-0 border-b border-on-primary/30 focus:ring-0 focus:border-on-primary transition-colors py-2 text-paper-white [&amp;&gt;option]:text-deep-plum">
 <option>Injectables (Cosmetic &amp; Therapeutic)</option>
 <option>Dermal Fillers &amp; Contouring</option>
 <option>Medical Weight Loss Programs</option>
@@ -584,10 +496,10 @@
 </select>
 </div>
 <label class="flex items-start gap-3 cursor-pointer group">
-<input class="mt-1 bg-transparent border-on-primary/30 text-accent-warm focus:ring-offset-primary rounded-sm" type="checkbox">
-<span class="font-body-md text-sm text-on-primary/60 group-hover:text-on-primary transition-colors">By checking this box you agree to receive SMS from CK Aesthetics. Information will not be shared with outside vendors.</span>
+<input class="mt-1 bg-transparent border-on-primary/30 text-soft-blush focus:ring-offset-primary rounded-sm" type="checkbox">
+<span class="font-body-md text-sm text-paper-white/60 group-hover:text-paper-white transition-colors">By checking this box you agree to receive SMS from CK Aesthetics. Information will not be shared with outside vendors.</span>
 </label>
-<button class="bg-on-primary text-primary px-12 py-4 font-label-lg text-label-lg uppercase hover:bg-accent-warm hover:text-white transition-all active:scale-95 tracking-widest">Send Message</button>
+<button class="bg-on-primary text-deep-plum px-12 py-4 font-label-lg text-label-lg uppercase hover:bg-soft-blush hover:text-white transition-all active:scale-95 tracking-widest">Send Message</button>
 </form>
 </div>
 <!-- Info Column -->
@@ -595,32 +507,32 @@
 <div class="grid grid-cols-1 md:grid-cols-2 gap-stack-lg">
 <div>
 <h4 class="font-label-lg text-label-lg uppercase tracking-widest mb-4 flex items-center gap-2">
-<span class="material-symbols-outlined text-accent-warm">contact_support</span> Direct Contact
+<span class="material-symbols-outlined text-soft-blush">contact_support</span> Direct Contact
                         </h4>
-<p class="font-body-md text-on-primary/70">Phone: (210) XXX-XXXX<br>Email: info@ckaesthetics.com</p>
+<p class="font-body-md text-paper-white/70">Phone: (210) XXX-XXXX<br>Email: info@ckaesthetics.com</p>
 </div>
 <div>
 <h4 class="font-label-lg text-label-lg uppercase tracking-widest mb-4 flex items-center gap-2">
-<span class="material-symbols-outlined text-accent-warm">location_on</span> Location
+<span class="material-symbols-outlined text-soft-blush">location_on</span> Location
                         </h4>
-<p class="font-body-md text-on-primary/70 mb-4">
+<p class="font-body-md text-paper-white/70 mb-4">
                             19296 Stone Oak Pkwy, Suite 102<br>
                             San Antonio, TX 78258
                         </p>
-<a class="inline-flex items-center gap-2 text-accent-warm font-label-md text-label-md uppercase border-b border-accent-warm pb-1 hover:text-on-primary hover:border-on-primary transition-all tracking-widest" href="#">Get Directions <span class="material-symbols-outlined text-sm">open_in_new</span></a>
+<a class="inline-flex items-center gap-2 text-soft-blush font-label-md text-label-md uppercase border-b border-accent-warm pb-1 hover:text-paper-white hover:border-on-primary transition-all tracking-widest" href="#">Get Directions <span class="material-symbols-outlined text-sm">open_in_new</span></a>
 </div>
 <div>
 <h4 class="font-label-lg text-label-lg uppercase tracking-widest mb-4 flex items-center gap-2">
-<span class="material-symbols-outlined text-accent-warm">schedule</span> Office Hours
+<span class="material-symbols-outlined text-soft-blush">schedule</span> Office Hours
                         </h4>
-<p class="font-body-md text-on-primary/70">Monday–Friday : 8:30 a.m.–4:30 p.m.</p>
-<p class="font-body-md text-xs text-on-primary/50 mt-2 italic">By appointment only.</p>
+<p class="font-body-md text-paper-white/70">Monday–Friday : 8:30 a.m.–4:30 p.m.</p>
+<p class="font-body-md text-xs text-paper-white/50 mt-2 italic">By appointment only.</p>
 </div>
 </div>
 <div class="mt-stack-lg pt-stack-lg border-t border-on-primary/10">
 <div class="bg-on-primary/5 p-gutter rounded-lg">
 <h4 class="font-headline-md mb-stack-sm italic">Find Us In San Antonio</h4>
-<div class="w-full h-48 bg-surface-container-highest/20 overflow-hidden rounded">
+<div class="w-full h-48 bg-paper-white-container-highest/20 overflow-hidden rounded">
 <img class="w-full h-full object-cover opacity-50 grayscale contrast-125" data-location="San Antonio" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA9PYIlBxibVz5vd-h4GhsX80k_7fUda2SY4jkk8l4ZEAU4R4Q1TNMs-0tTJ5Y_MIZUmEM8Mn8vf2r-wMCuLZ38K_NL9MLcCwPEXgUPNS8QeUfwHJM67tfGT32P2RJ7r4kgTgZfxPXAz_ItnpUPiQX66xzLQEvAGgqJYXgpd6V5UDVhlJG5K4X_8S_HTRv9svYBtJApvgxTFgqYh0-RUw0HZvyhHvG0F9pksR8r5zpniteK2SXRsuI_sp9WmZn4DKsv7M9uGcZjsCA">
 </div>
 </div>
@@ -630,39 +542,39 @@
 </section>
 </main>
 <!-- Footer -->
-<footer class="w-full pt-stack-lg pb-stack-md bg-surface-container-low border-t border-outline-variant/20">
+<footer class="w-full pt-stack-lg pb-stack-md bg-paper-white-container-low border-t border-medical-gray/20">
 <div class="max-w-container mx-auto px-margin-desktop grid grid-cols-1 md:grid-cols-4 gap-gutter text-on-surface">
 <div class="col-span-1 md:col-span-1">
-<div class="font-display-lg text-display-lg-mobile text-primary mb-4">CK Aesthetics</div>
+<div class="font-display-lg text-display-lg-mobile text-deep-plum mb-4">CK Aesthetics</div>
 <p class="font-body-md text-on-surface-variant">Quality skincare products and professional aesthetic services delivered with precision, compassion, and a commitment to affordable results.</p>
 </div>
 <div>
-<h5 class="font-label-lg text-label-lg text-primary mb-4 uppercase tracking-widest">About</h5>
+<h5 class="font-label-lg text-label-lg text-deep-plum mb-4 uppercase tracking-widest">About</h5>
 <ul class="space-y-2">
-<li class=""><a class="font-body-md text-on-surface-variant hover:text-primary transition-colors" href="#">Meet Cassie</a></li>
-<li class=""><a class="font-body-md text-on-surface-variant hover:text-primary transition-colors" href="#">Our Services</a></li>
-<li class=""><a class="font-body-md text-on-surface-variant hover:text-primary transition-colors" href="#">Office Policies</a></li>
-<li class=""><a class="font-body-md text-on-surface-variant hover:text-primary transition-colors" href="#">Patient Resources</a></li>
+<li class=""><a class="font-body-md text-on-surface-variant hover:text-deep-plum transition-colors" href="#">Meet Cassie</a></li>
+<li class=""><a class="font-body-md text-on-surface-variant hover:text-deep-plum transition-colors" href="#">Our Services</a></li>
+<li class=""><a class="font-body-md text-on-surface-variant hover:text-deep-plum transition-colors" href="#">Office Policies</a></li>
+<li class=""><a class="font-body-md text-on-surface-variant hover:text-deep-plum transition-colors" href="#">Patient Resources</a></li>
 </ul>
 </div>
 <div>
-<h5 class="font-label-lg text-label-lg text-primary mb-4 uppercase tracking-widest">Support</h5>
+<h5 class="font-label-lg text-label-lg text-deep-plum mb-4 uppercase tracking-widest">Support</h5>
 <ul class="space-y-2">
-<li class=""><a class="font-body-md text-on-surface-variant hover:text-primary transition-colors" href="#">Privacy Policy</a></li>
-<li class=""><a class="font-body-md text-on-surface-variant hover:text-primary transition-colors" href="#">COVID-19 Policy</a></li>
-<li class=""><a class="font-body-md text-on-surface-variant hover:text-primary transition-colors" href="#">Terms of Service</a></li>
+<li class=""><a class="font-body-md text-on-surface-variant hover:text-deep-plum transition-colors" href="#">Privacy Policy</a></li>
+<li class=""><a class="font-body-md text-on-surface-variant hover:text-deep-plum transition-colors" href="#">COVID-19 Policy</a></li>
+<li class=""><a class="font-body-md text-on-surface-variant hover:text-deep-plum transition-colors" href="#">Terms of Service</a></li>
 </ul>
 </div>
 <div>
-<h5 class="font-label-lg text-label-lg text-primary mb-4 uppercase tracking-widest">Follow Us</h5>
+<h5 class="font-label-lg text-label-lg text-deep-plum mb-4 uppercase tracking-widest">Follow Us</h5>
 <div class="flex gap-4">
-<a class="material-symbols-outlined text-primary hover:text-secondary transition-colors text-2xl" href="#">face</a>
-<a class="material-symbols-outlined text-primary hover:text-secondary transition-colors text-2xl" href="#">camera_alt</a>
-<a class="material-symbols-outlined text-primary hover:text-secondary transition-colors text-2xl" href="#">videocam</a>
+<a class="material-symbols-outlined text-deep-plum hover:text-deep-plum transition-colors text-2xl" href="#">face</a>
+<a class="material-symbols-outlined text-deep-plum hover:text-deep-plum transition-colors text-2xl" href="#">camera_alt</a>
+<a class="material-symbols-outlined text-deep-plum hover:text-deep-plum transition-colors text-2xl" href="#">videocam</a>
 </div>
 </div>
 </div>
-<div class="max-w-container mx-auto px-margin-desktop mt-stack-lg pt-stack-md border-t border-outline-variant/20 flex flex-col md:flex-row justify-between items-center text-center md:text-left gap-4">
+<div class="max-w-container mx-auto px-margin-desktop mt-stack-lg pt-stack-md border-t border-medical-gray/20 flex flex-col md:flex-row justify-between items-center text-center md:text-left gap-4">
 <p class="font-label-md text-on-surface-variant">© 2024 CK Aesthetics. San Antonio, TX. All rights reserved.</p>
 <p class="font-label-md text-on-surface-variant italic opacity-60">*Keep in mind that each patient is unique and results may vary. Consult with our specialists for a personalized plan.</p>
 </div>
