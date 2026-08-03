@@ -127,18 +127,20 @@
 </head>
 <body class="bg-background text-on-surface antialiased">
 <!-- TopNavBar -->
-<nav class="fixed top-0 w-full z-50 bg-surface/90 backdrop-blur-md">
-<div class="flex justify-between items-center px-margin-desktop py-unit max-w-container-max mx-auto">
-<span class="font-display-lg text-headline-md tracking-tight text-primary">CK Aesthetics</span>
-<div class="hidden md:flex gap-stack-lg">
-<a class="font-title-lg text-title-lg text-text-muted hover:text-primary transition-colors" href="index.html">Home</a>
-<a class="font-title-lg text-title-lg text-text-muted hover:text-primary transition-colors" href="services.html">Services</a>
-<a class="font-title-lg text-title-lg text-primary border-b-2 border-primary pb-1" href="#">About</a>
-<a class="font-title-lg text-title-lg text-text-muted hover:text-primary transition-colors" href="consultation.html">Consultation</a>
+<nav class="w-full top-0 sticky z-50 bg-paper-white/80 backdrop-blur-md border-b border-medical-gray/10">
+<div class="max-w-container mx-auto px-margin-desktop flex justify-between items-center h-20">
+<a href="index.html" class="font-display-lg text-headline-lg text-deep-plum cursor-pointer">CK Aesthetics</a>
+<div class="hidden md:flex items-center gap-gutter">
+<a class="font-label-lg text-label-lg font-medium transition-colors duration-300 text-on-surface-variant hover:text-deep-plum" href="index.html">Home</a>
+<a class="font-label-lg text-label-lg font-medium transition-colors duration-300 text-on-surface-variant hover:text-deep-plum" href="services.html">Services</a>
+<a class="font-label-lg text-label-lg font-medium transition-colors duration-300 text-deep-plum border-b-2 border-deep-plum pb-1" href="about.html">About Us</a>
+<a class="font-label-lg text-label-lg font-medium transition-colors duration-300 text-on-surface-variant hover:text-deep-plum" href="consultation.html">Consultation</a>
+<button onclick="window.location.href='https://squareup.com/appointments/book/L5CWQHE9Q1V00'" class="ml-4 px-6 py-3 bg-deep-plum text-paper-white font-label-lg text-label-lg uppercase active:scale-95 transition-all tracking-widest cursor-pointer">Book Now</button>
 </div>
-<button onclick="window.location.href='https://squareup.com/appointments/book/L5CWQHE9Q1V00'"  class="bg-primary text-on-primary px-stack-md py-stack-sm rounded hover:opacity-90 transition-all font-label-lg text-label-lg uppercase cursor-pointer">Book Now</button>
+<button class="md:hidden material-symbols-outlined text-deep-plum text-3xl cursor-pointer">menu</button>
 </div>
 </nav>
+
 <main class="pt-24 overflow-x-hidden">
 <!-- Hero Section -->
 <section class="max-w-container-max mx-auto px-margin-desktop py-section-gap flex flex-col md:flex-row items-center gap-stack-lg relative">
