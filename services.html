@@ -1,444 +1,371 @@
-<!DOCTYPE html>
-
-<html class="scroll-smooth" lang="en"><head>
-<meta charset="utf-8"/>
-<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<title>Services | CK Aesthetics</title>
-<meta content="Board-certified plastic surgery and aesthetic treatments in San Antonio. Specializing in Face, Body, and Injectables." name="description"/>
-<!-- Fonts & Icons -->
-<link href="https://fonts.googleapis.com" rel="preconnect"/>
-<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
-<link href="https://fonts.googleapis.com/css2?family=Libre+Caslon+Text:ital,wght@0,400;0,700;1,400&amp;family=Manrope:wght@200..800&amp;display=swap" rel="stylesheet"/>
-<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
-<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<!DOCTYPE html><html class="scroll-smooth" lang="en"><head>
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<title>Our Services | CK Aesthetics</title>
 <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Libre+Caslon+Text:wght@400;700&amp;family=Manrope:wght@400;600;700&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@300,0..1&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
 <script id="tailwind-config">
-      tailwind.config = {
-        darkMode: "class",
-        theme: {
-          extend: {
-            "colors": {
-                    "surface-container": "#efedec",
-                    "secondary-fixed": "#ffdbcc",
-                    "primary-fixed": "#ffd8e8",
-                    "deep-plum": "#5E3E4D",
-                    "tertiary-fixed": "#f1dfd6",
-                    "primary-fixed-dim": "#e6bbcd",
-                    "error": "#ba1a1a",
-                    "on-secondary-container": "#7a5c4f",
-                    "paper-white": "#FDFDFD",
-                    "tertiary": "#392f29",
-                    "surface-container-high": "#eae8e6",
-                    "on-secondary-fixed-variant": "#5b4135",
-                    "on-primary": "#ffffff",
-                    "background": "#fbf9f7",
-                    "on-secondary-fixed": "#2b160d",
-                    "surface-dim": "#dbdad8",
-                    "inverse-primary": "#e6bbcd",
-                    "surface-tint": "#775464",
-                    "soft-blush": "#C5A192",
-                    "primary": "#452836",
-                    "on-surface": "#1b1c1b",
-                    "surface-container-highest": "#e4e2e0",
-                    "surface-container-lowest": "#ffffff",
-                    "tertiary-fixed-dim": "#d4c3ba",
-                    "secondary-fixed-dim": "#e5beaf",
-                    "inverse-surface": "#30302f",
-                    "on-tertiary-fixed": "#231a14",
-                    "surface-bright": "#fbf9f7",
-                    "on-tertiary-container": "#c3b3aa",
-                    "primary-container": "#5e3e4d",
-                    "error-container": "#ffdad6",
-                    "on-background": "#1b1c1b",
-                    "secondary": "#75584b",
-                    "on-secondary": "#ffffff",
-                    "on-primary-fixed": "#2d1320",
-                    "surface-variant": "#e4e2e0",
-                    "surface": "#fbf9f7",
-                    "on-tertiary-fixed-variant": "#50443e",
-                    "tertiary-container": "#51453e",
-                    "on-error-container": "#93000a",
-                    "on-error": "#ffffff",
-                    "outline": "#807478",
-                    "muted-taupe": "#8B7D75",
-                    "outline-variant": "#d2c3c7",
-                    "secondary-container": "#ffd7c7",
-                    "on-surface-variant": "#4e4448",
-                    "on-primary-fixed-variant": "#5d3d4c",
-                    "on-primary-container": "#d5abbc",
-                    "medical-gray": "#EDEDED",
-                    "on-tertiary": "#ffffff",
-                    "surface-container-low": "#f5f3f1",
-                    "inverse-on-surface": "#f2f0ee"
+        tailwind.config = {
+          darkMode: "class",
+          theme: {
+            extend: {
+              "colors": {
+                      "on-tertiary-fixed-variant": "#50443e",
+                      "on-secondary-fixed": "#2b160d",
+                      "text-muted": "#8B7D75",
+                      "on-secondary-container": "#7a5c4f",
+                      "on-background": "#1b1c1b",
+                      "background": "#fbf9f7",
+                      "accent-warm": "#C5A192",
+                      "inverse-on-surface": "#f2f0ee",
+                      "surface-dim": "#dbdad8",
+                      "error-container": "#ffdad6",
+                      "text-main": "#5E3E4D",
+                      "on-primary-container": "#d5abbc",
+                      "on-primary-fixed-variant": "#5d3d4c",
+                      "primary-container": "#5e3e4d",
+                      "on-tertiary-container": "#c3b3aa",
+                      "surface-variant": "#e4e2e0",
+                      "surface-container-lowest": "#ffffff",
+                      "tertiary": "#392f29",
+                      "primary": "#452836",
+                      "surface": "#fbf9f7",
+                      "primary-fixed": "#ffd8e8",
+                      "surface-bright": "#fbf9f7",
+                      "inverse-surface": "#30302f",
+                      "on-tertiary": "#ffffff",
+                      "on-tertiary-fixed": "#231a14",
+                      "on-error-container": "#93000a",
+                      "surface-container-low": "#f5f3f1",
+                      "surface-pure": "#FDFDFD",
+                      "tertiary-container": "#51453e",
+                      "surface-container-high": "#eae8e6",
+                      "inverse-primary": "#e6bbcd",
+                      "surface-container": "#efedec",
+                      "secondary-container": "#ffd7c7",
+                      "primary-fixed-dim": "#e6bbcd",
+                      "secondary-fixed": "#ffdbcc",
+                      "surface-tint": "#775464",
+                      "secondary-fixed-dim": "#e5beaf",
+                      "on-error": "#ffffff",
+                      "error": "#ba1a1a",
+                      "tertiary-fixed-dim": "#d4c3ba",
+                      "on-surface": "#1b1c1b",
+                      "secondary": "#75584b",
+                      "on-primary-fixed": "#2d1320",
+                      "surface-container-highest": "#e4e2e0",
+                      "on-primary": "#ffffff",
+                      "tertiary-fixed": "#f1dfd6",
+                      "on-surface-variant": "#4e4448",
+                      "on-secondary-fixed-variant": "#5b4135",
+                      "on-secondary": "#ffffff",
+                      "outline": "#807478",
+                      "outline-variant": "#d2c3c7"
+              },
+              "borderRadius": {
+                      "DEFAULT": "0.125rem",
+                      "lg": "0.25rem",
+                      "xl": "0.5rem",
+                      "full": "0.75rem"
+              },
+              "spacing": {
+                      "unit": "8px",
+                      "stack-sm": "12px",
+                      "margin-mobile": "20px",
+                      "stack-md": "24px",
+                      "margin-desktop": "64px",
+                      "gutter": "24px",
+                      "section-gap": "120px",
+                      "container-max": "1280px",
+                      "stack-lg": "48px"
+              },
+              "fontFamily": {
+                      "label-md": ["Manrope"],
+                      "headline-lg": ["Libre Caslon Text"],
+                      "body-lg": ["Manrope"],
+                      "display-lg": ["Libre Caslon Text"],
+                      "body-md": ["Manrope"],
+                      "title-lg": ["Manrope"],
+                      "headline-md": ["Libre Caslon Text"],
+                      "label-lg": ["Manrope"],
+                      "headline-lg-mobile": ["Libre Caslon Text"],
+                      "display-lg-mobile": ["Libre Caslon Text"]
+              },
+              "fontSize": {
+                      "label-md": ["12px", {"lineHeight": "16px", "letterSpacing": "0.05em", "fontWeight": "600"}],
+                      "headline-lg": ["48px", {"lineHeight": "56px", "fontWeight": "400"}],
+                      "body-lg": ["18px", {"lineHeight": "32px", "fontWeight": "400"}],
+                      "display-lg": ["64px", {"lineHeight": "72px", "letterSpacing": "-0.02em", "fontWeight": "400"}],
+                      "body-md": ["16px", {"lineHeight": "28px", "fontWeight": "400"}],
+                      "title-lg": ["20px", {"lineHeight": "28px", "letterSpacing": "0.02em", "fontWeight": "600"}],
+                      "headline-md": ["32px", {"lineHeight": "40px", "fontWeight": "400"}],
+                      "label-lg": ["14px", {"lineHeight": "20px", "letterSpacing": "0.1em", "fontWeight": "700"}],
+                      "headline-lg-mobile": ["32px", {"lineHeight": "40px", "fontWeight": "400"}],
+                      "display-lg-mobile": ["40px", {"lineHeight": "48px", "letterSpacing": "-0.01em", "fontWeight": "400"}]
+              }
             },
-            "borderRadius": {
-                    "DEFAULT": "0.25rem",
-                    "lg": "0.5rem",
-                    "xl": "0.75rem",
-                    "full": "9999px"
-            },
-            "spacing": {
-                    "stack-md": "32px",
-                    "base": "8px",
-                    "stack-sm": "16px",
-                    "section-mobile": "64px",
-                    "gutter": "24px",
-                    "margin-edge": "40px",
-                    "section-desktop": "120px"
-            },
-            "fontFamily": {
-                    "display-lg-mobile": ["Libre Caslon Text"],
-                    "display-lg": ["Libre Caslon Text"],
-                    "headline-md": ["Libre Caslon Text"],
-                    "body-md": ["Manrope"],
-                    "headline-lg": ["Libre Caslon Text"],
-                    "label-md": ["Manrope"],
-                    "label-sm": ["Manrope"],
-                    "body-lg": ["Manrope"],
-                    "headline-xl": ["Libre Caslon Text"],
-                    "headline-xl-mobile": ["Libre Caslon Text"]
-            },
-            "fontSize": {
-                    "display-lg-mobile": ["40px", {"lineHeight": "48px", "fontWeight": "400"}],
-                    "display-lg": ["64px", {"lineHeight": "72px", "letterSpacing": "-0.02em", "fontWeight": "400"}],
-                    "headline-md": ["24px", {"lineHeight": "32px", "fontWeight": "400"}],
-                    "body-md": ["16px", {"lineHeight": "24px", "fontWeight": "400"}],
-                    "headline-lg": ["32px", {"lineHeight": "40px", "fontWeight": "400"}],
-                    "label-md": ["14px", {"lineHeight": "20px", "letterSpacing": "0.05em", "fontWeight": "600"}],
-                    "label-sm": ["12px", {"lineHeight": "16px", "letterSpacing": "0.02em", "fontWeight": "500"}],
-                    "body-lg": ["18px", {"lineHeight": "28px", "fontWeight": "400"}],
-                    "headline-xl": ["48px", {"lineHeight": "56px", "fontWeight": "400"}],
-                    "headline-xl-mobile": ["32px", {"lineHeight": "40px", "fontWeight": "400"}]
-            }
           },
-        },
-      }
+        }
     </script>
 <style>
         .material-symbols-outlined {
-            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+            font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24;
         }
-        body {
-            background-color: #FDFDFD;
-            font-family: 'Manrope', sans-serif;
-            color: #1b1c1b;
-        }
-        h1, h2, h3, h4 {
-            font-family: 'Libre Caslon Text', serif;
-        }
-        .reveal-on-scroll {
-            opacity: 0;
-            transform: translateY(20px);
-            transition: all 0.8s ease-out;
-        }
-        .reveal-on-scroll.visible {
-            opacity: 1;
-            transform: translateY(0);
-        }
-        .staggered-grid-item:nth-child(even) {
-            margin-top: 40px;
-        }
-        @media (max-width: 768px) {
-            .staggered-grid-item:nth-child(even) {
-                margin-top: 0;
-            }
+        .service-card-overlay {
+            background: linear-gradient(to top, rgba(27, 28, 27, 0.9) 0%, rgba(27, 28, 27, 0.4) 40%, rgba(27, 28, 27, 0) 100%);
         }
     </style>
-</head>
-<body class="bg-paper-white selection:bg-soft-blush selection:text-white">
-<!-- TopNavBar -->
-<nav class="fixed top-0 left-0 w-full z-50 bg-paper-white border-b border-medical-gray h-20 flex items-center transition-all duration-300" id="main-nav">
-<div class="flex justify-between items-center px-4 md:px-margin-edge h-20 max-w-7xl mx-auto w-full">
-<a href="index.html" class="font-headline-lg md:text-headline-lg text-xl uppercase tracking-widest text-deep-plum dark:text-primary-fixed-dim whitespace-nowrap hover:opacity-80 transition-opacity">
-<span class="md:hidden">CK</span>
-<span class="hidden md:inline">CK Aesthetics</span>
-</a>
-<div class="hidden md:flex gap-gutter items-center">
-<a class="text-deep-plum dark:text-primary-fixed font-bold border-b-2 border-soft-blush pb-1 font-label-md text-label-md" href="services.html">Services</a>
-<a class="text-muted-taupe dark:text-on-tertiary-container hover:text-deep-plum font-label-md text-label-md hover:opacity-90 transition-opacity duration-300" href="about.html">About Us</a>
-<a class="text-muted-taupe dark:text-on-tertiary-container hover:text-deep-plum font-label-md text-label-md hover:opacity-90 transition-opacity duration-300" href="consultation.html">Consultation</a>
+<script data-extension-id="idgadaccgipmpannjkmfddolnnhmeklj" src="chrome-extension://idgadaccgipmpannjkmfddolnnhmeklj/js/tb_remapper.js"></script></head>
+<body class="bg-background text-on-surface font-body-md">
+<!-- Header / TopNavBar -->
+<header class="w-full top-0 sticky z-50 bg-background/80 backdrop-blur-md">
+<nav class="max-w-[1280px] mx-auto px-margin-desktop flex justify-between items-center h-20">
+<div class="font-display-lg text-[32px] md:text-display-lg text-primary">CK Aesthetics</div>
+<div class="hidden md:flex items-center space-x-8">
+<a class="text-on-surface-variant font-medium hover:text-primary transition-colors duration-300" href="#">Home</a>
+<a class="text-primary font-bold border-b-2 border-primary pb-1" href="#">Services</a>
+<a class="text-on-surface-variant font-medium hover:text-primary transition-colors duration-300" href="#">About Us</a>
+<a class="text-on-surface-variant font-medium hover:text-primary transition-colors duration-300" href="#">Consultation</a>
 </div>
-<div class="flex items-center gap-2">
-<button onclick="window.location.href='consultation.html'" class="hidden md:block bg-deep-plum text-paper-white px-stack-sm py-2 font-label-md text-label-md uppercase tracking-wider scale-95 duration-200 ease-in-out hover:opacity-90 whitespace-nowrap ml-2">
-Request Consultation
-</button>
-<button id="mobile-menu-btn" class="md:hidden text-deep-plum p-2 focus:outline-none">
-<span class="material-symbols-outlined text-2xl">menu</span>
-</button>
-</div>
-</div>
-<!-- Mobile Menu -->
-<div id="mobile-menu" class="hidden md:hidden absolute top-20 left-0 w-full bg-paper-white border-b border-medical-gray shadow-lg flex-col py-4 px-4 gap-4 z-40">
-<a href="index.html" class="text-deep-plum font-label-md text-lg hover:opacity-80">Home</a>
-<a href="services.html" class="text-deep-plum font-label-md text-lg hover:opacity-80">Services</a>
-<a href="about.html" class="text-deep-plum font-label-md text-lg hover:opacity-80">About Us</a>
-<a href="consultation.html" class="text-deep-plum font-label-md text-lg hover:opacity-80">Consultation</a>
-<button onclick="window.location.href='consultation.html'" class="bg-deep-plum text-paper-white py-3 font-label-md text-label-md uppercase tracking-wider mt-2 w-full">Book Now</button>
-</div>
-<script>
-document.addEventListener('DOMContentLoaded', () => {
-    const mobileBtn = document.getElementById('mobile-menu-btn');
-    const mobileMenu = document.getElementById('mobile-menu');
-    if(mobileBtn && mobileMenu) {
-        mobileBtn.addEventListener('click', () => {
-            if(mobileMenu.classList.contains('hidden')) {
-                mobileMenu.classList.remove('hidden');
-                mobileMenu.classList.add('flex');
-                mobileBtn.innerHTML = '<span class="material-symbols-outlined text-2xl">close</span>';
-            } else {
-                mobileMenu.classList.add('hidden');
-                mobileMenu.classList.remove('flex');
-                mobileBtn.innerHTML = '<span class="material-symbols-outlined text-2xl">menu</span>';
-            }
-        });
-    }
-});
-</script>
+<button class="bg-primary text-on-primary px-6 py-3 font-label-lg uppercase tracking-widest cursor-pointer active:scale-95 transition-all">
+                Book Now
+            </button>
 </nav>
-<!-- Hero Section -->
-<header class="pt-20 relative overflow-hidden bg-background">
-<div class="max-w-7xl mx-auto px-margin-edge flex flex-col md:flex-row items-center min-h-[921px]">
-<div class="w-full md:w-1/2 pt-20 pb-12 md:py-0 pr-0 md:pr-12 z-10">
-<span class="font-label-md text-label-md text-soft-blush uppercase tracking-widest block mb-4">Aesthetics Refined</span>
-<h1 class="font-display-lg text-display-lg-mobile md:text-display-lg text-primary mb-8 leading-tight">
-                    Natural elegance,<br/><span class="italic font-normal">professionally perfected.</span>
-</h1>
-<p class="font-body-lg text-body-lg text-muted-taupe mb-10 max-w-lg leading-relaxed">
-                    Let your natural beauty shine with the expertise of Cassie. We provide high-quality skincare solutions in a relaxing sanctuary designed for your comfort and safety.
-                </p>
-<div class="flex flex-col sm:flex-row gap-4">
-<button onclick="window.location.href='consultation.html'" class="bg-deep-plum text-paper-white px-10 py-5 font-label-md text-label-md uppercase tracking-widest hover:opacity-95 transition-all">
-                        Request Your Consultation
-                    </button>
-<button onclick="document.getElementById('procedures').scrollIntoView()" class="border border-deep-plum text-deep-plum px-10 py-5 font-label-md text-label-md uppercase tracking-widest hover:bg-deep-plum hover:text-white transition-all">
-                        Explore Services
-                    </button>
-</div>
-</div>
-<div class="w-full md:w-1/2 relative h-[500px] md:h-[819px]">
-<div class="absolute inset-0 bg-surface-container-high translate-x-12 translate-y-12"></div>
-<img class="absolute inset-0 w-full h-full object-cover grayscale-[20%] hover:grayscale-0 transition-all duration-700" data-alt="High-end editorial portrait of a serene woman with radiant, natural skin and dark hair against a minimalist, warm neutral background. The lighting is soft and professional, capturing a quiet luxury medical spa aesthetic. Her expression is calm and confident, embodying the beauty refined philosophy." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCbn7NTPJMZ79Uo2oNIHhb2zcxeAMWtBNbBJuSfzRyaM5E5iv0Liv1Lv6rdLJtYdtHZkVXWWkKjnKnwdFothzpbgSZGRKHPh78Lz6frirbydbJKkiPWAhuxuELujg_GeWzSXn0cW2x95URcNXrMJupdu6Y-TfiTEN-ZcCYrkjflSRkRkb4M5VKoGOguOoBEiCXx3Ds9rleO7bVV4s2FEToWxU549bUzLHmhQSYgZ0Oeqmyhk9WJh5VX"/>
-</div>
-</div>
 </header>
-<!-- Services List -->
-<section class="py-section-desktop bg-paper-white" id="procedures">
-<div class="max-w-7xl mx-auto px-margin-edge">
-<div class="flex flex-col md:flex-row justify-between items-end mb-16 border-b border-medical-gray pb-8">
-<div>
-<span class="font-label-md text-label-md text-soft-blush uppercase tracking-widest block mb-2">Service Excellence</span>
-<h2 class="font-headline-xl text-headline-xl-mobile md:text-headline-xl text-deep-plum">Our Services</h2>
+<main><!-- Hero Section -->
+<section class="relative py-24 bg-surface-container-low overflow-hidden">
+<div class="max-w-[1280px] mx-auto px-margin-desktop text-center relative z-10">
+<h1 class="font-display-lg text-display-lg-mobile md:text-display-lg text-primary mb-6">Our Services</h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl mx-auto italic">
+            Experience the intersection of science and artistry. Our curated medical aesthetic treatments are designed to enhance your natural beauty while honoring the unique contours of your face and body.
+        </p>
 </div>
-<div class="mt-4 md:mt-0 text-left md:text-right max-w-sm">
-<p class="font-body-md text-body-md text-muted-taupe italic">Quality results driven skincare products and services, at affordable prices.</p>
-</div>
-</div>
-
-<div class="space-y-16">
-    <!-- Injectables Category -->
-    <div>
-        <h3 class="font-headline-lg text-headline-lg text-deep-plum mb-8 border-b border-medical-gray pb-4">Injectables</h3>
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-            <div class="bg-surface-container-low p-8 border border-medical-gray hover:border-soft-blush transition-colors relative overflow-hidden group">
-                <div class="absolute inset-0 opacity-0 group-hover:opacity-10 transition-opacity duration-500 bg-[url('images/botox.png')] bg-cover bg-center"></div>
-                <div class="relative z-10">
-                    <div class="flex justify-between items-start mb-4">
-                        <h4 class="font-headline-md text-headline-md text-deep-plum">Botox & Dysport</h4>
-                        <span class="font-label-md text-label-md text-muted-taupe">Consultation</span>
-                    </div>
-                    <p class="font-body-md text-on-surface-variant mb-4">Neuromodulators used to temporarily relax facial muscles that cause wrinkles, resulting in smoother, more youthful-looking skin.</p>
-                </div>
-            </div>
-            <div class="bg-surface-container-low p-8 border border-medical-gray hover:border-soft-blush transition-colors relative overflow-hidden group">
-                <div class="absolute inset-0 opacity-0 group-hover:opacity-10 transition-opacity duration-500 bg-[url('images/fillers.png')] bg-cover bg-center"></div>
-                <div class="relative z-10">
-                    <div class="flex justify-between items-start mb-4">
-                        <h4 class="font-headline-md text-headline-md text-deep-plum">Dermal Fillers</h4>
-                        <span class="font-label-md text-label-md text-muted-taupe">Consultation</span>
-                    </div>
-                    <p class="font-body-md text-on-surface-variant mb-4">Hyaluronic acid treatments to restore lost volume, smooth lines, and subtly enhance facial contours such as lips, cheeks, and jawline.</p>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- Weight Loss Category -->
-    <div>
-        <h3 class="font-headline-lg text-headline-lg text-deep-plum mb-8 border-b border-medical-gray pb-4">Medical Weight Loss</h3>
-        <div class="grid grid-cols-1 gap-8">
-            <div class="bg-surface-container-low p-8 border border-medical-gray hover:border-soft-blush transition-colors relative overflow-hidden group">
-                <div class="absolute inset-0 opacity-0 group-hover:opacity-10 transition-opacity duration-500 bg-[url('images/glp.png')] bg-cover bg-center"></div>
-                <div class="relative z-10">
-                    <div class="flex justify-between items-start mb-4">
-                        <h4 class="font-headline-md text-headline-md text-deep-plum">GLP-1 Weight Management</h4>
-                        <span class="font-label-md text-label-md text-muted-taupe">Consultation</span>
-                    </div>
-                    <p class="font-body-md text-on-surface-variant mb-4">A medically supervised weight loss program utilizing GLP-1 medications (like Semaglutide or Tirzepatide) tailored to your biology. Includes medical evaluation, prescription, and ongoing lifestyle support to help you achieve lasting results.</p>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-</div>
+<div class="absolute inset-0 opacity-[0.03] pointer-events-none" id="hero-grain"></div>
 </section>
-<!-- Instagram Feed Simulation (Bento) -->
-<section class="py-section-desktop bg-paper-white">
-<div class="max-w-7xl mx-auto px-margin-edge">
+<!-- Injectables (Cosmetic) -->
+<section class="py-section-gap max-w-[1280px] mx-auto px-margin-desktop">
 <div class="text-center mb-16">
-<h2 class="font-headline-xl text-headline-xl-mobile md:text-headline-xl text-deep-plum mb-4">The Latest From Instagram</h2>
-<a class="font-label-md text-label-md text-muted-taupe hover:text-soft-blush flex items-center justify-center gap-2" href="#">
-<span class="material-symbols-outlined text-lg">photo_camera</span> Follow us on Instagram
-                </a>
+<h2 class="font-headline-lg text-headline-lg text-tertiary mb-4">Injectables (Cosmetic)</h2>
+<div class="h-px w-24 bg-accent-warm mx-auto"></div>
 </div>
-<div class="grid grid-cols-2 md:grid-cols-4 gap-4">
-<div class="aspect-square bg-surface-container-low border border-medical-gray overflow-hidden">
-<img class="w-full h-full object-cover hover:scale-110 transition-transform duration-500" data-alt="Luxury skincare products displayed on a marble countertop with soft morning light." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAep737HbqnaAPlK8iNMOwzM1htXx1n3-tOrv88iOej_chOnj8SV-zqKyaBTAenCXc1vTAE1hISFa8DBRK0WJJetgOgso2AEx1rR94pXKRMhgYaG8NI9Gn0L6G_Pf2lv0UupBIhuR6wJ6a07twQ1SbI8j1VZfX2mi94nM5ZLCLMyyQ77CAq1xEd4mmAMac8ec08DbWk_GrmnEVw0rLTH93BWr-kZkEVreKWc_NqGUh6yuN5qagGNK6Q"/>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-gutter">
+<div class="group relative overflow-hidden h-[400px] rounded-lg shadow-sm">
+<img alt="Botox Injections" class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBPGzMTQB5szQTy3R0CRgTEi2aNxaxAW2UAcGgou76SB_qpOXnH1NK8loX87MHaW0O4dWVmD7IG-vwnFdzWfjcUPK5NrmrwhoKUxgnL_moXffR2MKihq0sLbQppmjfK0xwGrIlClJSVSLhk_xZHuV9GES7YUKyJIGsXa7vx0oo6XmUi9Vw4lgS9Fxi_PiogynJ7IXsMwLBdoG2YLvAB5R0deZjTAvWj9cpKxG6HLXAqsh9AWcfjfozQ8ozk_0qLXu6DnQcvG1BG2dc">
+<div class="absolute inset-0 service-card-overlay flex flex-col justify-end p-8">
+<h3 class="font-headline-md text-white">Botox Injections</h3>
 </div>
-<div class="aspect-square bg-surface-container-low border border-medical-gray overflow-hidden">
-<img class="w-full h-full object-cover hover:scale-110 transition-transform duration-500" data-alt="Interior of a modern, clinical medical spa with white leather chairs and golden accents." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCkrz1ucPkGQaddjb6WSYc-UXD2igljjmNxChfJ052GMBfrjiaTrmdY3MRq9khL63mTPm60SD_bzNV5FOJuBkM0vnRCOSw0eaWTgAHQ14KXs2H5r3GS-GMVOznRqXzMmYZPD4mNnLTu_oAkVJJeZovFzpBQ32We5CLgj1WzVFTHviM5vR-KKOHGqmusITrqeLAKzYIhLDKE-VrJaJuyzsVbS62A8uKs_NCAM1d7rhC46mdawvgOBbAv"/>
 </div>
-<div class="aspect-square bg-surface-container-low border border-medical-gray overflow-hidden">
-<img class="w-full h-full object-cover hover:scale-110 transition-transform duration-500" data-alt="A subtle before and after comparison of lip filler results, showing very natural enhancement." src="https://lh3.googleusercontent.com/aida-public/AB6AXuA5xgCY4MmyeDrMIGY_pCzuC95EWgYXRv-j9nbz9oOFATAiLZ82mBV7rYqIhIle7Y_NdsLAvVhtM_8YAGm3Er5hF-g98C7qlyCHAcb9vuzuL8nKXzkPYJFDTiw7i9ULfT7xtIY04Utw_7VcmP8wG_NCy3dxn9EhaWgnJShUWfFOFWcCPncVGkTR9Vb-PrskDgxxoFX8P78cPiedgx09Z1WFM0G334gNX1WcodtEmBNd_eLj0Z_3sUho"/>
+<div class="group relative overflow-hidden h-[400px] rounded-lg shadow-sm">
+<img alt="Brow Lift" class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCd9mQNT129pizCnrMcJos55LHQ1HJdChAoLImDNDxyf9EcgZjCDzg3hNUBpuDclC1TIvojjozNNZYFBBJYapjA-6QHWFWZe3v-K35CtZRmay9yTkxE4QyeZME0UczFchxkv2yJZ4XjCa8RtyGkJXnD50PSgzNUJHRxI_gIYQ8Mm2T5PnAQ2gynnanTMVHofEWJ1B_rqNgnM1Zr0A61uik5IoMJ70FJKG2Iryf7MRCZylgBFiw85GeScoenldPJ3Rk7jgf7YVYeqD0">
+<div class="absolute inset-0 service-card-overlay flex flex-col justify-end p-8">
+<h3 class="font-headline-md text-white">Brow Lift</h3>
 </div>
-<div class="aspect-square bg-surface-container-low border border-medical-gray overflow-hidden">
-<img class="w-full h-full object-cover hover:scale-110 transition-transform duration-500" data-alt="Abstract shot of fresh peonies in the medical spa lobby, conveying luxury and freshness." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBLFQQPmYWqXYfIgP1p99cs6sOugmnmjZm97gE8UgF-Uq1755VbtE2nL7Gl6HBwV1cTrqKZ66AM_UrmeGdHi-N_pUoT6EGdt1Ls_15BrQ8WHYcG_lKpftLMXjX778QJtTXGYa32-9IT0cAbWpI97N3TclUIbk381Kxj4IYfPlBAFBhWOuyX0hLJXVsZ6a6X8c2yNCPVSsgJcpSCnYXDNYFUptuFhvvRh1Nk82AY9eDs1omBZlZwyRna"/>
+</div>
+<div class="group relative overflow-hidden h-[400px] rounded-lg shadow-sm">
+<img alt="Nefertiti Facelift" class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAJCV6xecRE5wt4XOBO-ttFvKBZgDafzOUXb6ZhZJ4_WXugkJ5__3aR2OM9DVIy8CXISsTqROXpx0VN5HmUVBp3WrRtjYXHcua6-IvnFYgv33bax8bPkL7SsqMSzgUj-r29qACeJtjGbfWaCE05NI27MyGeqC5zvBfGq6PD-bUvGIi1WGUNIQESqB82YGKFwu9YPIVHHsXoV6QG0E3OLH1J5CNuij82WHC7sJHKlmY0knnHsfeA_MfNaSpoH3aWrJoYaGXYzujdeQI">
+<div class="absolute inset-0 service-card-overlay flex flex-col justify-end p-8">
+<h3 class="font-headline-md text-white">Nefertiti Facelift</h3>
 </div>
 </div>
 </div>
 </section>
-<!-- Contact Section -->
-<section class="relative py-section-desktop overflow-hidden" id="contact">
-<div class="absolute inset-0 -z-20">
-<img class="w-full h-full object-cover opacity-10" data-alt="Panoramic, out-of-focus cityscape of San Antonio at sunset, showing soft purple and orange tones, creating a beautiful blurred background for a contact section." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCd57VmWgClUUNnKB6ugk86NKGjiEPN7zrO3kqU6hzGIDh6J0bg4Sq8WvQwQVyATika48rEyUptDyOLZ2G4r9XQHZeoW-eOBaUs999rk7iedVFt-Mx-GuuCu9X51SaSja6KHPnrfIGU3AjzGWBgfFsiYNzi91cS4ZB2q3EDG9EzpOX_eHB6ZRC_b0NzpVSC8RH61lUV0ZYVCcZ9-9yz3KIEkBrZTPJnEdLl4nlQofw43Y61OtFTDvrM"/>
+<!-- Injectables (Therapeutic) -->
+<section class="py-section-gap bg-surface-container-low">
+<div class="max-w-[1280px] mx-auto px-margin-desktop">
+<div class="text-center mb-16">
+<h2 class="font-headline-lg text-headline-lg text-tertiary mb-4">Injectables (Therapeutic)</h2>
+<div class="h-px w-24 bg-accent-warm mx-auto"></div>
 </div>
-<div class="max-w-7xl mx-auto px-margin-edge">
-<div class="bg-paper-white/90 backdrop-blur-md border border-medical-gray p-8 md:p-16 shadow-2xl shadow-deep-plum/5">
-<div class="max-w-3xl mx-auto text-center mb-16">
-<h2 class="font-display-lg text-display-lg-mobile md:text-display-lg text-deep-plum mb-4">How Can We Help?</h2>
-<p class="font-body-lg text-body-lg text-muted-taupe">It's easy to get in touch with us! Just fill out the fields below and we'll respond promptly.</p>
-</div>
-<form class="grid grid-cols-1 md:grid-cols-2 gap-12">
-<div class="space-y-6">
-<div class="grid grid-cols-2 gap-4">
-<div class="space-y-2">
-<label class="font-label-sm text-label-sm text-deep-plum uppercase">First Name*</label>
-<input class="w-full border-b border-medical-gray bg-transparent py-2 focus:border-deep-plum outline-none transition-colors" type="text"/>
-</div>
-<div class="space-y-2">
-<label class="font-label-sm text-label-sm text-deep-plum uppercase">Last Name*</label>
-<input class="w-full border-b border-medical-gray bg-transparent py-2 focus:border-deep-plum outline-none transition-colors" type="text"/>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-gutter">
+<div class="group relative overflow-hidden h-[400px] rounded-lg shadow-sm">
+<img alt="TMJ &amp; Migraine Relief" class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBm-V8k6N-34ED3yWrQ8QLyEbadliHn1vbRJEeBK0A2136z8nOit10rWMJZ1EO2NHvCbcGY1x3BCd6M6a-sGRn0gVLrVfaJl0Yc_Ao7-sktthFD8TEjXlvXNZmEkAwaJhA4034W3UJOsXYuboZ6P91aozHQl87nq2hlAAZBiWMjTM4Ec4EnbUfJ7MMgoIpRN3ShGu99oOaJDsYWT55IDy59IPdO5CGseVhCg_Swh4TH7GSAx_B5Jflup-dDTOrsB19FIdkXUOpI1XE">
+<div class="absolute inset-0 service-card-overlay flex flex-col justify-end p-8">
+<h3 class="font-headline-md text-white">TMJ &amp; Migraines</h3>
+<p class="text-white/80 font-body-md">Therapeutic relief for jaw pain and tension.</p>
 </div>
 </div>
-<div class="space-y-2">
-<label class="font-label-sm text-label-sm text-deep-plum uppercase">Email Address*</label>
-<input class="w-full border-b border-medical-gray bg-transparent py-2 focus:border-deep-plum outline-none transition-colors" type="email"/>
-</div>
-
-<div class="space-y-2">
-<label class="font-label-sm text-label-sm text-deep-plum uppercase">Procedure of Interest*</label>
-<select class="w-full border-b border-medical-gray bg-transparent py-2 focus:border-deep-plum outline-none transition-colors appearance-none">
-<option>Rhinoplasty</option>
-<option>Breast Augmentation</option>
-<option>Tummy Tuck</option>
-<option>BOTOX® Cosmetic</option>
-<option>Other</option>
-</select>
-</div>
-</div>
-<div class="space-y-6 flex flex-col justify-between">
-<div class="space-y-2 h-full">
-<label class="font-label-sm text-label-sm text-deep-plum uppercase">How can we help?*</label>
-<textarea class="w-full border border-medical-gray bg-transparent p-4 focus:border-deep-plum outline-none transition-colors resize-none" rows="6"></textarea>
-</div>
-<div class="space-y-4">
-<div class="flex items-start gap-3">
-<input class="mt-1 border-medical-gray text-deep-plum focus:ring-deep-plum rounded-none" type="checkbox"/>
-<p class="text-xs text-muted-taupe leading-relaxed">
-                                    By checking this box you agree to receive SMS from CK Aesthetics. Data rates may apply.
-                                </p>
-</div>
-<div class="flex items-start gap-3">
-<input class="mt-1 border-medical-gray text-deep-plum focus:ring-deep-plum rounded-none" type="checkbox"/>
-<p class="text-xs text-muted-taupe leading-relaxed">
-                                    I accept the Terms of Use and Privacy Policy.
-                                </p>
-</div>
-</div>
-<button class="w-full bg-deep-plum text-paper-white py-5 font-label-md text-label-md uppercase tracking-widest hover:bg-primary transition-colors" type="submit">
-                            Send Message
-                        </button>
-</div>
-</form>
-<div class="mt-16 pt-8 border-t border-medical-gray flex flex-wrap justify-between items-center gap-8">
-<div class="flex items-center gap-4">
-<span class="material-symbols-outlined text-deep-plum">phone_in_talk</span>
-<div>
-<p class="font-label-sm text-label-sm text-muted-taupe uppercase">Call Us</p>
-</div>
-</div>
-<div class="flex items-center gap-4">
-<span class="material-symbols-outlined text-deep-plum">location_on</span>
-<div>
-<p class="font-label-sm text-label-sm text-muted-taupe uppercase">Visit Us</p>
-<p class="font-body-md text-body-md text-on-surface">19296 Stone Oak Pkwy, Suite 102, San Antonio, TX</p>
-</div>
+<div class="group relative overflow-hidden h-[400px] rounded-lg shadow-sm">
+<img alt="Barbie Tox &amp; Trigger Point" class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBm-V8k6N-34ED3yWrQ8QLyEbadliHn1vbRJEeBK0A2136z8nOit10rWMJZ1EO2NHvCbcGY1x3BCd6M6a-sGRn0gVLrVfaJl0Yc_Ao7-sktthFD8TEjXlvXNZmEkAwaJhA4034W3UJOsXYuboZ6P91aozHQl87nq2hlAAZBiWMjTM4Ec4EnbUfJ7MMgoIpRN3ShGu99oOaJDsYWT55IDy59IPdO5CGseVhCg_Swh4TH7GSAx_B5Jflup-dDTOrsB19FIdkXUOpI1XE">
+<div class="absolute inset-0 service-card-overlay flex flex-col justify-end p-8">
+<h3 class="font-headline-md text-white">Barbie Tox &amp; Trigger Point</h3>
+<p class="text-white/80 font-body-md">Muscle tension and postural refinement.</p>
 </div>
 </div>
 </div>
 </div>
 </section>
-<!-- Footer -->
-<footer class="bg-background border-t border-medical-gray pt-section-desktop pb-10">
-<div class="max-w-7xl mx-auto px-margin-edge">
-<div class="grid grid-cols-1 md:grid-cols-4 gap-12 mb-20">
-<div class="md:col-span-2">
-<h3 class="font-headline-md text-headline-md text-deep-plum uppercase tracking-widest mb-6">CK Aesthetics</h3>
-<p class="font-body-md text-body-md text-muted-taupe mb-8 max-w-sm">
-                        Quality skincare products and services at affordable prices, tailored to help you feel beautiful and confident.
-                    </p>
-<div class="flex gap-4">
-<a class="w-10 h-10 border border-medical-gray flex items-center justify-center hover:border-soft-blush hover:text-soft-blush transition-colors" href="#">
-<span class="material-symbols-outlined">face_nod</span>
-</a>
-<a class="w-10 h-10 border border-medical-gray flex items-center justify-center hover:border-soft-blush hover:text-soft-blush transition-colors" href="#">
-<span class="material-symbols-outlined">camera</span>
-</a>
-<a class="w-10 h-10 border border-medical-gray flex items-center justify-center hover:border-soft-blush hover:text-soft-blush transition-colors" href="#">
-<span class="material-symbols-outlined">play_circle</span>
-</a>
+<!-- Dermal Fillers -->
+<section class="py-section-gap max-w-[1280px] mx-auto px-margin-desktop">
+<div class="text-center mb-16">
+<h2 class="font-headline-lg text-headline-lg text-tertiary mb-4">Dermal Fillers</h2>
+<div class="h-px w-24 bg-accent-warm mx-auto"></div>
+</div>
+<div class="group relative overflow-hidden h-[500px] rounded-lg shadow-sm">
+<img alt="Dermal Fillers" class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" src="https://lh3.googleusercontent.com/aida/AP1WRLvkDTa0LsKAfQlD2Bb6m1_BTSEN0bcRTwVp8T8C_7p2kL3NfHrIv1UEKLPlXpwX-KKg6Uzvfr6k7ngHr3fKuByekLMdjvPjkCZqMw3xjtTWocqN_FuAcWJrk4J9M3moQ7uSWBSBo6SyYYM3zqMeNdVYM7irPkyxU-UZ9Xo6Pm68mx5BRbs-mRLL-wZmvACRi8YpvBqwg58DOHiXhpakGo0Ds7cA4UQYRpfbnhoneoc4jBWwa7Nw_y3AScM">
+<div class="absolute inset-0 service-card-overlay flex flex-col justify-end p-12">
+<h3 class="font-headline-md text-headline-md text-white mb-4">Premium Hyaluronic Acid Fillers</h3>
+<p class="text-white/80 font-body-lg max-w-2xl">Lip Filler, Cheek Filler, and Chin Filler for natural-looking volume and contour using Evolysse premium products.</p>
 </div>
 </div>
-<div>
-<h4 class="font-label-md text-label-md text-deep-plum uppercase mb-6">Services</h4>
-<ul class="space-y-3">
-<li><a class="font-body-md text-body-md text-muted-taupe hover:text-soft-blush transition-colors" href="services.html">Facials</a></li>
-<li><a class="font-body-md text-body-md text-muted-taupe hover:text-soft-blush transition-colors" href="services.html">Microneedling</a></li>
-<li><a class="font-body-md text-body-md text-muted-taupe hover:text-soft-blush transition-colors" href="services.html">Chemical Peels</a></li>
-<li><a href="services.html" class="font-body-md text-body-md text-muted-taupe hover:text-soft-blush transition-colors">Lashes & Brows</a></li>
-</ul>
+</section>
+<!-- Skin -->
+<section class="py-section-gap bg-surface-container-low">
+<div class="max-w-[1280px] mx-auto px-margin-desktop">
+<div class="text-center mb-16">
+<h2 class="font-headline-lg text-headline-lg text-tertiary mb-4">Skin</h2>
+<div class="h-px w-24 bg-accent-warm mx-auto"></div>
 </div>
-<div>
-<h4 class="font-label-md text-label-md text-deep-plum uppercase mb-6">Resources</h4>
-<ul class="space-y-3">
-<li><a class="font-body-md text-body-md text-muted-taupe hover:text-soft-blush transition-colors" href="#">Patient Resources</a></li>
-<li><a class="font-body-md text-body-md text-muted-taupe hover:text-soft-blush transition-colors" href="#">COVID-19 Update</a></li>
-<li><a class="font-body-md text-body-md text-muted-taupe hover:text-soft-blush transition-colors" href="#">Privacy Policy</a></li>
-<li><a class="font-body-md text-body-md text-muted-taupe hover:text-soft-blush transition-colors" href="#">Site Map</a></li>
-</ul>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-gutter">
+<div class="group relative overflow-hidden h-[400px] rounded-lg shadow-sm">
+<img alt="Microneedling &amp; PRP" class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAW-szaWi749nIk1CxAJ15DC6TbTMHXHS9irWpwTm4jxoYsRTv4hV-b3JmG-w5maCpPZOpp7e_aEDTkmm2caa1MWweW-UoeFCjsjRNimxbz-EsllhqXMNSJuZQ9IEAmFqDC_4y2eP8o0WQLJKQPnMgKxcxDT7c9ygcfLSqde8assj3bMWO7W6O_k1sSJ349MRcWXd-GAk_ZfahiLvGsEds5kGQPTFNpN3bnPYL2TbYzAYm6vXhso0kDeSU5clCVSUfNl5KbJgf7L9Q">
+<div class="absolute inset-0 service-card-overlay flex flex-col justify-end p-8">
+<h3 class="font-headline-md text-white">Microneedling &amp; PRP</h3>
 </div>
 </div>
-<div class="border-t border-medical-gray pt-10 flex flex-col md:flex-row justify-between items-center gap-6">
-<p class="font-label-sm text-label-sm text-muted-taupe">
-                    © 2024 CK Aesthetics. All Rights Reserved. Medical Aesthetician: Cassie.
+<div class="group relative overflow-hidden h-[400px] rounded-lg shadow-sm">
+<img alt="Chemical Peels" class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCwh2d-kTpB0QCQaQDjmJqx8QafPdAD-Ffurg6hEZToGZrEhjm4Em8qZfzO9OTLJs2lLjaB_xHOAq95sBICY0TlJNDbxrOrUYOVs0F0iyn2k2Z-6eU1DCnEba0u8ajSogBYJa_eGtmmSWbbKQa3ZC_FoRKwtF3cbVX7DFnJBNMzs7ubjSa6ZWjQBEYRyQQgFe_JYUTZjJBf8LUwGAbnISpYCMrG05JxI5EGxmEawTLyYdj4S7b1IwYfDLRLqFnYJuej-_X9S09wRAE">
+<div class="absolute inset-0 service-card-overlay flex flex-col justify-end p-8">
+<h3 class="font-headline-md text-white">Chemical Peels</h3>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Wellness Injections -->
+<section class="py-section-gap max-w-[1280px] mx-auto px-margin-desktop">
+<div class="text-center mb-16">
+<h2 class="font-headline-lg text-headline-lg text-tertiary mb-4">Wellness Injections</h2>
+<div class="h-px w-24 bg-accent-warm mx-auto"></div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-gutter">
+<div class="group relative overflow-hidden h-[300px] rounded-lg shadow-sm">
+<img alt="B12 Injection" class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBy2fw-voRZz5Y8tBaMgfhGCXPK39CsN63WCVbydkQ4Wbems6axRj2PH5vDT8wb0Ks3-U0Yyvvwu4SiFR2EpRVf5zbM6I2OKcQwkm_t8ejv9SsrDODIwt6J5LZpyItVrZgFB8kRxwrknVq_y-_Q-46RJApy4cjzkDUF5wXEfE0EXffRMLlnEF2IOxUn3icM92Adg-nmzfrxePpnh25mrhUiqr-Y3dRSfZ6gKIPQVNjrusZbMBUTlnjBnf7JkHLU5Q3If3jDZtnQAjg">
+<div class="absolute inset-0 service-card-overlay flex flex-col justify-end p-8">
+<h3 class="font-headline-md text-white">B12 Injection</h3>
+<p class="text-white/80 font-body-md">Energy and metabolic support.</p>
+</div>
+</div>
+<div class="group relative overflow-hidden h-[300px] rounded-lg shadow-sm">
+<img alt="NAD+ Injection" class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBy2fw-voRZz5Y8tBaMgfhGCXPK39CsN63WCVbydkQ4Wbems6axRj2PH5vDT8wb0Ks3-U0Yyvvwu4SiFR2EpRVf5zbM6I2OKcQwkm_t8ejv9SsrDODIwt6J5LZpyItVrZgFB8kRxwrknVq_y-_Q-46RJApy4cjzkDUF5wXEfE0EXffRMLlnEF2IOxUn3icM92Adg-nmzfrxePpnh25mrhUiqr-Y3dRSfZ6gKIPQVNjrusZbMBUTlnjBnf7JkHLU5Q3If3jDZtnQAjg">
+<div class="absolute inset-0 service-card-overlay flex flex-col justify-end p-8">
+<h3 class="font-headline-md text-white">NAD+ Injection</h3>
+<p class="text-white/80 font-body-md">Cellular repair and anti-aging.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Medical Weight Loss -->
+<section class="py-section-gap bg-surface-container-low">
+<div class="max-w-[1280px] mx-auto px-margin-desktop">
+<div class="flex flex-col md:flex-row items-center gap-16">
+<div class="w-full md:w-1/2">
+<h2 class="font-headline-lg text-headline-lg text-primary mb-6">Medical Weight Loss</h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant mb-8">
+                    Our comprehensive, medically-supervised weight management programs combine advanced metabolic science with personalized coaching.
                 </p>
-<div class="flex gap-8">
-<p class="font-label-sm text-label-sm text-muted-taupe italic">Website Design &amp; Marketing by Etna Interactive</p>
+<ul class="space-y-6 mb-10">
+<li class="flex items-start gap-3">
+<span class="material-symbols-outlined text-accent-warm mt-1">check_circle</span>
+<div>
+<p class="font-label-lg text-primary">Weight Loss Consults</p>
+<p class="font-body-md text-on-surface-variant">Live, virtual, or phone consults available.</p>
+</div>
+</li>
+<li class="flex items-start gap-3">
+<span class="material-symbols-outlined text-accent-warm mt-1">check_circle</span>
+<div>
+<p class="font-label-lg text-primary">GLP-1 Prescriptions</p>
+<p class="font-body-md text-on-surface-variant">New consults and ongoing follow-ups.</p>
+</div>
+</li>
+</ul>
+<button class="bg-primary text-on-primary px-8 py-4 font-label-lg uppercase tracking-widest hover:bg-primary/90 transition-all">Start Your Journey</button>
+</div>
+<div class="w-full md:w-1/2">
+<div class="relative">
+<img alt="Wellness Lifestyle" class="rounded-lg shadow-xl w-full aspect-square object-cover" src="https://lh3.googleusercontent.com/aida/AP1WRLsWSv8FkCGvL9u-a6Hk4cFPScwyqmZ1uTcphkuR3b6xKwuIUaOPqW5Chzbd2e0QkJ4E1M-F4rPTy9qQVMfFmhy8EPYVWPXCs-_iwAPXWzrxGn5_luA8e83q7c9h82B9t8HkfTftokyqz1lRCp33yltk1xC1Jd_QDGkvYOwOOhy_wy9TvX0CxC3ZI5e1gWxb0MZqnJTOwCbTHm2gubsSvqtY_MUWU27XLo7e_8cRkJ-2eL3mJSnMyabmhGQ">
+<div class="absolute -bottom-6 -left-6 bg-surface-pure p-8 shadow-lg max-w-[240px] hidden md:block">
+<p class="font-headline-md text-primary mb-2">94%</p>
+<p class="font-label-md text-on-surface-variant uppercase">Success rate for our tailored wellness protocols</p>
 </div>
 </div>
+</div>
+</div>
+</div>
+</section>
+<!-- CTA Section -->
+<section class="py-24 bg-primary text-on-primary text-center">
+<div class="max-w-[1280px] mx-auto px-margin-desktop">
+<h2 class="font-display-lg text-display-lg-mobile md:text-display-lg mb-8">Ready to rediscover yourself?</h2>
+<p class="font-body-lg text-body-lg mb-12 max-w-2xl mx-auto opacity-90">
+            Your journey to aesthetic excellence begins with a personalized consultation. Let's create a plan that celebrates your unique beauty.
+        </p>
+<div class="flex flex-col sm:flex-row justify-center gap-6">
+<button class="bg-on-primary text-primary px-10 py-5 font-label-lg uppercase tracking-widest hover:bg-surface-pure transition-all active:scale-95">Book a Consultation</button>
+<button class="border border-on-primary text-on-primary px-10 py-5 font-label-lg uppercase tracking-widest hover:bg-on-primary/10 transition-all active:scale-95">View Gallery</button>
+</div>
+</div>
+</section></main>
+<!-- Footer -->
+<footer class="w-full pt-stack-lg pb-stack-md bg-surface-container-low dark:bg-surface-container-high border-t border-outline-variant/20">
+<div class="max-w-[1280px] mx-auto px-margin-desktop grid grid-cols-1 md:grid-cols-4 gap-gutter">
+<!-- Brand Column -->
+<div class="space-y-6">
+<div class="font-display-lg-mobile text-display-lg-mobile text-primary">CK Aesthetics</div>
+<p class="font-body-md text-on-surface-variant">
+                    Providing premium aesthetic treatments in San Antonio with a focus on natural, elegant results.
+                </p>
+<div class="flex space-x-4">
+<a class="text-primary hover:opacity-70 transition-opacity" href="#">
+<span class="material-symbols-outlined">brand_awareness</span>
+</a>
+<a class="text-primary hover:opacity-70 transition-opacity" href="#">
+<span class="material-symbols-outlined">share</span>
+</a>
+</div>
+</div>
+<!-- Quick Links -->
+<div class="flex flex-col space-y-4">
+<h4 class="font-label-lg text-primary uppercase">Quick Links</h4>
+<a class="font-body-md text-on-surface-variant hover:text-primary transition-colors" href="#">About Us</a>
+<a class="font-body-md text-on-surface-variant hover:text-primary transition-colors" href="#">Office Tour</a>
+<a class="font-body-md text-on-surface-variant hover:text-primary transition-colors" href="#">Patient Resources</a>
+<a class="font-body-md text-on-surface-variant hover:text-primary transition-colors" href="#">Blog</a>
+</div>
+<!-- Legal -->
+<div class="flex flex-col space-y-4">
+<h4 class="font-label-lg text-primary uppercase">Information</h4>
+<a class="font-body-md text-on-surface-variant hover:text-primary transition-colors" href="#">Privacy Policy</a>
+<a class="font-body-md text-on-surface-variant hover:text-primary transition-colors" href="#">Terms of Service</a>
+<a class="font-body-md text-on-surface-variant hover:text-primary transition-colors" href="#">HIPAA Compliance</a>
+</div>
+<!-- Contact/Location -->
+<div class="flex flex-col space-y-4">
+<h4 class="font-label-lg text-primary uppercase">Find Us</h4>
+<div class="h-32 w-full rounded bg-surface-variant overflow-hidden">
+<div class="w-full h-full bg-cover bg-center grayscale opacity-60" data-location="San Antonio, TX" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBsr3Fw0ErZXezSE3GXCEEv5wutv0u0BmvKegk1dnI-xPdZKLkq2BsNMl0hig4PkMn0HmTT3gHvNiK14A3aEmcl09pTOMJh1Y6cLPu80ySj9zeu7_vAVPt2AP5YY99fm0fZiFxX50YaqycrfIY2Bn1svaWgPTvdYXvmPgZf9C6WcOoX12Yja4Ed1xsl1s8lZ30MrAUJ9fQ1cKAnpSUGuy5lHhCbP81e-ARhwdkuRc4gsdMLIqj2gJ-9NV7ODRQ4VMmddqCZQMGLHiA')"></div>
+</div>
+<p class="font-body-md text-on-surface-variant">San Antonio, TX</p>
+</div>
+</div>
+<div class="max-w-[1280px] mx-auto px-margin-desktop mt-16 pt-8 border-t border-outline-variant/10 text-center">
+<p class="font-label-md text-on-surface-variant">© 2024 CK Aesthetics. San Antonio, TX. All rights reserved.</p>
 </div>
 </footer>
 <script>
-        // Simple Intersection Observer for scroll animations
+        // Hero Grain Micro-interaction
+        const grainContainer = document.getElementById('hero-grain');
+        if (grainContainer) {
+            window.addEventListener('mousemove', (e) => {
+                const moveX = (e.clientX / window.innerWidth) * 20;
+                const moveY = (e.clientY / window.innerHeight) * 20;
+                grainContainer.style.transform = `translate(${moveX}px, ${moveY}px)`;
+            });
+        }
+
+        // Simple Intersection Observer for reveal effects
         const observerOptions = {
             threshold: 0.1
         };
@@ -446,23 +373,15 @@ document.addEventListener('DOMContentLoaded', () => {
         const observer = new IntersectionObserver((entries) => {
             entries.forEach(entry => {
                 if (entry.isIntersecting) {
-                    entry.target.classList.add('visible');
+                    entry.target.classList.add('opacity-100', 'translate-y-0');
+                    entry.target.classList.remove('opacity-0', 'translate-y-10');
                 }
             });
         }, observerOptions);
 
-        document.querySelectorAll('.reveal-on-scroll').forEach(el => observer.observe(el));
-
-        // Sticky Nav effect
-        window.addEventListener('scroll', () => {
-            const nav = document.getElementById('main-nav');
-            if (window.scrollY > 50) {
-                nav.classList.add('shadow-md', 'h-16');
-                nav.classList.remove('h-20');
-            } else {
-                nav.classList.remove('shadow-md', 'h-16');
-                nav.classList.add('h-20');
-            }
+        document.querySelectorAll('section').forEach(section => {
+            section.classList.add('transition-all', 'duration-1000', 'opacity-0', 'translate-y-10');
+            observer.observe(section);
         });
     </script>
 </body></html>
