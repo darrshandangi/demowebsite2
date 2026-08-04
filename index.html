@@ -131,7 +131,7 @@
     .hero-section { position: absolute; inset: 0; z-index: 10; display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center; padding: 0 24px; opacity: 0; pointer-events: none; transform: translateY(40px) translateZ(0); will-change: opacity, transform; transition: none; }
     .hero-section h1 { font-size: clamp(40px, 8vw, 100px); font-weight: 200; line-height: 1.1; margin: 0; text-shadow: 0 2px 20px rgba(0,0,0,0.5); color: #fff; font-family: 'Libre Caslon Text', serif; }
     .hero-section p { color: rgba(255,255,255,0.7); font-size: 14px; letter-spacing: 0.4em; text-transform: uppercase; margin-bottom: 12px; }
-    .hero-section .subtitle { color: rgba(255,255,255,0.6); font-size: clamp(14px, 1.5vw, 18px); font-weight: 300; max-width: 480px; letter-spacing: normal; text-transform: none; margin-top: 28px; }
+    .hero-section .subtitle { color: rgba(255,255,255,0.6); font-size: clamp(14px, 1.5vw, 18px); font-weight: 300; max-width: 800px; letter-spacing: normal; text-transform: none; margin-top: 28px; white-space: nowrap; }
     .hero-divider { width: 60px; height: 1px; background-color: rgba(255,255,255,0.4); margin: 28px 0; }
     .hero-btn { padding: 14px 40px; border: 1px solid rgba(255,255,255,0.6); background-color: rgba(255,255,255,0.05); color: #fff; font-size: 13px; letter-spacing: 0.25em; text-transform: uppercase; cursor: pointer; backdrop-filter: blur(8px); transition: all 0.4s ease; margin-top: 36px; }
     .hero-btn:hover { background-color: #fff; color: #000; }
@@ -168,7 +168,7 @@
 <a class="font-label-lg text-label-lg font-medium transition-colors duration-300 text-on-surface-variant hover:text-deep-plum" href="services.html">Services</a>
 <a class="font-label-lg text-label-lg font-medium transition-colors duration-300 text-on-surface-variant hover:text-deep-plum" href="about.html">About Us</a>
 <a class="font-label-lg text-label-lg font-medium transition-colors duration-300 text-on-surface-variant hover:text-deep-plum" href="consultation.html">Consultation</a>
-<button onclick="window.location.href='https://squareup.com/appointments/book/L5CWQHE9Q1V00'" class="ml-4 px-6 py-3 bg-deep-plum text-paper-white font-label-lg text-label-lg uppercase active:scale-95 transition-all tracking-widest cursor-pointer">Book Now</button>
+<button onclick="window.location.href='https://squareup.com/appointments/book/L5CWQHE9Q1V00'"  class="ml-4 px-6 py-3 bg-deep-plum text-paper-white font-label-lg text-label-lg uppercase active:scale-95 transition-all tracking-widest cursor-pointer">Book Now</button>
 </div>
 <button class="md:hidden material-symbols-outlined text-deep-plum text-3xl cursor-pointer">menu</button>
 </div>
@@ -215,7 +215,7 @@
       <h1>Step Inside</h1>
       <div class="hero-divider"></div>
       <div class="subtitle">Experience high-quality skincare in an environment of absolute tranquility</div>
-      <button onclick="window.location.href='https://squareup.com/appointments/book/L5CWQHE9Q1V00'"  class="hero-btn cursor-pointer">Book a Consultation</button>
+      <button onclick="window.location.href='https://squareup.com/appointments/book/L5CWQHE9Q1V00'"   class="hero-btn cursor-pointer">Book a Consultation</button>
     </div>
 
     <!-- Scroll Indicator -->
@@ -382,7 +382,7 @@
 <h3 class="font-headline-lg text-deep-plum mb-stack-md">Medical Weight Loss</h3>
 <p class="font-body-md text-on-surface-variant mb-stack-md max-w-md">Precision programs combining GLP-1 therapy (Semaglutide/Tirzepatide) with personalized metabolic coaching.</p>
 <div class="flex gap-gutter">
-<button onclick="window.location.href='https://squareup.com/appointments/book/L5CWQHE9Q1V00'"  class="bg-deep-plum text-paper-white px-8 py-3 font-label-lg uppercase tracking-widest hover:bg-deep-plum transition-all">Start Your Journey</button>
+<button onclick="window.location.href='https://squareup.com/appointments/book/L5CWQHE9Q1V00'"   class="bg-deep-plum text-paper-white px-8 py-3 font-label-lg uppercase tracking-widest hover:bg-deep-plum transition-all">Start Your Journey</button>
 <a class="flex items-center text-deep-plum font-label-lg underline underline-offset-4 hover:text-deep-plum transition-colors" href="#">Learn More</a>
 </div>
 </div>
@@ -619,7 +619,7 @@ document.addEventListener('DOMContentLoaded', () => {
         <a class="font-label-lg text-label-lg text-on-surface-variant font-medium py-3 border-b border-outline-variant/10 hover:text-primary transition-colors" href="services.html">Services</a>
         <a class="font-label-lg text-label-lg text-on-surface-variant font-medium py-3 border-b border-outline-variant/10 hover:text-primary transition-colors" href="about.html">About Us</a>
         <a class="font-label-lg text-label-lg text-on-surface-variant font-medium py-3 border-b border-outline-variant/10 hover:text-primary transition-colors" href="consultation.html">Consultation</a>
-        <button onclick="window.location.href='https://squareup.com/appointments/book/L5CWQHE9Q1V00'"  class="mt-4 px-6 py-3 bg-primary text-on-primary font-label-lg text-label-lg uppercase cursor-pointer active:scale-95 transition-all tracking-widest w-full">Book Now</button>
+        <button onclick="window.location.href='https://squareup.com/appointments/book/L5CWQHE9Q1V00'"   class="mt-4 px-6 py-3 bg-primary text-on-primary font-label-lg text-label-lg uppercase cursor-pointer active:scale-95 transition-all tracking-widest w-full">Book Now</button>
     `;
     const nav = document.querySelector('nav');
     if(nav) nav.appendChild(mobileMenu);
