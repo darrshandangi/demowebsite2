@@ -151,6 +151,7 @@
     .hero-section h1 { font-size: clamp(40px, 8vw, 100px); font-weight: 200; line-height: 1.1; margin: 0; text-shadow: 0 4px 40px rgba(0,0,0,0.9), 0 1px 3px rgba(0,0,0,0.8); color: #fff; font-family: 'Libre Caslon Text', serif; }
     .hero-section p { color: rgba(255,255,255,0.9); font-size: 14px; letter-spacing: 0.4em; text-transform: uppercase; margin-bottom: 12px; text-shadow: 0 2px 10px rgba(0,0,0,0.9); font-weight: 600; }
     .hero-section .subtitle { color: rgba(255,255,255,0.9); font-size: clamp(14px, 1.5vw, 18px); font-weight: 400; max-width: 800px; letter-spacing: normal; text-transform: none; margin-top: 28px; white-space: nowrap; text-shadow: 0 2px 15px rgba(0,0,0,0.9); }
+    #sec-1 h1, #sec-1 p, #sec-1 .subtitle { color: #d4af37 !important; }
     .hero-divider { width: 60px; height: 1px; background-color: rgba(255,255,255,0.4); margin: 28px 0; }
     .hero-btn { padding: 14px 40px; border: 1px solid rgba(255,255,255,0.6); background-color: rgba(255,255,255,0.05); color: #fff; font-size: 13px; letter-spacing: 0.25em; text-transform: uppercase; cursor: pointer; backdrop-filter: blur(8px); transition: all 0.4s ease; margin-top: 36px; }
     .hero-btn:hover { background-color: #fff; color: #000; }
@@ -215,7 +216,7 @@
     <div class="hero-section" id="sec-1">
       <p>Welcome to</p>
       <h1>CK Aesthetics</h1>
-      <h2 style="color: rgba(255,255,255,0.95); font-size: clamp(20px, 3.5vw, 42px); font-weight: 400; margin: 4px 0 0; text-shadow: 0 4px 30px rgba(0,0,0,0.9), 0 1px 3px rgba(0,0,0,0.8); font-family: 'Libre Caslon Text', serif;">Medical Aesthetics</h2>
+      <h2 style="color: #d4af37; font-size: clamp(20px, 3.5vw, 42px); font-weight: 400; margin: 4px 0 0; text-shadow: 0 4px 30px rgba(0,0,0,0.9), 0 1px 3px rgba(0,0,0,0.8); font-family: 'Libre Caslon Text', serif;">Medical Aesthetics</h2>
       <div class="hero-divider"></div>
       <div class="subtitle">Where modern science meets timeless beauty</div>
     </div>
@@ -230,7 +231,6 @@
 
     <!-- Section 3 -->
     <div class="hero-section" id="sec-3">
-      <button onclick="window.location.href='https://squareup.com/appointments/book/L5CWQHE9Q1V00'"   class="hero-btn cursor-pointer" style="margin-top: 15vh; border-color: rgba(255,255,255,0.4); background: rgba(0,0,0,0.4);">Book a Consultation</button>
     </div>
 
     <!-- Scroll Indicator -->
@@ -371,7 +371,7 @@
 </div>
 </div>
 <div class="relative overflow-hidden hidden md:block">
-<img class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" src="images/glp.png">
+<img class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" src="images/glp_injection.jpg">
 </div>
 </div>
 </div>
@@ -380,13 +380,16 @@
 <div class="md:col-span-6 group relative overflow-hidden bento-card-hover rounded-lg h-[400px]">
 <a href="services.html" class="absolute inset-0 z-30 cursor-pointer"></a>
 <div class="absolute inset-0 z-0 scale-105 group-hover:scale-100 transition-transform duration-700">
-<img class="w-full h-full object-cover" src="images/botox.png">
+<img class="w-full h-full object-cover" src="images/botox_injection.jpg">
 </div>
 <div class="absolute inset-0 service-card-overlay z-10"></div>
 <div class="absolute bottom-0 left-0 p-stack-lg z-20 w-full">
 <h3 class="font-headline-lg text-paper-white mb-stack-sm">Trapezius Botox®</h3>
-<p class="text-paper-white/80 mb-stack-md font-body-md">Targeted neuromodulator treatments to relieve chronic neck and shoulder tension.</p>
-<a class="inline-flex items-center gap-2 bg-on-primary text-deep-plum px-4 py-2 font-label-md text-label-md hover:bg-soft-blush hover:text-white transition-all uppercase tracking-widest relative z-40 cursor-pointer" href="services.html">Learn More <span class="material-symbols-outlined text-sm">chevron_right</span></a>
+<p class="text-paper-white/80 mb-stack-md font-body-md">Beauty wrinkle treatments and therapeutic muscle pain treatments with neuromodulators. Botox, Dysport and Jeuveau offered here.</p>
+<div class="flex flex-wrap gap-4 relative z-40">
+    <a class="inline-flex items-center gap-2 bg-on-primary text-deep-plum px-4 py-2 font-label-md text-label-md hover:bg-soft-blush hover:text-white transition-all uppercase tracking-widest cursor-pointer" href="https://squareup.com/appointments/book/L5CWQHE9Q1V00">Wrinkles <span class="material-symbols-outlined text-sm">chevron_right</span></a>
+    <a class="inline-flex items-center gap-2 bg-on-primary text-deep-plum px-4 py-2 font-label-md text-label-md hover:bg-soft-blush hover:text-white transition-all uppercase tracking-widest cursor-pointer" href="services.html">Muscle strain <span class="material-symbols-outlined text-sm">chevron_right</span></a>
+</div>
 </div>
 </div>
 
@@ -399,7 +402,7 @@
 <div class="absolute inset-0 service-card-overlay z-10"></div>
 <div class="absolute bottom-0 left-0 p-stack-lg z-20 w-full">
 <h3 class="font-headline-lg text-paper-white mb-stack-sm">Premium Fillers</h3>
-<p class="text-paper-white/80 mb-stack-md font-body-md">Enhance facial contours, restore volume, and hydrate with Evolysse® and RHA®.</p>
+<p class="text-paper-white/80 mb-stack-md font-body-md">Enhance facial contours, restore volume, and hydrate with Evolysse®.</p>
 <a class="inline-flex items-center gap-2 bg-on-primary text-deep-plum px-4 py-2 font-label-md text-label-md hover:bg-soft-blush hover:text-white transition-all uppercase tracking-widest relative z-40 cursor-pointer" href="services.html">Learn More <span class="material-symbols-outlined text-sm">chevron_right</span></a>
 </div>
 </div>
@@ -422,10 +425,10 @@
 
 </div>
 <div class="flex flex-col">
-<span class="font-label-lg text-label-lg text-text-muted-taupe uppercase tracking-[0.2em] mb-4 block">Founder &amp; Visionary</span>
-<h2 class="font-display-lg text-display-lg text-deep-plum mb-stack-md">Our Philosophy</h2>
-<div class="w-20 h-1 bg-soft-blush mb-stack-md"></div>
-<div class="space-y-6 font-body-lg text-on-surface-variant mb-stack-md leading-relaxed">
+<span class="text-sm md:text-base text-text-muted-taupe uppercase tracking-[0.3em] mb-4 block font-medium">Founder &amp; Visionary</span>
+<h2 class="text-4xl md:text-5xl lg:text-6xl font-light italic text-deep-plum mb-8">Our Philosophy</h2>
+<div class="w-24 h-1 bg-soft-blush mb-10"></div>
+<div class="space-y-8 text-lg md:text-xl leading-loose font-light text-on-surface-variant mb-12">
     <p>At CK Aesthetics, we believe the most beautiful results come from caring for the whole person—enhancing your natural beauty while supporting your overall health and confidence. With over 20 years of experience in medicine and surgery, I bring a refined precision and a commitment to personalized, evidence-based treatments.</p>
     <p>From advanced aesthetic treatments and facial rejuvenation to medical weight management and wellness-focused care, every treatment plan is thoughtfully tailored to your individual goals. My approach combines expertise, trust, and compassion to create an elevated experience where you feel supported, confident, and empowered to look your best, feel your best, and live your healthiest life.</p>
 </div>
@@ -567,7 +570,7 @@
 <div class="flex flex-col md:flex-row justify-between items-center px-margin-mobile md:px-margin-desktop gap-stack-md max-w-container-max mx-auto">
 <div class="flex flex-col items-center md:items-start">
 <span class="font-headline-md text-headline-md text-primary mb-unit">CK Aesthetics</span>
-<span class="font-body-md text-body-md text-on-surface-variant">© 2024 CK Aesthetics. All rights reserved.</span>
+<span class="font-body-md text-body-md text-on-surface-variant">© 2026 CK Aesthetics. All rights reserved.</span>
 </div>
 <div class="flex gap-stack-lg">
 <a class="font-body-md text-body-md text-on-surface-variant hover:text-primary transition-colors" href="consultation.html">Contact</a>
