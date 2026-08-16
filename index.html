@@ -111,7 +111,7 @@
       </div>
     </div>
 
-    <img loading=\"lazy\" loading=\"lazy\" id="hero-image" src="" alt="">
+    <canvas id="hero-image"></canvas>
     <div class="hero-overlay"></div>
 
     <!-- Section 1 -->
@@ -189,7 +189,12 @@
         if(loadingScreen) loadingScreen.style.opacity = '0';
         setTimeout(() => { if(loadingScreen) loadingScreen.style.display = 'none'; }, 500);
       }, 200);
-      if(images[0]) imgRef.src = images[0].src;
+      if (images[0]) {
+        imgRef.width = images[0].naturalWidth;
+        imgRef.height = images[0].naturalHeight;
+        const ctx = imgRef.getContext('2d');
+        ctx.drawImage(images[0], 0, 0);
+      }
       onScroll();
     }
   }
@@ -238,7 +243,8 @@
         if (frameIndex !== currentFrame) {
           currentFrame = frameIndex;
           if (images[currentFrame] && images[currentFrame].complete) {
-            imgRef.src = images[currentFrame].src;
+            const ctx = imgRef.getContext('2d');
+            ctx.drawImage(images[currentFrame], 0, 0);
           }
         }
       }
