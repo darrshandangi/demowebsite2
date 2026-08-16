@@ -71,7 +71,16 @@ module.exports = {
                 "section-mobile": "64px",
                 "gutter": "24px",
                 "margin-edge": "40px",
-                "section-desktop": "120px"
+                "section-desktop": "120px",
+                "margin-mobile": "1.25rem",
+                "margin-desktop": "3rem",
+                "stack-lg": "5rem",
+                "section-gap": "7.5rem"
+            },
+            "maxWidth": {
+                "container": "1200px",
+                "container-max": "1200px",
+                "content-narrow": "800px"
             },
             "fontFamily": {
                 "display-lg": ["Libre Caslon Text"],
