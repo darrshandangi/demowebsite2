@@ -5,111 +5,8 @@
 <meta name="description" content="Welcome to CK Aesthetics, Seattle's premier medical spa offering expert Botox, dermal fillers, lip flips, and medical weight management in Washington State.">
 <link href="https://fonts.googleapis.com/css2?family=Libre+Caslon+Text:ital,wght@0,400;0,700;1,400&amp;family=Manrope:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
-<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries&v=cachebust2"></script>
-<script id="tailwind-config">
-        tailwind.config = {
-            darkMode: "class",
-            theme: {
-                extend: {
-                    "colors": {
-                        "surface-container": "#efedec",
-                        "secondary-fixed": "#ffdbcc",
-                        "primary-fixed": "#ffd8e8",
-                        "deep-plum": "#5E3E4D",
-                        "tertiary-fixed": "#f1dfd6",
-                        "primary-fixed-dim": "#e6bbcd",
-                        "error": "#ba1a1a",
-                        "on-secondary-container": "#7a5c4f",
-                        "paper-white": "#FDFDFD",
-                        "tertiary": "#392f29",
-                        "surface-container-high": "#eae8e6",
-                        "on-secondary-fixed-variant": "#5b4135",
-                        "on-primary": "#ffffff",
-                        "background": "#fbf9f7",
-                        "on-secondary-fixed": "#2b160d",
-                        "surface-dim": "#dbdad8",
-                        "inverse-primary": "#e6bbcd",
-                        "surface-tint": "#775464",
-                        "soft-blush": "#C5A192",
-                        "primary": "#452836",
-                        "on-surface": "#1b1c1b",
-                        "surface-container-highest": "#e4e2e0",
-                        "surface-container-lowest": "#ffffff",
-                        "tertiary-fixed-dim": "#d4c3ba",
-                        "secondary-fixed-dim": "#e5beaf",
-                        "inverse-surface": "#30302f",
-                        "on-tertiary-fixed": "#231a14",
-                        "surface-bright": "#fbf9f7",
-                        "on-tertiary-container": "#c3b3aa",
-                        "primary-container": "#5e3e4d",
-                        "error-container": "#ffdad6",
-                        "on-background": "#1b1c1b",
-                        "secondary": "#75584b",
-                        "on-secondary": "#ffffff",
-                        "on-primary-fixed": "#2d1320",
-                        "surface-variant": "#e4e2e0",
-                        "surface": "#fbf9f7",
-                        "on-tertiary-fixed-variant": "#50443e",
-                        "tertiary-container": "#51453e",
-                        "on-error-container": "#93000a",
-                        "on-error": "#ffffff",
-                        "outline": "#807478",
-                        "muted-taupe": "#8B7D75",
-                        "outline-variant": "#d2c3c7",
-                        "secondary-container": "#ffd7c7",
-                        "on-surface-variant": "#4e4448",
-                        "on-primary-fixed-variant": "#5d3d4c",
-                        "on-primary-container": "#d5abbc",
-                        "medical-gray": "#EDEDED",
-                        "on-tertiary": "#ffffff",
-                        "surface-container-low": "#f5f3f1",
-                        "inverse-on-surface": "#f2f0ee"
-                    },
-                    "borderRadius": {
-                        "DEFAULT": "0.25rem",
-                        "lg": "0.5rem",
-                        "xl": "0.75rem",
-                        "full": "9999px"
-                    },
-                    "spacing": {
-                        "stack-lg": "48px",
-                        "stack-md": "32px",
-                        "base": "8px",
-                        "stack-sm": "16px",
-                        "section-mobile": "64px",
-                        "gutter": "24px",
-                        "margin-edge": "40px",
-                        "section-desktop": "120px",
-                        "margin-desktop": "64px",
-                        "margin-mobile": "20px",
-                        "section-gap": "120px"
-                    },
-                    "fontFamily": {
-                        "display-lg": ["Libre Caslon Text"],
-                        "headline-xl": ["Libre Caslon Text"],
-                        "headline-lg": ["Libre Caslon Text"],
-                        "headline-md": ["Libre Caslon Text"],
-                        "body-lg": ["Manrope"],
-                        "body-md": ["Manrope"],
-                        "label-md": ["Manrope"],
-                        "label-sm": ["Manrope"]
-                    },
-                    "fontSize": {
-                        "display-lg-mobile": ["40px", {"lineHeight": "48px", "fontWeight": "400"}],
-                        "display-lg": ["64px", {"lineHeight": "72px", "letterSpacing": "-0.02em", "fontWeight": "400"}],
-                        "headline-md": ["24px", {"lineHeight": "32px", "fontWeight": "400"}],
-                        "body-md": ["16px", {"lineHeight": "24px", "fontWeight": "400"}],
-                        "headline-lg": ["48px", {"lineHeight": "56px", "fontWeight": "400"}],
-                        "label-md": ["14px", {"lineHeight": "20px", "letterSpacing": "0.05em", "fontWeight": "600"}],
-                        "label-sm": ["12px", {"lineHeight": "16px", "letterSpacing": "0.02em", "fontWeight": "500"}],
-                        "body-lg": ["18px", {"lineHeight": "28px", "fontWeight": "400"}],
-                        "headline-xl": ["48px", {"lineHeight": "56px", "fontWeight": "400"}],
-                        "headline-xl-mobile": ["32px", {"lineHeight": "40px", "fontWeight": "400"}]
-                    }
-                }
-            }
-        }
-    </script>
+<link rel="stylesheet" href="styles.css">
+
 <style>
         .material-symbols-outlined {
             font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24;
@@ -214,7 +111,7 @@
       </div>
     </div>
 
-    <img id="hero-image" src="" alt="">
+    <img loading=\"lazy\" loading=\"lazy\" id="hero-image" src="" alt="">
     <div class="hero-overlay"></div>
 
     <!-- Section 1 -->
@@ -364,7 +261,7 @@
 <div class="relative">
 <div class="aspect-[4/5] overflow-hidden rounded-lg shadow-xl">
 <a href="about.html" class="absolute inset-0 z-30 cursor-pointer"></a>
-<img class="w-full h-full object-cover" src="images/founder_new_2.jpg" alt="Claudia Kalotay - Provider">
+<img loading=\"lazy\" loading=\"lazy\" class="w-full h-full object-cover" src="images/founder_new_2.jpg" alt="Claudia Kalotay - Provider">
 </div>
 
 </div>
@@ -395,7 +292,7 @@
 <div class="md:col-span-6 group relative overflow-hidden bento-card-hover rounded-lg h-[400px]">
 <a href="services.html#weight-loss" class="absolute inset-0 z-30 cursor-pointer"></a>
 <div class="absolute inset-0 z-0 scale-105 group-hover:scale-100 transition-transform duration-700">
-<img class="w-full h-full object-cover" src="images/Glp 1 service+home.jpeg">
+<img loading=\"lazy\" loading=\"lazy\" class="w-full h-full object-cover" src="images/Glp 1 service+home.jpeg">
 </div>
 <div class="absolute inset-0 service-card-overlay z-10"></div>
 <div class="absolute bottom-0 left-0 p-stack-lg z-20 w-full">
@@ -409,7 +306,7 @@
 <div class="md:col-span-6 group relative overflow-hidden bento-card-hover rounded-lg h-[400px]">
 <a href="services.html#wrinkle-botox" class="absolute inset-0 z-30 cursor-pointer"></a>
 <div class="absolute inset-0 z-0 scale-105 group-hover:scale-100 transition-transform duration-700">
-<img class="w-full h-full object-cover" src="images/botox_service+home.png">
+<img loading=\"lazy\" loading=\"lazy\" class="w-full h-full object-cover" src="images/botox_service+home.png">
 </div>
 <div class="absolute inset-0 service-card-overlay z-10"></div>
 <div class="absolute bottom-0 left-0 p-stack-lg z-20 w-full">
@@ -423,7 +320,7 @@
 <div class="md:col-span-6 group relative overflow-hidden bento-card-hover rounded-lg h-[400px]">
 <a href="services.html#muscle-strain-botox" class="absolute inset-0 z-30 cursor-pointer"></a>
 <div class="absolute inset-0 z-0 scale-105 group-hover:scale-100 transition-transform duration-700">
-<img class="w-full h-full object-cover" src="images/botox_muscle_pain_new.jpg">
+<img loading=\"lazy\" loading=\"lazy\" class="w-full h-full object-cover" src="images/botox_muscle_pain_new.jpg">
 </div>
 <div class="absolute inset-0 service-card-overlay z-10"></div>
 <div class="absolute bottom-0 left-0 p-stack-lg z-20 w-full">
@@ -437,7 +334,7 @@
 <div class="md:col-span-6 group relative overflow-hidden bento-card-hover rounded-lg h-[400px]">
 <a href="services.html#fillers" class="absolute inset-0 z-30 cursor-pointer"></a>
 <div class="absolute inset-0 z-0 scale-105 group-hover:scale-100 transition-transform duration-700">
-<img class="w-full h-full object-cover" src="images/dermal_filler_new.jpg">
+<img loading=\"lazy\" loading=\"lazy\" class="w-full h-full object-cover" src="images/dermal_filler_new.jpg">
 </div>
 <div class="absolute inset-0 service-card-overlay z-10"></div>
 <div class="absolute bottom-0 left-0 p-stack-lg z-20 w-full">
@@ -645,67 +542,67 @@
     <!-- List 1 of 10 images -->
     <div class="flex gap-4 pr-4 flex-shrink-0">
         <div class="w-[200px] md:w-[260px] flex-shrink-0 aspect-square bg-paper-white-container relative group cursor-pointer overflow-hidden rounded-lg shadow-sm">
-            <img class="w-full h-full object-cover transition-all duration-500 group-hover:scale-105" src="images/instagram_image_slideshow_1.jpg">
+            <img loading=\"lazy\" loading=\"lazy\" class="w-full h-full object-cover transition-all duration-500 group-hover:scale-105" src="images/instagram_image_slideshow_1.jpg">
         </div>
         <div class="w-[200px] md:w-[260px] flex-shrink-0 aspect-square bg-paper-white-container relative group cursor-pointer overflow-hidden rounded-lg shadow-sm">
-            <img class="w-full h-full object-cover transition-all duration-500 group-hover:scale-105" src="images/instagram_image_slideshow_2.jpg">
+            <img loading=\"lazy\" loading=\"lazy\" class="w-full h-full object-cover transition-all duration-500 group-hover:scale-105" src="images/instagram_image_slideshow_2.jpg">
         </div>
         <div class="w-[200px] md:w-[260px] flex-shrink-0 aspect-square bg-paper-white-container relative group cursor-pointer overflow-hidden rounded-lg shadow-sm">
-            <img class="w-full h-full object-cover transition-all duration-500 group-hover:scale-105" src="images/instagram_image_slideshow_3.jpg">
+            <img loading=\"lazy\" loading=\"lazy\" class="w-full h-full object-cover transition-all duration-500 group-hover:scale-105" src="images/instagram_image_slideshow_3.jpg">
         </div>
         <div class="w-[200px] md:w-[260px] flex-shrink-0 aspect-square bg-paper-white-container relative group cursor-pointer overflow-hidden rounded-lg shadow-sm">
-            <img class="w-full h-full object-cover transition-all duration-500 group-hover:scale-105" src="images/instagram_image_slideshow_4.jpg">
+            <img loading=\"lazy\" loading=\"lazy\" class="w-full h-full object-cover transition-all duration-500 group-hover:scale-105" src="images/instagram_image_slideshow_4.jpg">
         </div>
         <div class="w-[200px] md:w-[260px] flex-shrink-0 aspect-square bg-paper-white-container relative group cursor-pointer overflow-hidden rounded-lg shadow-sm">
-            <img class="w-full h-full object-cover transition-all duration-500 group-hover:scale-105" src="images/instagram_slideshow_image_5.jpg">
+            <img loading=\"lazy\" loading=\"lazy\" class="w-full h-full object-cover transition-all duration-500 group-hover:scale-105" src="images/instagram_slideshow_image_5.jpg">
         </div>
         <div class="w-[200px] md:w-[260px] flex-shrink-0 aspect-square bg-paper-white-container relative group cursor-pointer overflow-hidden rounded-lg shadow-sm">
-            <img class="w-full h-full object-cover transition-all duration-500 group-hover:scale-105" src="images/instagram_image_slideshow_6.jpg">
+            <img loading=\"lazy\" loading=\"lazy\" class="w-full h-full object-cover transition-all duration-500 group-hover:scale-105" src="images/instagram_image_slideshow_6.jpg">
         </div>
         <div class="w-[200px] md:w-[260px] flex-shrink-0 aspect-square bg-paper-white-container relative group cursor-pointer overflow-hidden rounded-lg shadow-sm">
-            <img class="w-full h-full object-cover transition-all duration-500 group-hover:scale-105" src="images/instagram_image_slideshow_7.jpg">
+            <img loading=\"lazy\" loading=\"lazy\" class="w-full h-full object-cover transition-all duration-500 group-hover:scale-105" src="images/instagram_image_slideshow_7.jpg">
         </div>
         <div class="w-[200px] md:w-[260px] flex-shrink-0 aspect-square bg-paper-white-container relative group cursor-pointer overflow-hidden rounded-lg shadow-sm">
-            <img class="w-full h-full object-cover transition-all duration-500 group-hover:scale-105" src="images/instagram_image_slide_show8.png">
+            <img loading=\"lazy\" loading=\"lazy\" class="w-full h-full object-cover transition-all duration-500 group-hover:scale-105" src="images/instagram_image_slide_show8.png">
         </div>
         <div class="w-[200px] md:w-[260px] flex-shrink-0 aspect-square bg-paper-white-container relative group cursor-pointer overflow-hidden rounded-lg shadow-sm">
-            <img class="w-full h-full object-cover transition-all duration-500 group-hover:scale-105" src="images/instagram_new_1.jpg">
+            <img loading=\"lazy\" loading=\"lazy\" class="w-full h-full object-cover transition-all duration-500 group-hover:scale-105" src="images/instagram_new_1.jpg">
         </div>
         <div class="w-[200px] md:w-[260px] flex-shrink-0 aspect-square bg-paper-white-container relative group cursor-pointer overflow-hidden rounded-lg shadow-sm">
-            <img class="w-full h-full object-cover transition-all duration-500 group-hover:scale-105" src="images/instagram_new_2.jpg">
+            <img loading=\"lazy\" loading=\"lazy\" class="w-full h-full object-cover transition-all duration-500 group-hover:scale-105" src="images/instagram_new_2.jpg">
         </div>
     </div>
     <!-- List 2 of 10 images (duplicated for seamless loop) -->
     <div class="flex gap-4 pr-4 flex-shrink-0">
         <div class="w-[200px] md:w-[260px] flex-shrink-0 aspect-square bg-paper-white-container relative group cursor-pointer overflow-hidden rounded-lg shadow-sm">
-            <img class="w-full h-full object-cover transition-all duration-500 group-hover:scale-105" src="images/instagram_image_slideshow_1.jpg">
+            <img loading=\"lazy\" loading=\"lazy\" class="w-full h-full object-cover transition-all duration-500 group-hover:scale-105" src="images/instagram_image_slideshow_1.jpg">
         </div>
         <div class="w-[200px] md:w-[260px] flex-shrink-0 aspect-square bg-paper-white-container relative group cursor-pointer overflow-hidden rounded-lg shadow-sm">
-            <img class="w-full h-full object-cover transition-all duration-500 group-hover:scale-105" src="images/instagram_image_slideshow_2.jpg">
+            <img loading=\"lazy\" loading=\"lazy\" class="w-full h-full object-cover transition-all duration-500 group-hover:scale-105" src="images/instagram_image_slideshow_2.jpg">
         </div>
         <div class="w-[200px] md:w-[260px] flex-shrink-0 aspect-square bg-paper-white-container relative group cursor-pointer overflow-hidden rounded-lg shadow-sm">
-            <img class="w-full h-full object-cover transition-all duration-500 group-hover:scale-105" src="images/instagram_image_slideshow_3.jpg">
+            <img loading=\"lazy\" loading=\"lazy\" class="w-full h-full object-cover transition-all duration-500 group-hover:scale-105" src="images/instagram_image_slideshow_3.jpg">
         </div>
         <div class="w-[200px] md:w-[260px] flex-shrink-0 aspect-square bg-paper-white-container relative group cursor-pointer overflow-hidden rounded-lg shadow-sm">
-            <img class="w-full h-full object-cover transition-all duration-500 group-hover:scale-105" src="images/instagram_image_slideshow_4.jpg">
+            <img loading=\"lazy\" loading=\"lazy\" class="w-full h-full object-cover transition-all duration-500 group-hover:scale-105" src="images/instagram_image_slideshow_4.jpg">
         </div>
         <div class="w-[200px] md:w-[260px] flex-shrink-0 aspect-square bg-paper-white-container relative group cursor-pointer overflow-hidden rounded-lg shadow-sm">
-            <img class="w-full h-full object-cover transition-all duration-500 group-hover:scale-105" src="images/instagram_slideshow_image_5.jpg">
+            <img loading=\"lazy\" loading=\"lazy\" class="w-full h-full object-cover transition-all duration-500 group-hover:scale-105" src="images/instagram_slideshow_image_5.jpg">
         </div>
         <div class="w-[200px] md:w-[260px] flex-shrink-0 aspect-square bg-paper-white-container relative group cursor-pointer overflow-hidden rounded-lg shadow-sm">
-            <img class="w-full h-full object-cover transition-all duration-500 group-hover:scale-105" src="images/instagram_image_slideshow_6.jpg">
+            <img loading=\"lazy\" loading=\"lazy\" class="w-full h-full object-cover transition-all duration-500 group-hover:scale-105" src="images/instagram_image_slideshow_6.jpg">
         </div>
         <div class="w-[200px] md:w-[260px] flex-shrink-0 aspect-square bg-paper-white-container relative group cursor-pointer overflow-hidden rounded-lg shadow-sm">
-            <img class="w-full h-full object-cover transition-all duration-500 group-hover:scale-105" src="images/instagram_image_slideshow_7.jpg">
+            <img loading=\"lazy\" loading=\"lazy\" class="w-full h-full object-cover transition-all duration-500 group-hover:scale-105" src="images/instagram_image_slideshow_7.jpg">
         </div>
         <div class="w-[200px] md:w-[260px] flex-shrink-0 aspect-square bg-paper-white-container relative group cursor-pointer overflow-hidden rounded-lg shadow-sm">
-            <img class="w-full h-full object-cover transition-all duration-500 group-hover:scale-105" src="images/instagram_image_slide_show8.png">
+            <img loading=\"lazy\" loading=\"lazy\" class="w-full h-full object-cover transition-all duration-500 group-hover:scale-105" src="images/instagram_image_slide_show8.png">
         </div>
         <div class="w-[200px] md:w-[260px] flex-shrink-0 aspect-square bg-paper-white-container relative group cursor-pointer overflow-hidden rounded-lg shadow-sm">
-            <img class="w-full h-full object-cover transition-all duration-500 group-hover:scale-105" src="images/instagram_new_1.jpg">
+            <img loading=\"lazy\" loading=\"lazy\" class="w-full h-full object-cover transition-all duration-500 group-hover:scale-105" src="images/instagram_new_1.jpg">
         </div>
         <div class="w-[200px] md:w-[260px] flex-shrink-0 aspect-square bg-paper-white-container relative group cursor-pointer overflow-hidden rounded-lg shadow-sm">
-            <img class="w-full h-full object-cover transition-all duration-500 group-hover:scale-105" src="images/instagram_new_2.jpg">
+            <img loading=\"lazy\" loading=\"lazy\" class="w-full h-full object-cover transition-all duration-500 group-hover:scale-105" src="images/instagram_new_2.jpg">
         </div>
     </div>
 </div>
