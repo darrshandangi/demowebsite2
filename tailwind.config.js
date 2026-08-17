@@ -83,14 +83,14 @@ module.exports = {
                 "content-narrow": "800px"
             },
             "fontFamily": {
-                "display-lg": ["Libre Caslon Text"],
-                "headline-xl": ["Libre Caslon Text"],
-                "headline-lg": ["Libre Caslon Text"],
-                "headline-md": ["Libre Caslon Text"],
-                "body-lg": ["Manrope"],
-                "body-md": ["Manrope"],
-                "label-md": ["Manrope"],
-                "label-sm": ["Manrope"]
+                "display-lg": ["'Libre Caslon Text'", "serif"],
+                "headline-xl": ["'Libre Caslon Text'", "serif"],
+                "headline-lg": ["'Libre Caslon Text'", "serif"],
+                "headline-md": ["'Libre Caslon Text'", "serif"],
+                "body-lg": ["'Manrope'", "sans-serif"],
+                "body-md": ["'Manrope'", "sans-serif"],
+                "label-md": ["'Manrope'", "sans-serif"],
+                "label-sm": ["'Manrope'", "sans-serif"]
             },
             "fontSize": {
                 "display-lg-mobile": ["40px", {"lineHeight": "48px", "fontWeight": "400"}],
