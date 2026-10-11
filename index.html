@@ -1,753 +1,754 @@
-<!DOCTYPE html><html class="scroll-smooth" lang="en" style=""><head>
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-ZYBWPBYXL3"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-ZYBWPBYXL3');
-</script><meta charset="utf-8">
-<meta content="width=device-width, initial-scale=1.0" name="viewport">
-<title>CK Aesthetics | Premier Med Spa in Bothell, WA | GLP-1 | Neurotoxins & Fillers</title>
-<meta name="description" content="Welcome to CK Aesthetics, Seattle's premier medical spa offering expert Botox, dermal fillers, lip flips, and medical weight management in Washington State.">
-
-<style>
-        .material-symbols-outlined {
-            font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24;
-            vertical-align: middle;
-        }
-        .bento-card-hover {
-            transition: transform 0.4s cubic-bezier(0.2, 0, 0, 1), box-shadow 0.4s cubic-bezier(0.2, 0, 0, 1);
-        }
-        .bento-card-hover:hover {
-            transform: translateY(-4px);
-            box-shadow: 0 10px 40px -10px rgba(94, 62, 77, 0.15);
-        }
-        .service-card-overlay {
-            background: linear-gradient(to top, rgba(27, 28, 27, 0.8) 0%, rgba(27, 28, 27, 0.3) 50%, rgba(27, 28, 27, 0) 100%);
-        }
-        @keyframes marquee {
-            0% { transform: translateX(0); }
-            100% { transform: translateX(-50%); }
-        }
-        .marquee-container {
-            overflow: hidden;
-            width: 100%;
-        }
-        .marquee-content {
-            display: flex;
-            width: max-content;
-            animation: marquee 30s linear infinite;
-        }
-        .marquee-content:hover {
-            animation-play-state: paused;
-        }
-        .marquee-reverse {
-            animation-direction: reverse;
-        }
-    </style>
-<style>
-    #scroll-container { height: 8000px; width: 100%; position: relative; }
-    #sticky-viewport { position: sticky; top: 0; width: 100%; height: 100vh; height: 100dvh; overflow: hidden; background-color: #000; }
-    #loading-screen { position: absolute; inset: 0; z-index: 50; display: flex; flex-direction: column; align-items: center; justify-content: center; background-color: #000; transition: opacity 0.5s; }
-    #hero-image { position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; object-position: center; will-change: contents, transform; transform: translateZ(0); }
-    .hero-overlay { position: absolute; inset: 0; z-index: 1; background: linear-gradient(to bottom, rgba(0,0,0,0.2) 0%, rgba(0,0,0,0) 35%, rgba(0,0,0,0) 55%, rgba(0,0,0,0.55) 100%); pointer-events: none; }
-    .hero-section { position: absolute; inset: 0; z-index: 10; display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center; padding: 0 24px; opacity: 0; pointer-events: none; transform: translateY(40px) translateZ(0); will-change: opacity, transform; transition: none; }
-    .hero-section h1 { font-size: clamp(40px, 8vw, 100px); font-weight: 200; line-height: 1.1; margin: 0; text-shadow: 0 4px 40px rgba(0,0,0,0.9), 0 1px 3px rgba(0,0,0,0.8); color: #fff; font-family: 'Libre Caslon Text', serif; }
-    .hero-section p { color: rgba(255,255,255,0.9); font-size: 14px; letter-spacing: 0.4em; text-transform: uppercase; margin-bottom: 12px; text-shadow: 0 2px 10px rgba(0,0,0,0.9); font-weight: 600; }
-    .hero-section .subtitle { color: rgba(255,255,255,0.9); font-size: clamp(14px, 1.5vw, 18px); font-weight: 400; max-width: 800px; letter-spacing: normal; text-transform: none; margin-top: 28px; white-space: nowrap; text-shadow: 0 2px 15px rgba(0,0,0,0.9); }
-    #sec-1 h1 { color: #ffffff !important; text-shadow: 0 0 20px rgba(255, 255, 255, 0.6), 0 4px 25px rgba(0,0,0,0.9) !important; }
-    #sec-1 p, #sec-1 .subtitle { color: #ffffff !important; letter-spacing: 0.3em !important; font-weight: 400 !important; text-shadow: 0 4px 20px rgba(0,0,0,0.9) !important; text-transform: uppercase; font-size: clamp(12px, 1.2vw, 16px); }
-    .hero-divider { width: 60px; height: 1px; background-color: rgba(255,255,255,0.4); margin: 28px 0; }
-    .hero-btn { padding: 14px 40px; border: 1px solid rgba(255,255,255,0.6); background-color: rgba(255,255,255,0.05); color: #fff; font-size: 13px; letter-spacing: 0.25em; text-transform: uppercase; cursor: pointer; backdrop-filter: blur(8px); transition: all 0.4s ease; margin-top: 36px; }
-    .hero-btn:hover { background-color: #fff; color: #000; }
-    #scroll-indicator { position: absolute; bottom: 32px; left: 50%; transform: translateX(-50%); z-index: 10; display: flex; flex-direction: column; align-items: center; pointer-events: none; }
-    @keyframes scrollPulse { 0%, 100% { transform: translateY(0); opacity: 0.3; } 50% { transform: translateY(14px); opacity: 1; } }
-    .scroll-track { width: 1px; height: 28px; background-color: rgba(255,255,255,0.3); margin-top: 10px; }
-    .scroll-thumb { width: 100%; height: 50%; background-color: rgba(255,255,255,0.7); animation: scrollPulse 1.5s ease-in-out infinite; }
-    @media (max-width: 768px) { 
-        #scroll-container { height: 4500px; } 
-        #sticky-viewport { background-color: #ffffff; } 
-        #hero-image { 
-            height: 60dvh !important; 
-            top: 20dvh !important; 
-            object-fit: cover !important; 
-            border: none;
-        }
-        .hero-overlay {
-            height: 60dvh !important;
-            top: 20dvh !important;
-        }
-        #scroll-indicator div:first-child { color: #000 !important; opacity: 1 !important; font-weight: 600 !important; }
-        .scroll-track { background-color: rgba(0,0,0,0.3) !important; }
-        .scroll-thumb { background-color: #000 !important; }
-    }
-    </style>
-<link href="https://fonts.googleapis.com/css2?family=Libre+Caslon+Text:ital,wght@0,400;0,700;1,400&amp;family=Manrope:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
-<link rel="stylesheet" href="styles.css?v=5">
-</head>
-<body class="bg-paper-white text-on-background font-body-md overflow-x-hidden">
-<!-- TopNavBar -->
-<nav class="w-full top-0 sticky z-50 bg-paper-white/80 backdrop-blur-md border-b border-medical-gray/10">
-<div class="max-w-container mx-auto px-margin-mobile md:px-margin-desktop flex justify-between items-center h-20">
-<a href="index.html" class="font-display-lg text-3xl md:text-headline-lg text-deep-plum cursor-pointer">CK Aesthetics</a>
-<div class="hidden md:flex items-center gap-gutter">
-<a class="font-label-lg text-label-lg font-medium transition-colors duration-300 text-deep-plum border-b-2 border-deep-plum pb-1" href="index.html">Home</a>
-<a class="font-label-lg text-label-lg font-medium transition-colors duration-300 text-on-surface-variant hover:text-deep-plum" href="services.html">Services</a>
-<a class="font-label-lg text-label-lg font-medium transition-colors duration-300 text-on-surface-variant hover:text-deep-plum" href="about.html">About Us</a>
-<a class="font-label-lg text-label-lg font-medium transition-colors duration-300 text-on-surface-variant hover:text-deep-plum" href="consultation.html">Consultation</a>
-<button onclick="window.location.href='https://squareup.com/appointments/book/L5CWQHE9Q1V00'"  class="ml-4 px-6 py-3 bg-deep-plum text-paper-white font-label-lg text-label-lg uppercase active:scale-95 transition-all tracking-widest cursor-pointer">Book Now</button>
-</div>
-<button class="md:hidden material-symbols-outlined text-deep-plum text-3xl cursor-pointer">menu</button>
-</div>
-</nav>
-
-<div id="scroll-container">
-  <div id="sticky-viewport">
-    
-    <div id="loading-screen">
-      <div style="color: rgba(255,255,255,0.5); font-size: 12px; letter-spacing: 0.3em; text-transform: uppercase; margin-bottom: 24px; font-family: sans-serif;">
-        Loading Experience
-      </div>
-      <div style="width: 200px; height: 2px; background-color: rgba(255,255,255,0.1); border-radius: 4px; overflow: hidden;">
-        <div id="loading-bar" style="height: 100%; width: 0%; background-color: rgba(255,255,255,0.7); transition: width 0.3s ease-out;"></div>
-      </div>
-      <div id="loading-text" style="color: rgba(255,255,255,0.35); font-size: 11px; margin-top: 12px; letter-spacing: 0.2em; font-family: sans-serif;">
-        0%
-      </div>
-    </div>
-
-    <canvas id="hero-image"></canvas>
-    <div class="hero-overlay"></div>
-
-    <!-- Section 1 -->
-    <div class="hero-section" id="sec-1">
-      <p>Welcome to</p>
-      <h1>CK Aesthetics</h1>
-      <div class="hero-divider"></div>
-      <div class="subtitle">Where modern science meets timeless beauty</div>
-    </div>
-
-    <!-- Section 2 -->
-    <div class="hero-section" id="sec-2">
-      <p>Our Expertise</p>
-      <h1>Advanced Aesthetics</h1>
-      <div class="hero-divider"></div>
-      <div class="subtitle">Precision treatments tailored to your unique natural beauty</div>
-    </div>
-
-    <!-- Section 3 -->
-    <div class="hero-section" id="sec-3">
-    </div>
-
-    <!-- Scroll Indicator -->
-    <div id="scroll-indicator">
-      <div style="color: rgba(255,255,255,0.45); font-size: 11px; letter-spacing: 0.3em; text-transform: uppercase;">Scroll to explore</div>
-      <div class="scroll-track">
-        <div class="scroll-thumb"></div>
-      </div>
-    </div>
-
-  </div>
-</div>
-
-<script>
-  const FRAME_COUNT = 300;
-  const framePaths = [];
-  for (let i = 1; i <= FRAME_COUNT; i++) {
-    framePaths.push(`frames/ck final frames/ezgif-frame-${i.toString().padStart(3, "0")}.jpg`);
-  }
-
-  const imgRef = document.getElementById('hero-image');
-  const loadingScreen = document.getElementById('loading-screen');
-  const loadingBar = document.getElementById('loading-bar');
-  const loadingText = document.getElementById('loading-text');
-  const container = document.getElementById('scroll-container');
-  const scrollIndicator = document.getElementById('scroll-indicator');
-
-  const sections = [
-    { el: document.getElementById('sec-1'), startFade: 0.0, startFull: 0.06, endFull: 0.2, endFade: 0.3 },
-    { el: document.getElementById('sec-2'), startFade: 0.34, startFull: 0.4, endFull: 0.55, endFade: 0.65 },
-    { el: document.getElementById('sec-3'), startFade: 0.68, startFull: 0.75, endFull: 0.92, endFade: 1.0 }
-  ];
-
-  let images = new Array(FRAME_COUNT);
-  let loadedCount = 0;
-  let isLoaded = false;
-  let currentFrame = 0;
-  let rafId = 0;
-
-  for (let i = 0; i < FRAME_COUNT; i++) {
-    const img = new Image();
-    img.src = framePaths[i];
-    img.onload = () => { loadedCount++; updateLoading(); };
-    img.onerror = () => { loadedCount++; updateLoading(); };
-    images[i] = img;
-  }
-
-  function updateLoading() {
-    const progress = Math.round((loadedCount / FRAME_COUNT) * 100);
-    if(loadingBar) loadingBar.style.width = `${progress}%`;
-    if(loadingText) loadingText.innerText = `${progress}%`;
-    if (loadedCount === FRAME_COUNT) {
-      isLoaded = true;
-      setTimeout(() => {
-        if(loadingScreen) loadingScreen.style.opacity = '0';
-        setTimeout(() => { if(loadingScreen) loadingScreen.style.display = 'none'; }, 500);
-      }, 200);
-      if (images[0]) {
-        imgRef.width = images[0].naturalWidth;
-        imgRef.height = images[0].naturalHeight;
-        const ctx = imgRef.getContext('2d');
-        ctx.drawImage(images[0], 0, 0);
-      }
-      onScroll();
-    }
-  }
-
-  let lastPointerEvents = [];
-
-  function updateSections(p) {
-    sections.forEach((sec, idx) => {
-      if(!sec.el) return;
-      let opacity = 0;
-      let ty = 40;
-      if (p >= sec.startFade && p < sec.startFull) {
-        const t = (p - sec.startFade) / (sec.startFull - sec.startFade);
-        opacity = t; ty = 40 * (1 - t);
-      } else if (p >= sec.startFull && p <= sec.endFull) {
-        opacity = 1; ty = 0;
-      } else if (p > sec.endFull && p <= sec.endFade) {
-        const t = (p - sec.endFull) / (sec.endFade - sec.endFull);
-        opacity = 1 - t; ty = -20 * t;
-      }
-      
-      // Only apply styles to minimize layout thrashing
-      sec.el.style.opacity = opacity.toFixed(3);
-      sec.el.style.transform = `translateY(${ty.toFixed(1)}px) translateZ(0)`;
-      
-      const newPe = opacity > 0.1 ? 'auto' : 'none';
-      if (lastPointerEvents[idx] !== newPe) {
-        sec.el.style.pointerEvents = newPe;
-        lastPointerEvents[idx] = newPe;
-      }
-    });
-    if(scrollIndicator) scrollIndicator.style.opacity = Math.max(0, 1 - p * 10);
-  }
-
-  function onScroll() {
-    if(!container) return;
-    if (rafId) cancelAnimationFrame(rafId);
-    rafId = requestAnimationFrame(() => {
-      const rect = container.getBoundingClientRect();
-      const scrollable = rect.height - window.innerHeight;
-      const scrolled = -rect.top;
-      let progress = Math.max(0, Math.min(1, scrolled / scrollable));
-      
-      if (isLoaded) {
-        const frameIndex = Math.round(progress * (FRAME_COUNT - 1));
-        if (frameIndex !== currentFrame) {
-          currentFrame = frameIndex;
-          if (images[currentFrame] && images[currentFrame].complete) {
-            const ctx = imgRef.getContext('2d');
-            ctx.drawImage(images[currentFrame], 0, 0);
-          }
-        }
-      }
-      updateSections(progress);
-    });
-  }
-
-  window.addEventListener('scroll', onScroll, { passive: true });
-  onScroll();
-</script>
-
-<main>
-<!-- Section 1: Our Expertise -->
-<!-- Section 2: Meet Your Aesthetician: Claudia -->
-<section class="pt-12 md:pt-16 pb-section-gap bg-soft-blush/10 transition-all duration-1000 opacity-100">
-<div class="max-w-container mx-auto px-margin-mobile md:px-margin-desktop mb-12 text-center">
-    <h2 class="text-5xl md:text-6xl lg:text-7xl font-medium text-deep-plum" style="font-family: 'Times New Roman', Times, serif;">The Founder</h2>
-</div>
-<div class="max-w-container mx-auto px-margin-mobile md:px-margin-desktop grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
-<div class="relative">
-<div class="aspect-[4/5] overflow-hidden rounded-lg shadow-xl">
-<a href="about.html" class="absolute inset-0 z-30 cursor-pointer"></a>
-<img loading=\"lazy\" loading=\"lazy\" class="w-full h-full object-cover" src="images/founder_new_2.jpg" alt="Claudia Kalotay - Provider">
-</div>
-
-</div>
-<div class="flex flex-col">
-<h2 class="text-3xl sm:text-4xl md:text-5xl lg:text-5xl xl:text-5xl font-light italic text-deep-plum mb-8" style="font-family: 'Times New Roman', Times, serif;">Our Philosophy by<br> <span class="whitespace-nowrap">Claudia Kalotay PA-C</span></h2>
-<div class="w-24 h-1 bg-soft-blush mb-10"></div>
-<div class="space-y-8 text-lg md:text-xl leading-loose font-light text-on-surface-variant mb-12">
-    <p>At CK Aesthetics, I believe the most beautiful results are subtle, refined, and uniquely yours. My goal is to help you look refreshed and naturally beautiful—not overdone or artificial—while allowing you to age gracefully and confidently.</p>
-    <p>With more than 20 years of experience in medicine and surgery, I bring a trained eye, clinical precision, and a personalized approach to every patient. I also believe luxury care should feel personal and relaxed—a place where you can be yourself, ask questions, and feel genuinely cared for. A place where everyone is welcome.</p>
-    <p>Whether you’re here for aesthetic treatments, facial rejuvenation, or medical weight management and wellness, my goal is simple: to help you look your best, feel your best, live your healthiest life, and still look like you.</p>
-</div>
-<div class="flex gap-gutter mt-stack-md">
-<button onclick="window.location.href='about.html'" class="bg-deep-plum text-paper-white px-8 py-4 font-label-lg text-label-lg uppercase hover:bg-deep-plum transition-all flex items-center gap-2 tracking-widest cursor-pointer">Meet Claudia</button>
-<button onclick="window.location.href='consultation.html'" class="border border-primary text-deep-plum px-8 py-4 font-label-lg text-label-lg uppercase hover:bg-deep-plum hover:text-white transition-all tracking-widest">Consultation</button>
-</div>
-</div>
-</div>
-</section>
-
-<section class="pt-8 md:pt-16 pb-12 md:pb-16 max-w-container mx-auto px-margin-mobile md:px-margin-desktop transition-all duration-1000 opacity-100">
-<div class="mb-stack-lg text-center">
-<span class="font-label-lg text-label-lg text-text-muted-taupe uppercase tracking-[0.2em] mb-2 block">Our Expertise</span>
-<h2 class="font-display-lg text-display-lg text-deep-plum">Choose Your Service</h2>
-</div>
-<div class="grid grid-cols-1 md:grid-cols-12 gap-gutter">
-
-<!-- Medical Weight Loss -->
-<div class="md:col-span-6 group relative overflow-hidden bento-card-hover rounded-lg h-[400px]">
-<a href="services.html#weight-loss" class="absolute inset-0 z-30 cursor-pointer"></a>
-<div class="absolute inset-0 z-0 scale-105 group-hover:scale-100 transition-transform duration-700">
-<img loading=\"lazy\" loading=\"lazy\" class="w-full h-full object-cover" src="images/Glp 1 service+home.jpeg">
-</div>
-<div class="absolute inset-0 service-card-overlay z-10"></div>
-<div class="absolute bottom-0 left-0 p-stack-lg z-20 w-full">
-<h3 class="font-headline-lg text-paper-white mb-stack-sm">Medical Weight Management</h3>
-<p class="text-paper-white/80 mb-stack-md font-body-md">Comprehensive, medically-supervised weight management programs using GLP-1 therapy.</p>
-<a class="inline-flex items-center gap-2 bg-on-primary text-deep-plum px-4 py-2 font-label-md text-label-md hover:bg-soft-blush hover:text-white transition-all uppercase tracking-widest relative z-40 cursor-pointer" href="https://squareup.com/appointments/book/L5CWQHE9Q1V00">Start Your Journey <span class="material-symbols-outlined text-sm">chevron_right</span></a>
-</div>
-</div>
-
-<!-- Wrinkle Botox -->
-<div class="md:col-span-6 group relative overflow-hidden bento-card-hover rounded-lg h-[400px]">
-<a href="services.html#wrinkle-botox" class="absolute inset-0 z-30 cursor-pointer"></a>
-<div class="absolute inset-0 z-0 scale-105 group-hover:scale-100 transition-transform duration-700">
-<img loading=\"lazy\" loading=\"lazy\" class="w-full h-full object-cover" src="images/botox_service+home.png">
-</div>
-<div class="absolute inset-0 service-card-overlay z-10"></div>
-<div class="absolute bottom-0 left-0 p-stack-lg z-20 w-full">
-<h3 class="font-headline-lg text-paper-white mb-stack-sm">Wrinkle treatment</h3>
-<p class="text-paper-white/80 mb-stack-md font-body-md">Beauty wrinkle treatments with neuromodulators. Botox, Dysport and Jeuveau offered here.</p>
-<a class="inline-flex items-center gap-2 bg-on-primary text-deep-plum px-4 py-2 font-label-md text-label-md hover:bg-soft-blush hover:text-white transition-all uppercase tracking-widest relative z-40 cursor-pointer" href="services.html#wrinkle-botox">Learn More <span class="material-symbols-outlined text-sm">chevron_right</span></a>
-</div>
-</div>
-
-<!-- Muscle Strain Botox -->
-<div class="md:col-span-6 group relative overflow-hidden bento-card-hover rounded-lg h-[400px]">
-<a href="services.html#muscle-strain-botox" class="absolute inset-0 z-30 cursor-pointer"></a>
-<div class="absolute inset-0 z-0 scale-105 group-hover:scale-100 transition-transform duration-700">
-<img loading=\"lazy\" loading=\"lazy\" class="w-full h-full object-cover" src="images/botox_muscle_pain_new.jpg">
-</div>
-<div class="absolute inset-0 service-card-overlay z-10"></div>
-<div class="absolute bottom-0 left-0 p-stack-lg z-20 w-full">
-<h3 class="font-headline-lg text-paper-white mb-stack-sm">Neurotoxin for muscle tension</h3>
-<p class="text-paper-white/80 mb-stack-md font-body-md">Therapeutic muscle pain treatments with neuromodulators to relieve tension.</p>
-<a class="inline-flex items-center gap-2 bg-on-primary text-deep-plum px-4 py-2 font-label-md text-label-md hover:bg-soft-blush hover:text-white transition-all uppercase tracking-widest relative z-40 cursor-pointer" href="services.html#muscle-strain-botox">Learn More <span class="material-symbols-outlined text-sm">chevron_right</span></a>
-</div>
-</div>
-
-<!-- Dermal Fillers -->
-<div class="md:col-span-6 group relative overflow-hidden bento-card-hover rounded-lg h-[400px]">
-<a href="services.html#fillers" class="absolute inset-0 z-30 cursor-pointer"></a>
-<div class="absolute inset-0 z-0 scale-105 group-hover:scale-100 transition-transform duration-700">
-<img loading=\"lazy\" loading=\"lazy\" class="w-full h-full object-cover" src="images/dermal_filler_new.jpg">
-</div>
-<div class="absolute inset-0 service-card-overlay z-10"></div>
-<div class="absolute bottom-0 left-0 p-stack-lg z-20 w-full">
-<h3 class="font-headline-lg text-paper-white mb-stack-sm">Premium Fillers</h3>
-<p class="text-paper-white/80 mb-stack-md font-body-md">Enhance facial contours, restore volume, and hydrate with Evolysse.</p>
-<a class="inline-flex items-center gap-2 bg-on-primary text-deep-plum px-4 py-2 font-label-md text-label-md hover:bg-soft-blush hover:text-white transition-all uppercase tracking-widest relative z-40 cursor-pointer" href="services.html#fillers">Learn More <span class="material-symbols-outlined text-sm">chevron_right</span></a>
-</div>
-</div>
-
-<!-- All Services -->
-<div class="md:col-span-12 text-center mt-8 relative z-40">
-<a href="services.html#additional-services" class="inline-block border border-deep-plum text-deep-plum px-10 py-4 font-label-lg uppercase tracking-widest hover:bg-deep-plum hover:text-white transition-all cursor-pointer">View All Services</a>
-</div>
-
-</div>
-</section>
-
-<!-- Section: Google Reviews -->
-<section class="pt-12 md:pt-20 pb-12 md:pb-20 bg-soft-blush/10 overflow-hidden transition-all duration-1000 opacity-100">
-<div class="max-w-container mx-auto px-margin-mobile md:px-margin-desktop flex flex-col md:flex-row justify-between items-end mb-stack-lg">
-<div>
-<span class="font-label-lg text-label-lg text-text-muted-taupe uppercase tracking-[0.2em] mb-2 block">Client Love</span>
-<h2 class="font-display-lg text-display-lg text-deep-plum">What Our Clients Say</h2>
-</div>
-<a class="flex items-center gap-2 font-label-lg text-label-lg text-deep-plum hover:text-soft-blush transition-colors mb-2 tracking-widest" href="https://maps.app.goo.gl/GiGn3Fs6x3ziihM66" target="_blank" rel="noopener noreferrer">
-<span class="material-symbols-outlined text-[#fbbc04]" style="font-variation-settings: 'FILL' 1;">star</span> View All Reviews on Google
-</a>
-</div>
-<div class="marquee-container w-full mt-8">
-<div class="marquee-content marquee-reverse flex gap-6 pr-6">
-    <!-- Review 1 -->
-    <div class="w-[300px] md:w-[400px] flex-shrink-0 bg-paper-white p-6 rounded-lg shadow-sm border border-tertiary/10 flex flex-col justify-between">
-        <div>
-            <div class="flex text-[#fbbc04] mb-3">
-                <span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span><span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span><span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span><span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span><span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
-            </div>
-            <p class="font-body-md text-on-surface-variant italic mb-4">"Claudia was absolutely the best! She helped me navigate my weight loss journey in a way that felt manageable and sustainable. With her guidance, I was able to lose 25 pounds in just 6 weeks. She’s incredibly knowledgeable, supportive, and truly cares about your success."</p>
-        </div>
-        <div class="flex items-center gap-3">
-            <div class="w-10 h-10 rounded-full bg-deep-plum text-paper-white flex items-center justify-center font-bold">J</div>
-            <span class="font-label-md font-medium text-deep-plum">Jordan W.</span>
-        </div>
-    </div>
-    <!-- Review 2 -->
-    <div class="w-[300px] md:w-[400px] flex-shrink-0 bg-paper-white p-6 rounded-lg shadow-sm border border-tertiary/10 flex flex-col justify-between">
-        <div>
-            <div class="flex text-[#fbbc04] mb-3">
-                <span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span><span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span><span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span><span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span><span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
-            </div>
-            <p class="font-body-md text-on-surface-variant italic mb-4">"Claudia did my Botox and not only did she do a phenomenal job, but she listened to all of my concerns and explained to me what needed to be done to achieve that. I will be going back to see her and I highly recommend others to see her as well!"</p>
-        </div>
-        <div class="flex items-center gap-3">
-            <div class="w-10 h-10 rounded-full bg-deep-plum text-paper-white flex items-center justify-center font-bold">M</div>
-            <span class="font-label-md font-medium text-deep-plum">Macie S.</span>
-        </div>
-    </div>
-    <!-- Review 3 -->
-    <div class="w-[300px] md:w-[400px] flex-shrink-0 bg-paper-white p-6 rounded-lg shadow-sm border border-tertiary/10 flex flex-col justify-between">
-        <div>
-            <div class="flex text-[#fbbc04] mb-3">
-                <span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span><span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span><span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span><span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span><span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
-            </div>
-            <p class="font-body-md text-on-surface-variant italic mb-4">"I hosted a Botox party for a group of us who were all first-timers. Claudia came incredibly prepared, took the time to explain everything clearly, and made sure each of us felt confident and at ease. Highly recommend Claudia!"</p>
-        </div>
-        <div class="flex items-center gap-3">
-            <div class="w-10 h-10 rounded-full bg-deep-plum text-paper-white flex items-center justify-center font-bold">J</div>
-            <span class="font-label-md font-medium text-deep-plum">Janeen S.</span>
-        </div>
-    </div>
-    <!-- Review 4 -->
-    <div class="w-[300px] md:w-[400px] flex-shrink-0 bg-paper-white p-6 rounded-lg shadow-sm border border-tertiary/10 flex flex-col justify-between">
-        <div>
-            <div class="flex text-[#fbbc04] mb-3">
-                <span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span><span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span><span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span><span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span><span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
-            </div>
-            <p class="font-body-md text-on-surface-variant italic mb-4">"As an orthopedic PA, she has incredible precision and the steadiest hands, which gave me so much confidence in trusting her with my Jeuveau injections. The results look natural and exactly what I was hoping for."</p>
-        </div>
-        <div class="flex items-center gap-3">
-            <div class="w-10 h-10 rounded-full bg-deep-plum text-paper-white flex items-center justify-center font-bold">A</div>
-            <span class="font-label-md font-medium text-deep-plum">Autumn P.</span>
-        </div>
-    </div>
-    <!-- Review 5 -->
-    <div class="w-[300px] md:w-[400px] flex-shrink-0 bg-paper-white p-6 rounded-lg shadow-sm border border-tertiary/10 flex flex-col justify-between">
-        <div>
-            <div class="flex text-[#fbbc04] mb-3">
-                <span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span><span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span><span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span><span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span><span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
-            </div>
-            <p class="font-body-md text-on-surface-variant italic mb-4">"I've received Botox from Claudia twice so far and really appreciate her explaining what to expect... I was concerned about looking stiff or unnatural but that is not at all how it has turned out!"</p>
-        </div>
-        <div class="flex items-center gap-3">
-            <div class="w-10 h-10 rounded-full bg-deep-plum text-paper-white flex items-center justify-center font-bold">L</div>
-            <span class="font-label-md font-medium text-deep-plum">Lenee A.</span>
-        </div>
-    </div>
-    <!-- Review 6 -->
-    <div class="w-[300px] md:w-[400px] flex-shrink-0 bg-paper-white p-6 rounded-lg shadow-sm border border-tertiary/10 flex flex-col justify-between">
-        <div>
-            <div class="flex text-[#fbbc04] mb-3">
-                <span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span><span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span><span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span><span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span><span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
-            </div>
-            <p class="font-body-md text-on-surface-variant italic mb-4">"Claudia did a wonderful job! Not only did I not experience painful injections, I didn’t 'hear' my skin pop when the needle broke the surfaces and I had zero bruising... I was impressed and would recommend."</p>
-        </div>
-        <div class="flex items-center gap-3">
-            <div class="w-10 h-10 rounded-full bg-deep-plum text-paper-white flex items-center justify-center font-bold">N</div>
-            <span class="font-label-md font-medium text-deep-plum">Nicole N.</span>
-        </div>
-    </div>
-    
-    <!-- Duplicate for endless scroll effect -->
-    <!-- Review 1 -->
-    <div class="w-[300px] md:w-[400px] flex-shrink-0 bg-paper-white p-6 rounded-lg shadow-sm border border-tertiary/10 flex flex-col justify-between">
-        <div>
-            <div class="flex text-[#fbbc04] mb-3">
-                <span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span><span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span><span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span><span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span><span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
-            </div>
-            <p class="font-body-md text-on-surface-variant italic mb-4">"Claudia was absolutely the best! She helped me navigate my weight loss journey in a way that felt manageable and sustainable. With her guidance, I was able to lose 25 pounds in just 6 weeks. She’s incredibly knowledgeable, supportive, and truly cares about your success."</p>
-        </div>
-        <div class="flex items-center gap-3">
-            <div class="w-10 h-10 rounded-full bg-deep-plum text-paper-white flex items-center justify-center font-bold">J</div>
-            <span class="font-label-md font-medium text-deep-plum">Jordan W.</span>
-        </div>
-    </div>
-    <!-- Review 2 -->
-    <div class="w-[300px] md:w-[400px] flex-shrink-0 bg-paper-white p-6 rounded-lg shadow-sm border border-tertiary/10 flex flex-col justify-between">
-        <div>
-            <div class="flex text-[#fbbc04] mb-3">
-                <span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span><span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span><span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span><span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span><span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
-            </div>
-            <p class="font-body-md text-on-surface-variant italic mb-4">"Claudia did my Botox and not only did she do a phenomenal job, but she listened to all of my concerns and explained to me what needed to be done to achieve that. I will be going back to see her and I highly recommend others to see her as well!"</p>
-        </div>
-        <div class="flex items-center gap-3">
-            <div class="w-10 h-10 rounded-full bg-deep-plum text-paper-white flex items-center justify-center font-bold">M</div>
-            <span class="font-label-md font-medium text-deep-plum">Macie S.</span>
-        </div>
-    </div>
-    <!-- Review 3 -->
-    <div class="w-[300px] md:w-[400px] flex-shrink-0 bg-paper-white p-6 rounded-lg shadow-sm border border-tertiary/10 flex flex-col justify-between">
-        <div>
-            <div class="flex text-[#fbbc04] mb-3">
-                <span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span><span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span><span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span><span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span><span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
-            </div>
-            <p class="font-body-md text-on-surface-variant italic mb-4">"I hosted a Botox party for a group of us who were all first-timers. Claudia came incredibly prepared, took the time to explain everything clearly, and made sure each of us felt confident and at ease. Highly recommend Claudia!"</p>
-        </div>
-        <div class="flex items-center gap-3">
-            <div class="w-10 h-10 rounded-full bg-deep-plum text-paper-white flex items-center justify-center font-bold">J</div>
-            <span class="font-label-md font-medium text-deep-plum">Janeen S.</span>
-        </div>
-    </div>
-    <!-- Review 4 -->
-    <div class="w-[300px] md:w-[400px] flex-shrink-0 bg-paper-white p-6 rounded-lg shadow-sm border border-tertiary/10 flex flex-col justify-between">
-        <div>
-            <div class="flex text-[#fbbc04] mb-3">
-                <span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span><span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span><span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span><span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span><span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
-            </div>
-            <p class="font-body-md text-on-surface-variant italic mb-4">"As an orthopedic PA, she has incredible precision and the steadiest hands, which gave me so much confidence in trusting her with my Jeuveau injections. The results look natural and exactly what I was hoping for."</p>
-        </div>
-        <div class="flex items-center gap-3">
-            <div class="w-10 h-10 rounded-full bg-deep-plum text-paper-white flex items-center justify-center font-bold">A</div>
-            <span class="font-label-md font-medium text-deep-plum">Autumn P.</span>
-        </div>
-    </div>
-    <!-- Review 5 -->
-    <div class="w-[300px] md:w-[400px] flex-shrink-0 bg-paper-white p-6 rounded-lg shadow-sm border border-tertiary/10 flex flex-col justify-between">
-        <div>
-            <div class="flex text-[#fbbc04] mb-3">
-                <span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span><span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span><span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span><span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span><span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
-            </div>
-            <p class="font-body-md text-on-surface-variant italic mb-4">"I've received Botox from Claudia twice so far and really appreciate her explaining what to expect... I was concerned about looking stiff or unnatural but that is not at all how it has turned out!"</p>
-        </div>
-        <div class="flex items-center gap-3">
-            <div class="w-10 h-10 rounded-full bg-deep-plum text-paper-white flex items-center justify-center font-bold">L</div>
-            <span class="font-label-md font-medium text-deep-plum">Lenee A.</span>
-        </div>
-    </div>
-    <!-- Review 6 -->
-    <div class="w-[300px] md:w-[400px] flex-shrink-0 bg-paper-white p-6 rounded-lg shadow-sm border border-tertiary/10 flex flex-col justify-between">
-        <div>
-            <div class="flex text-[#fbbc04] mb-3">
-                <span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span><span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span><span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span><span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span><span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
-            </div>
-            <p class="font-body-md text-on-surface-variant italic mb-4">"Claudia did a wonderful job! Not only did I not experience painful injections, I didn’t 'hear' my skin pop when the needle broke the surfaces and I had zero bruising... I was impressed and would recommend."</p>
-        </div>
-        <div class="flex items-center gap-3">
-            <div class="w-10 h-10 rounded-full bg-deep-plum text-paper-white flex items-center justify-center font-bold">N</div>
-            <span class="font-label-md font-medium text-deep-plum">Nicole N.</span>
-        </div>
-    </div>
-</div>
-</div>
-</section>
-<!-- Section 3: The Latest From Instagram -->
-<section class="pt-12 md:pt-20 pb-12 md:pb-20 overflow-hidden transition-all duration-1000 opacity-100">
-<div class="max-w-container mx-auto px-margin-mobile md:px-margin-desktop flex flex-col md:flex-row justify-between items-end mb-stack-lg">
-<div>
-<span class="font-label-lg text-label-lg text-text-muted-taupe uppercase tracking-[0.2em] mb-2 block">Social Community</span>
-<h2 class="font-display-lg text-display-lg text-deep-plum">The Latest From Instagram</h2>
-</div>
-<a class="flex items-center gap-2 font-label-lg text-label-lg text-deep-plum hover:text-soft-blush transition-colors mb-2 tracking-widest" href="https://www.instagram.com/pa_claudia_aesthetics?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank" rel="noopener noreferrer">
-<span class="material-symbols-outlined">photo_camera</span> Follow @pa_claudia_aesthetics
-            </a>
-</div>
-<div class="marquee-container w-full mt-8">
-<div class="marquee-content flex">
-    <!-- List 1 of 10 images -->
-    <div class="flex gap-4 pr-4 flex-shrink-0">
-        <div class="w-[200px] md:w-[260px] flex-shrink-0 aspect-square bg-paper-white-container relative group cursor-pointer overflow-hidden rounded-lg shadow-sm">
-            <img loading=\"lazy\" loading=\"lazy\" class="w-full h-full object-cover transition-all duration-500 group-hover:scale-105" src="images/instagram_image_slideshow_1.jpg">
-        </div>
-        <div class="w-[200px] md:w-[260px] flex-shrink-0 aspect-square bg-paper-white-container relative group cursor-pointer overflow-hidden rounded-lg shadow-sm">
-            <img loading=\"lazy\" loading=\"lazy\" class="w-full h-full object-cover transition-all duration-500 group-hover:scale-105" src="images/instagram_image_slideshow_2.jpg">
-        </div>
-        <div class="w-[200px] md:w-[260px] flex-shrink-0 aspect-square bg-paper-white-container relative group cursor-pointer overflow-hidden rounded-lg shadow-sm">
-            <img loading=\"lazy\" loading=\"lazy\" class="w-full h-full object-cover transition-all duration-500 group-hover:scale-105" src="images/instagram_image_slideshow_3.jpg">
-        </div>
-        <div class="w-[200px] md:w-[260px] flex-shrink-0 aspect-square bg-paper-white-container relative group cursor-pointer overflow-hidden rounded-lg shadow-sm">
-            <img loading=\"lazy\" loading=\"lazy\" class="w-full h-full object-cover transition-all duration-500 group-hover:scale-105" src="images/instagram_image_slideshow_4.jpg">
-        </div>
-        <div class="w-[200px] md:w-[260px] flex-shrink-0 aspect-square bg-paper-white-container relative group cursor-pointer overflow-hidden rounded-lg shadow-sm">
-            <img loading=\"lazy\" loading=\"lazy\" class="w-full h-full object-cover transition-all duration-500 group-hover:scale-105" src="images/instagram_slideshow_image_5.jpg">
-        </div>
-        <div class="w-[200px] md:w-[260px] flex-shrink-0 aspect-square bg-paper-white-container relative group cursor-pointer overflow-hidden rounded-lg shadow-sm">
-            <img loading=\"lazy\" loading=\"lazy\" class="w-full h-full object-cover transition-all duration-500 group-hover:scale-105" src="images/instagram_image_slideshow_6.jpg">
-        </div>
-        <div class="w-[200px] md:w-[260px] flex-shrink-0 aspect-square bg-paper-white-container relative group cursor-pointer overflow-hidden rounded-lg shadow-sm">
-            <img loading=\"lazy\" loading=\"lazy\" class="w-full h-full object-cover transition-all duration-500 group-hover:scale-105" src="images/instagram_image_slideshow_7.jpg">
-        </div>
-        <div class="w-[200px] md:w-[260px] flex-shrink-0 aspect-square bg-paper-white-container relative group cursor-pointer overflow-hidden rounded-lg shadow-sm">
-            <img loading=\"lazy\" loading=\"lazy\" class="w-full h-full object-cover transition-all duration-500 group-hover:scale-105" src="images/instagram_image_slide_show8.png">
-        </div>
-        <div class="w-[200px] md:w-[260px] flex-shrink-0 aspect-square bg-paper-white-container relative group cursor-pointer overflow-hidden rounded-lg shadow-sm">
-            <img loading=\"lazy\" loading=\"lazy\" class="w-full h-full object-cover transition-all duration-500 group-hover:scale-105" src="images/instagram_new_1.jpg">
-        </div>
-        <div class="w-[200px] md:w-[260px] flex-shrink-0 aspect-square bg-paper-white-container relative group cursor-pointer overflow-hidden rounded-lg shadow-sm">
-            <img loading=\"lazy\" loading=\"lazy\" class="w-full h-full object-cover transition-all duration-500 group-hover:scale-105" src="images/instagram_new_2.jpg">
-        </div>
-    </div>
-    <!-- List 2 of 10 images (duplicated for seamless loop) -->
-    <div class="flex gap-4 pr-4 flex-shrink-0">
-        <div class="w-[200px] md:w-[260px] flex-shrink-0 aspect-square bg-paper-white-container relative group cursor-pointer overflow-hidden rounded-lg shadow-sm">
-            <img loading=\"lazy\" loading=\"lazy\" class="w-full h-full object-cover transition-all duration-500 group-hover:scale-105" src="images/instagram_image_slideshow_1.jpg">
-        </div>
-        <div class="w-[200px] md:w-[260px] flex-shrink-0 aspect-square bg-paper-white-container relative group cursor-pointer overflow-hidden rounded-lg shadow-sm">
-            <img loading=\"lazy\" loading=\"lazy\" class="w-full h-full object-cover transition-all duration-500 group-hover:scale-105" src="images/instagram_image_slideshow_2.jpg">
-        </div>
-        <div class="w-[200px] md:w-[260px] flex-shrink-0 aspect-square bg-paper-white-container relative group cursor-pointer overflow-hidden rounded-lg shadow-sm">
-            <img loading=\"lazy\" loading=\"lazy\" class="w-full h-full object-cover transition-all duration-500 group-hover:scale-105" src="images/instagram_image_slideshow_3.jpg">
-        </div>
-        <div class="w-[200px] md:w-[260px] flex-shrink-0 aspect-square bg-paper-white-container relative group cursor-pointer overflow-hidden rounded-lg shadow-sm">
-            <img loading=\"lazy\" loading=\"lazy\" class="w-full h-full object-cover transition-all duration-500 group-hover:scale-105" src="images/instagram_image_slideshow_4.jpg">
-        </div>
-        <div class="w-[200px] md:w-[260px] flex-shrink-0 aspect-square bg-paper-white-container relative group cursor-pointer overflow-hidden rounded-lg shadow-sm">
-            <img loading=\"lazy\" loading=\"lazy\" class="w-full h-full object-cover transition-all duration-500 group-hover:scale-105" src="images/instagram_slideshow_image_5.jpg">
-        </div>
-        <div class="w-[200px] md:w-[260px] flex-shrink-0 aspect-square bg-paper-white-container relative group cursor-pointer overflow-hidden rounded-lg shadow-sm">
-            <img loading=\"lazy\" loading=\"lazy\" class="w-full h-full object-cover transition-all duration-500 group-hover:scale-105" src="images/instagram_image_slideshow_6.jpg">
-        </div>
-        <div class="w-[200px] md:w-[260px] flex-shrink-0 aspect-square bg-paper-white-container relative group cursor-pointer overflow-hidden rounded-lg shadow-sm">
-            <img loading=\"lazy\" loading=\"lazy\" class="w-full h-full object-cover transition-all duration-500 group-hover:scale-105" src="images/instagram_image_slideshow_7.jpg">
-        </div>
-        <div class="w-[200px] md:w-[260px] flex-shrink-0 aspect-square bg-paper-white-container relative group cursor-pointer overflow-hidden rounded-lg shadow-sm">
-            <img loading=\"lazy\" loading=\"lazy\" class="w-full h-full object-cover transition-all duration-500 group-hover:scale-105" src="images/instagram_image_slide_show8.png">
-        </div>
-        <div class="w-[200px] md:w-[260px] flex-shrink-0 aspect-square bg-paper-white-container relative group cursor-pointer overflow-hidden rounded-lg shadow-sm">
-            <img loading=\"lazy\" loading=\"lazy\" class="w-full h-full object-cover transition-all duration-500 group-hover:scale-105" src="images/instagram_new_1.jpg">
-        </div>
-        <div class="w-[200px] md:w-[260px] flex-shrink-0 aspect-square bg-paper-white-container relative group cursor-pointer overflow-hidden rounded-lg shadow-sm">
-            <img loading=\"lazy\" loading=\"lazy\" class="w-full h-full object-cover transition-all duration-500 group-hover:scale-105" src="images/instagram_new_2.jpg">
-        </div>
-    </div>
-</div>
-</div>
-</section>
-<!-- Section 4 & 5: Contact & Info -->
-<section class="bg-deep-plum text-paper-white transition-all duration-1000 opacity-100">
-<div class="max-w-container mx-auto px-margin-mobile md:px-margin-desktop grid grid-cols-1 lg:grid-cols-2">
-<!-- Contact Booking -->
-<div class="py-section-gap pr-0 lg:pr-stack-lg border-b lg:border-b-0 lg:border-r border-on-primary/10 flex flex-col justify-start pt-16 lg:pt-24">
-<h2 class="font-display-lg text-display-lg-mobile md:text-display-lg mb-4">Ready to Begin?</h2>
-<p class="font-body-md text-paper-white/70 mb-stack-lg">Book a personalized medical aesthetics consultation online. Let us help you achieve your aesthetic and wellness goals.</p>
-<div class="mt-4">
-<button onclick="window.location.href='https://squareup.com/appointments/book/L5CWQHE9Q1V00'" class="bg-on-primary text-deep-plum px-12 py-4 font-label-lg text-label-lg uppercase hover:bg-soft-blush hover:text-white transition-all active:scale-95 tracking-widest cursor-pointer">Book A Consultation</button>
-</div>
-</div>
-<!-- Info Column -->
-<div class="py-section-gap pl-0 lg:pl-stack-lg flex flex-col justify-between">
-<div class="grid grid-cols-1 md:grid-cols-2 gap-stack-lg">
-<div>
-<h4 class="font-label-lg text-label-lg uppercase tracking-widest mb-4 flex items-center gap-2">
-<span class="material-symbols-outlined text-soft-blush">contact_support</span> Direct Contact
-                        </h4>
-<p class="font-body-md text-paper-white/70">Phone: (206) 226-5477<br>Email: kalotay@gmail.com</p>
-</div>
-<div>
-<h4 class="font-label-lg text-label-lg uppercase tracking-widest mb-4 flex items-center gap-2">
-<span class="material-symbols-outlined text-soft-blush">location_on</span> Location
-                        </h4>
-<p class="font-body-md text-paper-white/70 mb-4">
-                            22833 Bothell Everett Highway<br>Suite 200, Salon 7<br>Bothell, WA 98021
-                        </p>
-<a class="inline-flex items-center gap-2 text-soft-blush font-label-md text-label-md uppercase border-b border-accent-warm pb-1 hover:text-paper-white hover:border-on-primary transition-all tracking-widest" href="https://maps.app.goo.gl/ZgkN3WU9fhPvFFDi9" target="_blank">Get Directions <span class="material-symbols-outlined text-sm">open_in_new</span></a>
-</div>
-<div>
-<h4 class="font-label-lg text-label-lg uppercase tracking-widest mb-4 flex items-center gap-2">
-<span class="material-symbols-outlined text-soft-blush">schedule</span> Office Hours
-                        </h4>
-<div class="font-body-md text-paper-white/70 space-y-1 w-full max-w-xs">
-    <div class="flex justify-between"><span>Mon:</span> <span>9:00 AM – 3:00 PM</span></div>
-    <div class="flex justify-between"><span>Tue:</span> <span>Closed</span></div>
-    <div class="flex justify-between"><span>Wed:</span> <span>4:30 PM – 6:00 PM</span></div>
-    <div class="flex justify-between"><span>Thu:</span> <span>Closed</span></div>
-    <div class="flex justify-between"><span>Fri:</span> <span>4:30 PM – 6:00 PM</span></div>
-    <div class="flex justify-between"><span>Sat &amp; Sun:</span> <span>9:00 AM – 3:00 PM</span></div>
-</div>
-<p class="font-body-md text-xs text-paper-white/50 mt-4 italic">By appointment only.</p>
-</div>
-</div>
-<div class="mt-stack-lg pt-stack-lg border-t border-on-primary/10">
-<div class="bg-on-primary/5 p-gutter rounded-lg">
-<h4 class="font-headline-md mb-stack-sm italic">Find Us In Bothell</h4>
-<div class="w-full h-48 bg-paper-white-container-highest/20 overflow-hidden rounded">
-<iframe src="https://maps.google.com/maps?q=22833%20Bothell%20Everett%20Highway%2C%20Suite%20200%2C%20Salon%207%2C%20Bothell%20%2C%20Wa%2098021&t=&z=14&ie=UTF8&iwloc=&output=embed" width="100%" height="100%" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
-</div>
-</div>
-</div>
-</div>
-</div>
-</section>
-</main>
-<!-- Footer -->
-<footer class="bg-surface-container-low w-full py-stack-lg border-t border-tertiary/5">
-<div class="flex flex-col md:flex-row justify-between items-center px-margin-mobile md:px-margin-desktop gap-stack-md max-w-container-max mx-auto">
-<div class="flex flex-col items-center md:items-start">
-<span class="font-headline-md text-headline-md text-primary mb-unit">CK Aesthetics</span>
-<span class="font-body-md text-body-md text-on-surface-variant">© 2026 CK Aesthetics. All rights reserved.</span>
-</div>
-<div class="flex gap-stack-lg">
+<!DOCTYPE html><html class="scroll-smooth" lang="en" style=""><head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-ZYBWPBYXL3"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-ZYBWPBYXL3');
+</script><meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<title>CK Aesthetics | Premier Med Spa in Bothell, WA | GLP-1 | Neurotoxins & Fillers</title>
+<meta name="description" content="Welcome to CK Aesthetics, Seattle's premier medical spa offering expert Botox, dermal fillers, lip flips, and medical weight management in Washington State.">
+
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24;
+            vertical-align: middle;
+        }
+        .bento-card-hover {
+            transition: transform 0.4s cubic-bezier(0.2, 0, 0, 1), box-shadow 0.4s cubic-bezier(0.2, 0, 0, 1);
+        }
+        .bento-card-hover:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 10px 40px -10px rgba(94, 62, 77, 0.15);
+        }
+        .service-card-overlay {
+            background: linear-gradient(to top, rgba(27, 28, 27, 0.8) 0%, rgba(27, 28, 27, 0.3) 50%, rgba(27, 28, 27, 0) 100%);
+        }
+        @keyframes marquee {
+            0% { transform: translateX(0); }
+            100% { transform: translateX(-50%); }
+        }
+        .marquee-container {
+            overflow: hidden;
+            width: 100%;
+        }
+        .marquee-content {
+            display: flex;
+            width: max-content;
+            animation: marquee 30s linear infinite;
+        }
+        .marquee-content:hover {
+            animation-play-state: paused;
+        }
+        .marquee-reverse {
+            animation-direction: reverse;
+        }
+    </style>
+<style>
+    #scroll-container { height: 8000px; width: 100%; position: relative; }
+    #sticky-viewport { position: sticky; top: 0; width: 100%; height: 100vh; height: 100dvh; overflow: hidden; background-color: #000; }
+    #loading-screen { position: absolute; inset: 0; z-index: 50; display: flex; flex-direction: column; align-items: center; justify-content: center; background-color: #000; transition: opacity 0.5s; }
+    #hero-image { position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; object-position: center; will-change: contents, transform; transform: translateZ(0); }
+    .hero-overlay { position: absolute; inset: 0; z-index: 1; background: linear-gradient(to bottom, rgba(0,0,0,0.2) 0%, rgba(0,0,0,0) 35%, rgba(0,0,0,0) 55%, rgba(0,0,0,0.55) 100%); pointer-events: none; }
+    .hero-section { position: absolute; inset: 0; z-index: 10; display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center; padding: 0 24px; opacity: 0; pointer-events: none; transform: translateY(40px) translateZ(0); will-change: opacity, transform; transition: none; }
+    .hero-section h1 { font-size: clamp(40px, 8vw, 100px); font-weight: 200; line-height: 1.1; margin: 0; text-shadow: 0 4px 40px rgba(0,0,0,0.9), 0 1px 3px rgba(0,0,0,0.8); color: #fff; font-family: 'Libre Caslon Text', serif; }
+    .hero-section p { color: rgba(255,255,255,0.9); font-size: 14px; letter-spacing: 0.4em; text-transform: uppercase; margin-bottom: 12px; text-shadow: 0 2px 10px rgba(0,0,0,0.9); font-weight: 600; }
+    .hero-section .subtitle { color: rgba(255,255,255,0.9); font-size: clamp(14px, 1.5vw, 18px); font-weight: 400; max-width: 800px; letter-spacing: normal; text-transform: none; margin-top: 28px; white-space: nowrap; text-shadow: 0 2px 15px rgba(0,0,0,0.9); }
+    #sec-1 h1 { color: #ffffff !important; text-shadow: 0 0 20px rgba(255, 255, 255, 0.6), 0 4px 25px rgba(0,0,0,0.9) !important; }
+    #sec-1 p, #sec-1 .subtitle { color: #ffffff !important; letter-spacing: 0.3em !important; font-weight: 400 !important; text-shadow: 0 4px 20px rgba(0,0,0,0.9) !important; text-transform: uppercase; font-size: clamp(12px, 1.2vw, 16px); }
+    .hero-divider { width: 60px; height: 1px; background-color: rgba(255,255,255,0.4); margin: 28px 0; }
+    .hero-btn { padding: 14px 40px; border: 1px solid rgba(255,255,255,0.6); background-color: rgba(255,255,255,0.05); color: #fff; font-size: 13px; letter-spacing: 0.25em; text-transform: uppercase; cursor: pointer; backdrop-filter: blur(8px); transition: all 0.4s ease; margin-top: 36px; }
+    .hero-btn:hover { background-color: #fff; color: #000; }
+    #scroll-indicator { position: absolute; bottom: 32px; left: 50%; transform: translateX(-50%); z-index: 10; display: flex; flex-direction: column; align-items: center; pointer-events: none; }
+    @keyframes scrollPulse { 0%, 100% { transform: translateY(0); opacity: 0.3; } 50% { transform: translateY(14px); opacity: 1; } }
+    .scroll-track { width: 1px; height: 28px; background-color: rgba(255,255,255,0.3); margin-top: 10px; }
+    .scroll-thumb { width: 100%; height: 50%; background-color: rgba(255,255,255,0.7); animation: scrollPulse 1.5s ease-in-out infinite; }
+    @media (max-width: 768px) { 
+        #scroll-container { height: 4500px; } 
+        #sticky-viewport { background-color: #ffffff; } 
+        #hero-image { 
+            height: 60dvh !important; 
+            top: 20dvh !important; 
+            object-fit: cover !important; 
+            border: none;
+        }
+        .hero-overlay {
+            height: 60dvh !important;
+            top: 20dvh !important;
+        }
+        #scroll-indicator div:first-child { color: #000 !important; opacity: 1 !important; font-weight: 600 !important; }
+        .scroll-track { background-color: rgba(0,0,0,0.3) !important; }
+        .scroll-thumb { background-color: #000 !important; }
+    }
+    </style>
+<link href="https://fonts.googleapis.com/css2?family=Libre+Caslon+Text:ital,wght@0,400;0,700;1,400&amp;family=Manrope:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css?v=5">
+</head>
+<body class="bg-paper-white text-on-background font-body-md overflow-x-hidden">
+<!-- TopNavBar -->
+<nav class="w-full top-0 sticky z-50 bg-paper-white/80 backdrop-blur-md border-b border-medical-gray/10">
+<div class="max-w-container mx-auto px-margin-mobile md:px-margin-desktop flex justify-between items-center h-20">
+<a href="index.html" class="font-display-lg text-3xl md:text-headline-lg text-deep-plum cursor-pointer">CK Aesthetics</a>
+<div class="hidden md:flex items-center gap-gutter">
+<a class="font-label-lg text-label-lg font-medium transition-colors duration-300 text-deep-plum border-b-2 border-deep-plum pb-1" href="index.html">Home</a>
+<a class="font-label-lg text-label-lg font-medium transition-colors duration-300 text-on-surface-variant hover:text-deep-plum" href="services.html">Services</a>
+<a class="font-label-lg text-label-lg font-medium transition-colors duration-300 text-on-surface-variant hover:text-deep-plum" href="about.html">About Us</a>
+<a class="font-label-lg text-label-lg font-medium transition-colors duration-300 text-on-surface-variant hover:text-deep-plum" href="consultation.html">Consultation</a>
+<button onclick="window.location.href='https://squareup.com/appointments/book/L5CWQHE9Q1V00'"  class="ml-4 px-6 py-3 bg-deep-plum text-paper-white font-label-lg text-label-lg uppercase active:scale-95 transition-all tracking-widest cursor-pointer">Book Now</button>
+</div>
+<button class="md:hidden material-symbols-outlined text-deep-plum text-3xl cursor-pointer">menu</button>
+</div>
+</nav>
+
+<div id="scroll-container">
+  <div id="sticky-viewport">
+    
+    <div id="loading-screen">
+      <div style="color: rgba(255,255,255,0.5); font-size: 12px; letter-spacing: 0.3em; text-transform: uppercase; margin-bottom: 24px; font-family: sans-serif;">
+        Loading Experience
+      </div>
+      <div style="width: 200px; height: 2px; background-color: rgba(255,255,255,0.1); border-radius: 4px; overflow: hidden;">
+        <div id="loading-bar" style="height: 100%; width: 0%; background-color: rgba(255,255,255,0.7); transition: width 0.3s ease-out;"></div>
+      </div>
+      <div id="loading-text" style="color: rgba(255,255,255,0.35); font-size: 11px; margin-top: 12px; letter-spacing: 0.2em; font-family: sans-serif;">
+        0%
+      </div>
+    </div>
+
+    <canvas id="hero-image"></canvas>
+    <div class="hero-overlay"></div>
+
+    <!-- Section 1 -->
+    <div class="hero-section" id="sec-1">
+      <p>Welcome to</p>
+      <h1>CK Aesthetics</h1>
+      <div class="hero-divider"></div>
+      <div class="subtitle">Where modern science meets timeless beauty</div>
+    </div>
+
+    <!-- Section 2 -->
+    <div class="hero-section" id="sec-2">
+      <p>Our Expertise</p>
+      <h1>Advanced Aesthetics</h1>
+      <div class="hero-divider"></div>
+      <div class="subtitle">Precision treatments tailored to your unique natural beauty</div>
+    </div>
+
+    <!-- Section 3 -->
+    <div class="hero-section" id="sec-3">
+    </div>
+
+    <!-- Scroll Indicator -->
+    <div id="scroll-indicator">
+      <div style="color: rgba(255,255,255,0.45); font-size: 11px; letter-spacing: 0.3em; text-transform: uppercase;">Scroll to explore</div>
+      <div class="scroll-track">
+        <div class="scroll-thumb"></div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<script>
+  const FRAME_COUNT = 300;
+  const framePaths = [];
+  for (let i = 1; i <= FRAME_COUNT; i++) {
+    framePaths.push(`frames/ck final frames/ezgif-frame-${i.toString().padStart(3, "0")}.jpg`);
+  }
+
+  const imgRef = document.getElementById('hero-image');
+  const loadingScreen = document.getElementById('loading-screen');
+  const loadingBar = document.getElementById('loading-bar');
+  const loadingText = document.getElementById('loading-text');
+  const container = document.getElementById('scroll-container');
+  const scrollIndicator = document.getElementById('scroll-indicator');
+
+  const sections = [
+    { el: document.getElementById('sec-1'), startFade: 0.0, startFull: 0.06, endFull: 0.2, endFade: 0.3 },
+    { el: document.getElementById('sec-2'), startFade: 0.34, startFull: 0.4, endFull: 0.55, endFade: 0.65 },
+    { el: document.getElementById('sec-3'), startFade: 0.68, startFull: 0.75, endFull: 0.92, endFade: 1.0 }
+  ];
+
+  let images = new Array(FRAME_COUNT);
+  let loadedCount = 0;
+  let isLoaded = false;
+  let currentFrame = 0;
+  let rafId = 0;
+
+  for (let i = 0; i < FRAME_COUNT; i++) {
+    const img = new Image();
+    img.src = framePaths[i];
+    img.onload = () => { loadedCount++; updateLoading(); };
+    img.onerror = () => { loadedCount++; updateLoading(); };
+    images[i] = img;
+  }
+
+  function updateLoading() {
+    const progress = Math.round((loadedCount / FRAME_COUNT) * 100);
+    if(loadingBar) loadingBar.style.width = `${progress}%`;
+    if(loadingText) loadingText.innerText = `${progress}%`;
+    if (loadedCount === FRAME_COUNT) {
+      isLoaded = true;
+      setTimeout(() => {
+        if(loadingScreen) loadingScreen.style.opacity = '0';
+        setTimeout(() => { if(loadingScreen) loadingScreen.style.display = 'none'; }, 500);
+      }, 200);
+      if (images[0]) {
+        imgRef.width = images[0].naturalWidth;
+        imgRef.height = images[0].naturalHeight;
+        const ctx = imgRef.getContext('2d');
+        ctx.drawImage(images[0], 0, 0);
+      }
+      onScroll();
+    }
+  }
+
+  let lastPointerEvents = [];
+
+  function updateSections(p) {
+    sections.forEach((sec, idx) => {
+      if(!sec.el) return;
+      let opacity = 0;
+      let ty = 40;
+      if (p >= sec.startFade && p < sec.startFull) {
+        const t = (p - sec.startFade) / (sec.startFull - sec.startFade);
+        opacity = t; ty = 40 * (1 - t);
+      } else if (p >= sec.startFull && p <= sec.endFull) {
+        opacity = 1; ty = 0;
+      } else if (p > sec.endFull && p <= sec.endFade) {
+        const t = (p - sec.endFull) / (sec.endFade - sec.endFull);
+        opacity = 1 - t; ty = -20 * t;
+      }
+      
+      // Only apply styles to minimize layout thrashing
+      sec.el.style.opacity = opacity.toFixed(3);
+      sec.el.style.transform = `translateY(${ty.toFixed(1)}px) translateZ(0)`;
+      
+      const newPe = opacity > 0.1 ? 'auto' : 'none';
+      if (lastPointerEvents[idx] !== newPe) {
+        sec.el.style.pointerEvents = newPe;
+        lastPointerEvents[idx] = newPe;
+      }
+    });
+    if(scrollIndicator) scrollIndicator.style.opacity = Math.max(0, 1 - p * 10);
+  }
+
+  function onScroll() {
+    if(!container) return;
+    if (rafId) cancelAnimationFrame(rafId);
+    rafId = requestAnimationFrame(() => {
+      const rect = container.getBoundingClientRect();
+      const scrollable = rect.height - window.innerHeight;
+      const scrolled = -rect.top;
+      let progress = Math.max(0, Math.min(1, scrolled / scrollable));
+      
+      if (isLoaded) {
+        const frameIndex = Math.round(progress * (FRAME_COUNT - 1));
+        if (frameIndex !== currentFrame) {
+          currentFrame = frameIndex;
+          if (images[currentFrame] && images[currentFrame].complete) {
+            const ctx = imgRef.getContext('2d');
+            ctx.drawImage(images[currentFrame], 0, 0);
+          }
+        }
+      }
+      updateSections(progress);
+    });
+  }
+
+  window.addEventListener('scroll', onScroll, { passive: true });
+  onScroll();
+</script>
+
+<main>
+<!-- Section 1: Our Expertise -->
+<!-- Section 2: Meet Your Aesthetician: Claudia -->
+<section class="pt-12 md:pt-16 pb-section-gap bg-soft-blush/10 transition-all duration-1000 opacity-100">
+<div class="max-w-container mx-auto px-margin-mobile md:px-margin-desktop mb-12 text-center">
+    <h2 class="text-5xl md:text-6xl lg:text-7xl font-medium text-deep-plum" style="font-family: 'Times New Roman', Times, serif;">The Founder</h2>
+</div>
+<div class="max-w-container mx-auto px-margin-mobile md:px-margin-desktop grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
+<div class="relative">
+<div class="aspect-[4/5] overflow-hidden rounded-lg shadow-xl">
+<a href="about.html" class="absolute inset-0 z-30 cursor-pointer"></a>
+<img loading=\"lazy\" loading=\"lazy\" class="w-full h-full object-cover" src="images/founder_new_2.jpg" alt="Claudia Kalotay - Provider">
+</div>
+
+</div>
+<div class="flex flex-col">
+<h2 class="text-3xl sm:text-4xl md:text-5xl lg:text-5xl xl:text-5xl font-light italic text-deep-plum mb-8" style="font-family: 'Times New Roman', Times, serif;">Our Philosophy by<br> <span class="whitespace-nowrap">Claudia Kalotay PA-C</span></h2>
+<div class="w-24 h-1 bg-soft-blush mb-10"></div>
+<div class="space-y-8 text-lg md:text-xl leading-loose font-light text-on-surface-variant mb-12">
+    <p>At CK Aesthetics, I believe the most beautiful results are subtle, refined, and uniquely yours. My goal is to help you look refreshed and naturally beautiful—not overdone or artificial—while allowing you to age gracefully and confidently.</p>
+    <p>With more than 20 years of experience in medicine and surgery, I bring a trained eye, clinical precision, and a personalized approach to every patient. I also believe luxury care should feel personal and relaxed—a place where you can be yourself, ask questions, and feel genuinely cared for. A place where everyone is welcome.</p>
+    <p>Whether you’re here for aesthetic treatments, facial rejuvenation, or medical weight management and wellness, my goal is simple: to help you look your best, feel your best, live your healthiest life, and still look like you.</p>
+</div>
+<div class="flex gap-gutter mt-stack-md">
+<button onclick="window.location.href='about.html'" class="bg-deep-plum text-paper-white px-8 py-4 font-label-lg text-label-lg uppercase hover:bg-deep-plum transition-all flex items-center gap-2 tracking-widest cursor-pointer">Meet Claudia</button>
+<button onclick="window.location.href='consultation.html'" class="border border-primary text-deep-plum px-8 py-4 font-label-lg text-label-lg uppercase hover:bg-deep-plum hover:text-white transition-all tracking-widest">Consultation</button>
+</div>
+</div>
+</div>
+</section>
+
+<section class="pt-8 md:pt-16 pb-12 md:pb-16 max-w-container mx-auto px-margin-mobile md:px-margin-desktop transition-all duration-1000 opacity-100">
+<div class="mb-stack-lg text-center">
+<span class="font-label-lg text-label-lg text-text-muted-taupe uppercase tracking-[0.2em] mb-2 block">Our Expertise</span>
+<h2 class="font-display-lg text-display-lg text-deep-plum">Choose Your Service</h2>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-12 gap-gutter">
+
+<!-- Medical Weight Loss -->
+<div class="md:col-span-6 group relative overflow-hidden bento-card-hover rounded-lg h-[400px]">
+<a href="services.html#weight-loss" class="absolute inset-0 z-30 cursor-pointer"></a>
+<div class="absolute inset-0 z-0 scale-105 group-hover:scale-100 transition-transform duration-700">
+<img loading=\"lazy\" loading=\"lazy\" class="w-full h-full object-cover" src="images/Glp 1 service+home.jpeg">
+</div>
+<div class="absolute inset-0 service-card-overlay z-10"></div>
+<div class="absolute bottom-0 left-0 p-stack-lg z-20 w-full">
+<h3 class="font-headline-lg text-paper-white mb-stack-sm">Medical Weight Management</h3>
+<p class="text-paper-white/80 mb-stack-md font-body-md">Comprehensive, medically-supervised weight management programs using GLP-1 therapy.</p>
+<a class="inline-flex items-center gap-2 bg-on-primary text-deep-plum px-4 py-2 font-label-md text-label-md hover:bg-soft-blush hover:text-white transition-all uppercase tracking-widest relative z-40 cursor-pointer" href="https://squareup.com/appointments/book/L5CWQHE9Q1V00">Start Your Journey <span class="material-symbols-outlined text-sm">chevron_right</span></a>
+</div>
+</div>
+
+<!-- Wrinkle Botox -->
+<div class="md:col-span-6 group relative overflow-hidden bento-card-hover rounded-lg h-[400px]">
+<a href="services.html#wrinkle-botox" class="absolute inset-0 z-30 cursor-pointer"></a>
+<div class="absolute inset-0 z-0 scale-105 group-hover:scale-100 transition-transform duration-700">
+<img loading=\"lazy\" loading=\"lazy\" class="w-full h-full object-cover" src="images/botox_service+home.png">
+</div>
+<div class="absolute inset-0 service-card-overlay z-10"></div>
+<div class="absolute bottom-0 left-0 p-stack-lg z-20 w-full">
+<h3 class="font-headline-lg text-paper-white mb-stack-sm">Wrinkle treatment</h3>
+<p class="text-paper-white/80 mb-stack-md font-body-md">Beauty wrinkle treatments with neuromodulators. Botox, Dysport and Jeuveau offered here.</p>
+<a class="inline-flex items-center gap-2 bg-on-primary text-deep-plum px-4 py-2 font-label-md text-label-md hover:bg-soft-blush hover:text-white transition-all uppercase tracking-widest relative z-40 cursor-pointer" href="services.html#wrinkle-botox">Learn More <span class="material-symbols-outlined text-sm">chevron_right</span></a>
+</div>
+</div>
+
+<!-- Muscle Strain Botox -->
+<div class="md:col-span-6 group relative overflow-hidden bento-card-hover rounded-lg h-[400px]">
+<a href="services.html#muscle-strain-botox" class="absolute inset-0 z-30 cursor-pointer"></a>
+<div class="absolute inset-0 z-0 scale-105 group-hover:scale-100 transition-transform duration-700">
+<img loading=\"lazy\" loading=\"lazy\" class="w-full h-full object-cover" src="images/botox_muscle_pain_new.jpg">
+</div>
+<div class="absolute inset-0 service-card-overlay z-10"></div>
+<div class="absolute bottom-0 left-0 p-stack-lg z-20 w-full">
+<h3 class="font-headline-lg text-paper-white mb-stack-sm">Neurotoxin for muscle tension</h3>
+<p class="text-paper-white/80 mb-stack-md font-body-md">Therapeutic muscle pain treatments with neuromodulators to relieve tension.</p>
+<a class="inline-flex items-center gap-2 bg-on-primary text-deep-plum px-4 py-2 font-label-md text-label-md hover:bg-soft-blush hover:text-white transition-all uppercase tracking-widest relative z-40 cursor-pointer" href="services.html#muscle-strain-botox">Learn More <span class="material-symbols-outlined text-sm">chevron_right</span></a>
+</div>
+</div>
+
+<!-- Dermal Fillers -->
+<div class="md:col-span-6 group relative overflow-hidden bento-card-hover rounded-lg h-[400px]">
+<a href="services.html#fillers" class="absolute inset-0 z-30 cursor-pointer"></a>
+<div class="absolute inset-0 z-0 scale-105 group-hover:scale-100 transition-transform duration-700">
+<img loading=\"lazy\" loading=\"lazy\" class="w-full h-full object-cover" src="images/dermal_filler_new.jpg">
+</div>
+<div class="absolute inset-0 service-card-overlay z-10"></div>
+<div class="absolute bottom-0 left-0 p-stack-lg z-20 w-full">
+<h3 class="font-headline-lg text-paper-white mb-stack-sm">Premium Fillers</h3>
+<p class="text-paper-white/80 mb-stack-md font-body-md">Enhance facial contours, restore volume, and hydrate with Evolysse.</p>
+<a class="inline-flex items-center gap-2 bg-on-primary text-deep-plum px-4 py-2 font-label-md text-label-md hover:bg-soft-blush hover:text-white transition-all uppercase tracking-widest relative z-40 cursor-pointer" href="services.html#fillers">Learn More <span class="material-symbols-outlined text-sm">chevron_right</span></a>
+</div>
+</div>
+
+<!-- All Services -->
+<div class="md:col-span-12 text-center mt-8 relative z-40">
+<a href="services.html#additional-services" class="inline-block border border-deep-plum text-deep-plum px-10 py-4 font-label-lg uppercase tracking-widest hover:bg-deep-plum hover:text-white transition-all cursor-pointer">View All Services</a>
+</div>
+
+</div>
+</section>
+
+<!-- Section: Google Reviews -->
+<section class="pt-12 md:pt-20 pb-12 md:pb-20 bg-soft-blush/10 overflow-hidden transition-all duration-1000 opacity-100">
+<div class="max-w-container mx-auto px-margin-mobile md:px-margin-desktop flex flex-col md:flex-row justify-between items-end mb-stack-lg">
+<div>
+<span class="font-label-lg text-label-lg text-text-muted-taupe uppercase tracking-[0.2em] mb-2 block">Client Love</span>
+<h2 class="font-display-lg text-display-lg text-deep-plum">What Our Clients Say</h2>
+</div>
+<a class="flex items-center gap-2 font-label-lg text-label-lg text-deep-plum hover:text-soft-blush transition-colors mb-2 tracking-widest" href="https://maps.app.goo.gl/GiGn3Fs6x3ziihM66" target="_blank" rel="noopener noreferrer">
+<span class="material-symbols-outlined text-[#fbbc04]" style="font-variation-settings: 'FILL' 1;">star</span> View All Reviews on Google
+</a>
+</div>
+<div class="marquee-container w-full mt-8">
+<div class="marquee-content marquee-reverse flex gap-6 pr-6">
+    <!-- Review 1 -->
+    <div class="w-[300px] md:w-[400px] flex-shrink-0 bg-paper-white p-6 rounded-lg shadow-sm border border-tertiary/10 flex flex-col justify-between">
+        <div>
+            <div class="flex text-[#fbbc04] mb-3">
+                <span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span><span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span><span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span><span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span><span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+            </div>
+            <p class="font-body-md text-on-surface-variant italic mb-4">"Claudia was absolutely the best! She helped me navigate my weight loss journey in a way that felt manageable and sustainable. With her guidance, I was able to lose 25 pounds in just 6 weeks. She’s incredibly knowledgeable, supportive, and truly cares about your success."</p>
+        </div>
+        <div class="flex items-center gap-3">
+            <div class="w-10 h-10 rounded-full bg-deep-plum text-paper-white flex items-center justify-center font-bold">J</div>
+            <span class="font-label-md font-medium text-deep-plum">Jordan W.</span>
+        </div>
+    </div>
+    <!-- Review 2 -->
+    <div class="w-[300px] md:w-[400px] flex-shrink-0 bg-paper-white p-6 rounded-lg shadow-sm border border-tertiary/10 flex flex-col justify-between">
+        <div>
+            <div class="flex text-[#fbbc04] mb-3">
+                <span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span><span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span><span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span><span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span><span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+            </div>
+            <p class="font-body-md text-on-surface-variant italic mb-4">"Claudia did my Botox and not only did she do a phenomenal job, but she listened to all of my concerns and explained to me what needed to be done to achieve that. I will be going back to see her and I highly recommend others to see her as well!"</p>
+        </div>
+        <div class="flex items-center gap-3">
+            <div class="w-10 h-10 rounded-full bg-deep-plum text-paper-white flex items-center justify-center font-bold">M</div>
+            <span class="font-label-md font-medium text-deep-plum">Macie S.</span>
+        </div>
+    </div>
+    <!-- Review 3 -->
+    <div class="w-[300px] md:w-[400px] flex-shrink-0 bg-paper-white p-6 rounded-lg shadow-sm border border-tertiary/10 flex flex-col justify-between">
+        <div>
+            <div class="flex text-[#fbbc04] mb-3">
+                <span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span><span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span><span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span><span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span><span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+            </div>
+            <p class="font-body-md text-on-surface-variant italic mb-4">"I hosted a Botox party for a group of us who were all first-timers. Claudia came incredibly prepared, took the time to explain everything clearly, and made sure each of us felt confident and at ease. Highly recommend Claudia!"</p>
+        </div>
+        <div class="flex items-center gap-3">
+            <div class="w-10 h-10 rounded-full bg-deep-plum text-paper-white flex items-center justify-center font-bold">J</div>
+            <span class="font-label-md font-medium text-deep-plum">Janeen S.</span>
+        </div>
+    </div>
+    <!-- Review 4 -->
+    <div class="w-[300px] md:w-[400px] flex-shrink-0 bg-paper-white p-6 rounded-lg shadow-sm border border-tertiary/10 flex flex-col justify-between">
+        <div>
+            <div class="flex text-[#fbbc04] mb-3">
+                <span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span><span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span><span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span><span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span><span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+            </div>
+            <p class="font-body-md text-on-surface-variant italic mb-4">"As an orthopedic PA, she has incredible precision and the steadiest hands, which gave me so much confidence in trusting her with my Jeuveau injections. The results look natural and exactly what I was hoping for."</p>
+        </div>
+        <div class="flex items-center gap-3">
+            <div class="w-10 h-10 rounded-full bg-deep-plum text-paper-white flex items-center justify-center font-bold">A</div>
+            <span class="font-label-md font-medium text-deep-plum">Autumn P.</span>
+        </div>
+    </div>
+    <!-- Review 5 -->
+    <div class="w-[300px] md:w-[400px] flex-shrink-0 bg-paper-white p-6 rounded-lg shadow-sm border border-tertiary/10 flex flex-col justify-between">
+        <div>
+            <div class="flex text-[#fbbc04] mb-3">
+                <span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span><span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span><span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span><span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span><span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+            </div>
+            <p class="font-body-md text-on-surface-variant italic mb-4">"I've received Botox from Claudia twice so far and really appreciate her explaining what to expect... I was concerned about looking stiff or unnatural but that is not at all how it has turned out!"</p>
+        </div>
+        <div class="flex items-center gap-3">
+            <div class="w-10 h-10 rounded-full bg-deep-plum text-paper-white flex items-center justify-center font-bold">L</div>
+            <span class="font-label-md font-medium text-deep-plum">Lenee A.</span>
+        </div>
+    </div>
+    <!-- Review 6 -->
+    <div class="w-[300px] md:w-[400px] flex-shrink-0 bg-paper-white p-6 rounded-lg shadow-sm border border-tertiary/10 flex flex-col justify-between">
+        <div>
+            <div class="flex text-[#fbbc04] mb-3">
+                <span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span><span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span><span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span><span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span><span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+            </div>
+            <p class="font-body-md text-on-surface-variant italic mb-4">"Claudia did a wonderful job! Not only did I not experience painful injections, I didn’t 'hear' my skin pop when the needle broke the surfaces and I had zero bruising... I was impressed and would recommend."</p>
+        </div>
+        <div class="flex items-center gap-3">
+            <div class="w-10 h-10 rounded-full bg-deep-plum text-paper-white flex items-center justify-center font-bold">N</div>
+            <span class="font-label-md font-medium text-deep-plum">Nicole N.</span>
+        </div>
+    </div>
+    
+    <!-- Duplicate for endless scroll effect -->
+    <!-- Review 1 -->
+    <div class="w-[300px] md:w-[400px] flex-shrink-0 bg-paper-white p-6 rounded-lg shadow-sm border border-tertiary/10 flex flex-col justify-between">
+        <div>
+            <div class="flex text-[#fbbc04] mb-3">
+                <span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span><span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span><span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span><span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span><span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+            </div>
+            <p class="font-body-md text-on-surface-variant italic mb-4">"Claudia was absolutely the best! She helped me navigate my weight loss journey in a way that felt manageable and sustainable. With her guidance, I was able to lose 25 pounds in just 6 weeks. She’s incredibly knowledgeable, supportive, and truly cares about your success."</p>
+        </div>
+        <div class="flex items-center gap-3">
+            <div class="w-10 h-10 rounded-full bg-deep-plum text-paper-white flex items-center justify-center font-bold">J</div>
+            <span class="font-label-md font-medium text-deep-plum">Jordan W.</span>
+        </div>
+    </div>
+    <!-- Review 2 -->
+    <div class="w-[300px] md:w-[400px] flex-shrink-0 bg-paper-white p-6 rounded-lg shadow-sm border border-tertiary/10 flex flex-col justify-between">
+        <div>
+            <div class="flex text-[#fbbc04] mb-3">
+                <span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span><span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span><span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span><span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span><span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+            </div>
+            <p class="font-body-md text-on-surface-variant italic mb-4">"Claudia did my Botox and not only did she do a phenomenal job, but she listened to all of my concerns and explained to me what needed to be done to achieve that. I will be going back to see her and I highly recommend others to see her as well!"</p>
+        </div>
+        <div class="flex items-center gap-3">
+            <div class="w-10 h-10 rounded-full bg-deep-plum text-paper-white flex items-center justify-center font-bold">M</div>
+            <span class="font-label-md font-medium text-deep-plum">Macie S.</span>
+        </div>
+    </div>
+    <!-- Review 3 -->
+    <div class="w-[300px] md:w-[400px] flex-shrink-0 bg-paper-white p-6 rounded-lg shadow-sm border border-tertiary/10 flex flex-col justify-between">
+        <div>
+            <div class="flex text-[#fbbc04] mb-3">
+                <span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span><span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span><span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span><span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span><span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+            </div>
+            <p class="font-body-md text-on-surface-variant italic mb-4">"I hosted a Botox party for a group of us who were all first-timers. Claudia came incredibly prepared, took the time to explain everything clearly, and made sure each of us felt confident and at ease. Highly recommend Claudia!"</p>
+        </div>
+        <div class="flex items-center gap-3">
+            <div class="w-10 h-10 rounded-full bg-deep-plum text-paper-white flex items-center justify-center font-bold">J</div>
+            <span class="font-label-md font-medium text-deep-plum">Janeen S.</span>
+        </div>
+    </div>
+    <!-- Review 4 -->
+    <div class="w-[300px] md:w-[400px] flex-shrink-0 bg-paper-white p-6 rounded-lg shadow-sm border border-tertiary/10 flex flex-col justify-between">
+        <div>
+            <div class="flex text-[#fbbc04] mb-3">
+                <span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span><span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span><span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span><span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span><span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+            </div>
+            <p class="font-body-md text-on-surface-variant italic mb-4">"As an orthopedic PA, she has incredible precision and the steadiest hands, which gave me so much confidence in trusting her with my Jeuveau injections. The results look natural and exactly what I was hoping for."</p>
+        </div>
+        <div class="flex items-center gap-3">
+            <div class="w-10 h-10 rounded-full bg-deep-plum text-paper-white flex items-center justify-center font-bold">A</div>
+            <span class="font-label-md font-medium text-deep-plum">Autumn P.</span>
+        </div>
+    </div>
+    <!-- Review 5 -->
+    <div class="w-[300px] md:w-[400px] flex-shrink-0 bg-paper-white p-6 rounded-lg shadow-sm border border-tertiary/10 flex flex-col justify-between">
+        <div>
+            <div class="flex text-[#fbbc04] mb-3">
+                <span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span><span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span><span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span><span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span><span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+            </div>
+            <p class="font-body-md text-on-surface-variant italic mb-4">"I've received Botox from Claudia twice so far and really appreciate her explaining what to expect... I was concerned about looking stiff or unnatural but that is not at all how it has turned out!"</p>
+        </div>
+        <div class="flex items-center gap-3">
+            <div class="w-10 h-10 rounded-full bg-deep-plum text-paper-white flex items-center justify-center font-bold">L</div>
+            <span class="font-label-md font-medium text-deep-plum">Lenee A.</span>
+        </div>
+    </div>
+    <!-- Review 6 -->
+    <div class="w-[300px] md:w-[400px] flex-shrink-0 bg-paper-white p-6 rounded-lg shadow-sm border border-tertiary/10 flex flex-col justify-between">
+        <div>
+            <div class="flex text-[#fbbc04] mb-3">
+                <span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span><span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span><span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span><span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span><span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+            </div>
+            <p class="font-body-md text-on-surface-variant italic mb-4">"Claudia did a wonderful job! Not only did I not experience painful injections, I didn’t 'hear' my skin pop when the needle broke the surfaces and I had zero bruising... I was impressed and would recommend."</p>
+        </div>
+        <div class="flex items-center gap-3">
+            <div class="w-10 h-10 rounded-full bg-deep-plum text-paper-white flex items-center justify-center font-bold">N</div>
+            <span class="font-label-md font-medium text-deep-plum">Nicole N.</span>
+        </div>
+    </div>
+</div>
+</div>
+</section>
+<!-- Section 3: The Latest From Instagram -->
+<section class="pt-12 md:pt-20 pb-12 md:pb-20 overflow-hidden transition-all duration-1000 opacity-100">
+<div class="max-w-container mx-auto px-margin-mobile md:px-margin-desktop flex flex-col md:flex-row justify-between items-end mb-stack-lg">
+<div>
+<span class="font-label-lg text-label-lg text-text-muted-taupe uppercase tracking-[0.2em] mb-2 block">Social Community</span>
+<h2 class="font-display-lg text-display-lg text-deep-plum">The Latest From Instagram</h2>
+</div>
+<a class="flex items-center gap-2 font-label-lg text-label-lg text-deep-plum hover:text-soft-blush transition-colors mb-2 tracking-widest" href="https://www.instagram.com/pa_claudia_aesthetics?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank" rel="noopener noreferrer">
+<span class="material-symbols-outlined">photo_camera</span> Follow @pa_claudia_aesthetics
+            </a>
+</div>
+<div class="marquee-container w-full mt-8">
+<div class="marquee-content flex">
+    <!-- List 1 of 10 images -->
+    <div class="flex gap-4 pr-4 flex-shrink-0">
+        <div class="w-[200px] md:w-[260px] flex-shrink-0 aspect-square bg-paper-white-container relative group cursor-pointer overflow-hidden rounded-lg shadow-sm">
+            <img loading=\"lazy\" loading=\"lazy\" class="w-full h-full object-cover transition-all duration-500 group-hover:scale-105" src="images/instagram_image_slideshow_1.jpg">
+        </div>
+        <div class="w-[200px] md:w-[260px] flex-shrink-0 aspect-square bg-paper-white-container relative group cursor-pointer overflow-hidden rounded-lg shadow-sm">
+            <img loading=\"lazy\" loading=\"lazy\" class="w-full h-full object-cover transition-all duration-500 group-hover:scale-105" src="images/instagram_image_slideshow_2.jpg">
+        </div>
+        <div class="w-[200px] md:w-[260px] flex-shrink-0 aspect-square bg-paper-white-container relative group cursor-pointer overflow-hidden rounded-lg shadow-sm">
+            <img loading=\"lazy\" loading=\"lazy\" class="w-full h-full object-cover transition-all duration-500 group-hover:scale-105" src="images/instagram_image_slideshow_3.jpg">
+        </div>
+        <div class="w-[200px] md:w-[260px] flex-shrink-0 aspect-square bg-paper-white-container relative group cursor-pointer overflow-hidden rounded-lg shadow-sm">
+            <img loading=\"lazy\" loading=\"lazy\" class="w-full h-full object-cover transition-all duration-500 group-hover:scale-105" src="images/instagram_image_slideshow_4.jpg">
+        </div>
+        <div class="w-[200px] md:w-[260px] flex-shrink-0 aspect-square bg-paper-white-container relative group cursor-pointer overflow-hidden rounded-lg shadow-sm">
+            <img loading=\"lazy\" loading=\"lazy\" class="w-full h-full object-cover transition-all duration-500 group-hover:scale-105" src="images/instagram_slideshow_image_5.jpg">
+        </div>
+        <div class="w-[200px] md:w-[260px] flex-shrink-0 aspect-square bg-paper-white-container relative group cursor-pointer overflow-hidden rounded-lg shadow-sm">
+            <img loading=\"lazy\" loading=\"lazy\" class="w-full h-full object-cover transition-all duration-500 group-hover:scale-105" src="images/instagram_image_slideshow_6.jpg">
+        </div>
+        <div class="w-[200px] md:w-[260px] flex-shrink-0 aspect-square bg-paper-white-container relative group cursor-pointer overflow-hidden rounded-lg shadow-sm">
+            <img loading=\"lazy\" loading=\"lazy\" class="w-full h-full object-cover transition-all duration-500 group-hover:scale-105" src="images/instagram_image_slideshow_7.jpg">
+        </div>
+        <div class="w-[200px] md:w-[260px] flex-shrink-0 aspect-square bg-paper-white-container relative group cursor-pointer overflow-hidden rounded-lg shadow-sm">
+            <img loading=\"lazy\" loading=\"lazy\" class="w-full h-full object-cover transition-all duration-500 group-hover:scale-105" src="images/instagram_image_slide_show8.png">
+        </div>
+        <div class="w-[200px] md:w-[260px] flex-shrink-0 aspect-square bg-paper-white-container relative group cursor-pointer overflow-hidden rounded-lg shadow-sm">
+            <img loading=\"lazy\" loading=\"lazy\" class="w-full h-full object-cover transition-all duration-500 group-hover:scale-105" src="images/instagram_new_1.jpg">
+        </div>
+        <div class="w-[200px] md:w-[260px] flex-shrink-0 aspect-square bg-paper-white-container relative group cursor-pointer overflow-hidden rounded-lg shadow-sm">
+            <img loading=\"lazy\" loading=\"lazy\" class="w-full h-full object-cover transition-all duration-500 group-hover:scale-105" src="images/instagram_new_2.jpg">
+        </div>
+    </div>
+    <!-- List 2 of 10 images (duplicated for seamless loop) -->
+    <div class="flex gap-4 pr-4 flex-shrink-0">
+        <div class="w-[200px] md:w-[260px] flex-shrink-0 aspect-square bg-paper-white-container relative group cursor-pointer overflow-hidden rounded-lg shadow-sm">
+            <img loading=\"lazy\" loading=\"lazy\" class="w-full h-full object-cover transition-all duration-500 group-hover:scale-105" src="images/instagram_image_slideshow_1.jpg">
+        </div>
+        <div class="w-[200px] md:w-[260px] flex-shrink-0 aspect-square bg-paper-white-container relative group cursor-pointer overflow-hidden rounded-lg shadow-sm">
+            <img loading=\"lazy\" loading=\"lazy\" class="w-full h-full object-cover transition-all duration-500 group-hover:scale-105" src="images/instagram_image_slideshow_2.jpg">
+        </div>
+        <div class="w-[200px] md:w-[260px] flex-shrink-0 aspect-square bg-paper-white-container relative group cursor-pointer overflow-hidden rounded-lg shadow-sm">
+            <img loading=\"lazy\" loading=\"lazy\" class="w-full h-full object-cover transition-all duration-500 group-hover:scale-105" src="images/instagram_image_slideshow_3.jpg">
+        </div>
+        <div class="w-[200px] md:w-[260px] flex-shrink-0 aspect-square bg-paper-white-container relative group cursor-pointer overflow-hidden rounded-lg shadow-sm">
+            <img loading=\"lazy\" loading=\"lazy\" class="w-full h-full object-cover transition-all duration-500 group-hover:scale-105" src="images/instagram_image_slideshow_4.jpg">
+        </div>
+        <div class="w-[200px] md:w-[260px] flex-shrink-0 aspect-square bg-paper-white-container relative group cursor-pointer overflow-hidden rounded-lg shadow-sm">
+            <img loading=\"lazy\" loading=\"lazy\" class="w-full h-full object-cover transition-all duration-500 group-hover:scale-105" src="images/instagram_slideshow_image_5.jpg">
+        </div>
+        <div class="w-[200px] md:w-[260px] flex-shrink-0 aspect-square bg-paper-white-container relative group cursor-pointer overflow-hidden rounded-lg shadow-sm">
+            <img loading=\"lazy\" loading=\"lazy\" class="w-full h-full object-cover transition-all duration-500 group-hover:scale-105" src="images/instagram_image_slideshow_6.jpg">
+        </div>
+        <div class="w-[200px] md:w-[260px] flex-shrink-0 aspect-square bg-paper-white-container relative group cursor-pointer overflow-hidden rounded-lg shadow-sm">
+            <img loading=\"lazy\" loading=\"lazy\" class="w-full h-full object-cover transition-all duration-500 group-hover:scale-105" src="images/instagram_image_slideshow_7.jpg">
+        </div>
+        <div class="w-[200px] md:w-[260px] flex-shrink-0 aspect-square bg-paper-white-container relative group cursor-pointer overflow-hidden rounded-lg shadow-sm">
+            <img loading=\"lazy\" loading=\"lazy\" class="w-full h-full object-cover transition-all duration-500 group-hover:scale-105" src="images/instagram_image_slide_show8.png">
+        </div>
+        <div class="w-[200px] md:w-[260px] flex-shrink-0 aspect-square bg-paper-white-container relative group cursor-pointer overflow-hidden rounded-lg shadow-sm">
+            <img loading=\"lazy\" loading=\"lazy\" class="w-full h-full object-cover transition-all duration-500 group-hover:scale-105" src="images/instagram_new_1.jpg">
+        </div>
+        <div class="w-[200px] md:w-[260px] flex-shrink-0 aspect-square bg-paper-white-container relative group cursor-pointer overflow-hidden rounded-lg shadow-sm">
+            <img loading=\"lazy\" loading=\"lazy\" class="w-full h-full object-cover transition-all duration-500 group-hover:scale-105" src="images/instagram_new_2.jpg">
+        </div>
+    </div>
+</div>
+</div>
+</section>
+<!-- Section 4 & 5: Contact & Info -->
+<section class="bg-deep-plum text-paper-white transition-all duration-1000 opacity-100">
+<div class="max-w-container mx-auto px-margin-mobile md:px-margin-desktop grid grid-cols-1 lg:grid-cols-2">
+<!-- Contact Booking -->
+<div class="py-section-gap pr-0 lg:pr-stack-lg border-b lg:border-b-0 lg:border-r border-on-primary/10 flex flex-col justify-start pt-16 lg:pt-24">
+<h2 class="font-display-lg text-display-lg-mobile md:text-display-lg mb-4">Ready to Begin?</h2>
+<p class="font-body-md text-paper-white/70 mb-stack-lg">Book a personalized medical aesthetics consultation online. Let us help you achieve your aesthetic and wellness goals.</p>
+<div class="mt-4">
+<button onclick="window.location.href='https://squareup.com/appointments/book/L5CWQHE9Q1V00'" class="bg-on-primary text-deep-plum px-12 py-4 font-label-lg text-label-lg uppercase hover:bg-soft-blush hover:text-white transition-all active:scale-95 tracking-widest cursor-pointer">Book A Consultation</button>
+</div>
+</div>
+<!-- Info Column -->
+<div class="py-section-gap pl-0 lg:pl-stack-lg flex flex-col justify-between">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-stack-lg">
+<div>
+<h4 class="font-label-lg text-label-lg uppercase tracking-widest mb-4 flex items-center gap-2">
+<span class="material-symbols-outlined text-soft-blush">contact_support</span> Direct Contact
+                        </h4>
+<p class="font-body-md text-paper-white/70">Phone: (206) 226-5477<br>Email: kalotay@gmail.com</p>
+</div>
+<div>
+<h4 class="font-label-lg text-label-lg uppercase tracking-widest mb-4 flex items-center gap-2">
+<span class="material-symbols-outlined text-soft-blush">location_on</span> Location
+                        </h4>
+<p class="font-body-md text-paper-white/70 mb-4">
+                            22833 Bothell Everett Highway<br>Suite 200, Salon 7<br>Bothell, WA 98021
+                        </p>
+<a class="inline-flex items-center gap-2 text-soft-blush font-label-md text-label-md uppercase border-b border-accent-warm pb-1 hover:text-paper-white hover:border-on-primary transition-all tracking-widest" href="https://maps.app.goo.gl/ZgkN3WU9fhPvFFDi9" target="_blank">Get Directions <span class="material-symbols-outlined text-sm">open_in_new</span></a>
+</div>
+<div>
+<h4 class="font-label-lg text-label-lg uppercase tracking-widest mb-4 flex items-center gap-2">
+<span class="material-symbols-outlined text-soft-blush">schedule</span> Office Hours
+                        </h4>
+<div class="font-body-md text-paper-white/70 space-y-1 w-full max-w-xs">
+    <div class="flex justify-between"><span>Mon:</span> <span>9:00 AM – 3:00 PM</span></div>
+    <div class="flex justify-between"><span>Tue:</span> <span>Closed</span></div>
+    <div class="flex justify-between"><span>Wed:</span> <span>4:30 PM – 6:00 PM</span></div>
+    <div class="flex justify-between"><span>Thu:</span> <span>Closed</span></div>
+    <div class="flex justify-between"><span>Fri:</span> <span>4:30 PM – 6:00 PM</span></div>
+    <div class="flex justify-between"><span>Sat &amp; Sun:</span> <span>9:00 AM – 3:00 PM</span></div>
+</div>
+<p class="font-body-md text-xs text-paper-white/50 mt-4 italic">By appointment only.</p>
+</div>
+</div>
+<div class="mt-stack-lg pt-stack-lg border-t border-on-primary/10">
+<div class="bg-on-primary/5 p-gutter rounded-lg">
+<h4 class="font-headline-md mb-stack-sm italic">Find Us In Bothell</h4>
+<div class="w-full h-48 bg-paper-white-container-highest/20 overflow-hidden rounded">
+<iframe src="https://maps.google.com/maps?q=22833%20Bothell%20Everett%20Highway%2C%20Suite%20200%2C%20Salon%207%2C%20Bothell%20%2C%20Wa%2098021&t=&z=14&ie=UTF8&iwloc=&output=embed" width="100%" height="100%" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-surface-container-low w-full py-stack-lg border-t border-tertiary/5">
+<div class="flex flex-col md:flex-row justify-between items-center px-margin-mobile md:px-margin-desktop gap-stack-md max-w-container-max mx-auto">
+<div class="flex flex-col items-center md:items-start">
+<span class="font-headline-md text-headline-md text-primary mb-unit">CK Aesthetics</span>
+<span class="font-body-md text-body-md text-on-surface-variant">© 2026 CK Aesthetics. All rights reserved.</span>
+</div>
+<div class="flex gap-stack-lg">
 <a class="font-body-md text-body-md text-on-surface-variant hover:text-primary transition-colors" href="consultation.html">Contact</a>
-</div>
-<div class="flex gap-4">
-<a class="w-10 h-10 rounded-full bg-surface-pure flex items-center justify-center text-primary hover:bg-primary hover:text-on-primary transition-all shadow-sm" href="https://www.instagram.com/pa_claudia_aesthetics?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank" rel="noopener noreferrer">
-<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
-</a>
-<a class="w-10 h-10 rounded-full bg-surface-pure flex items-center justify-center text-primary hover:bg-primary hover:text-on-primary transition-all shadow-sm" href="https://maps.app.goo.gl/ZgkN3WU9fhPvFFDi9" target="_blank" rel="noopener noreferrer">
-<span class="material-symbols-outlined" style="font-variation-settings: 'wght' 300;">location_on</span>
-</a>
-</div>
-</div>
-</footer>
-<script>
-    // Simple intersection observer for reveal animations
-    const observerOptions = {
-        threshold: 0.1
-    };
-
-    const observer = new IntersectionObserver((entries) => {
-        entries.forEach(entry => {
-            if (entry.isIntersecting) {
-                entry.target.classList.add('opacity-100');
-                entry.target.classList.remove('opacity-0', 'translate-y-8');
-            }
-        });
-    }, observerOptions);
-
-    document.querySelectorAll('section').forEach(section => {
-        section.classList.add('transition-all', 'duration-1000', 'opacity-0', 'translate-y-8');
-        observer.observe(section);
-    });
-</script>
-
-
-
-<script>
-document.addEventListener('DOMContentLoaded', () => {
-    const mobileBtn = document.querySelector('nav button.md\\:hidden');
-    const mobileMenu = document.createElement('div');
-    mobileMenu.className = 'md:hidden hidden flex-col absolute top-20 left-0 w-full bg-background/95 backdrop-blur-md border-b border-outline-variant/10 shadow-lg py-4 px-margin-mobile z-40';
-    mobileMenu.innerHTML = `
-        <a class="font-label-lg text-label-lg text-on-surface-variant font-medium py-3 border-b border-outline-variant/10 hover:text-primary transition-colors" href="services.html">Services</a>
-        <a class="font-label-lg text-label-lg text-on-surface-variant font-medium py-3 border-b border-outline-variant/10 hover:text-primary transition-colors" href="about.html">About Us</a>
-        <a class="font-label-lg text-label-lg text-on-surface-variant font-medium py-3 border-b border-outline-variant/10 hover:text-primary transition-colors" href="consultation.html">Consultation</a>
-        <button onclick="window.location.href='https://squareup.com/appointments/book/L5CWQHE9Q1V00'"   class="mt-4 px-6 py-3 bg-primary text-on-primary font-label-lg text-label-lg uppercase cursor-pointer active:scale-95 transition-all tracking-widest w-full">Book Now</button>
-    `;
-    const nav = document.querySelector('nav');
-    if(nav) nav.appendChild(mobileMenu);
-
-    if(mobileBtn) {
-        mobileBtn.addEventListener('click', () => {
-            if(mobileMenu.classList.contains('hidden')) {
-                mobileMenu.classList.remove('hidden');
-                mobileMenu.classList.add('flex');
-                mobileBtn.innerHTML = 'close';
-            } else {
-                mobileMenu.classList.add('hidden');
-                mobileMenu.classList.remove('flex');
-                mobileBtn.innerHTML = 'menu';
-            }
-        });
-    }
-});
-</script>
-\n</body></html>
+<a class="font-body-md text-body-md text-on-surface-variant hover:text-primary transition-colors" href="cancellation-policy.html">Cancellation Policy</a>
+</div>
+<div class="flex gap-4">
+<a class="w-10 h-10 rounded-full bg-surface-pure flex items-center justify-center text-primary hover:bg-primary hover:text-on-primary transition-all shadow-sm" href="https://www.instagram.com/pa_claudia_aesthetics?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank" rel="noopener noreferrer">
+<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
+</a>
+<a class="w-10 h-10 rounded-full bg-surface-pure flex items-center justify-center text-primary hover:bg-primary hover:text-on-primary transition-all shadow-sm" href="https://maps.app.goo.gl/ZgkN3WU9fhPvFFDi9" target="_blank" rel="noopener noreferrer">
+<span class="material-symbols-outlined" style="font-variation-settings: 'wght' 300;">location_on</span>
+</a>
+</div>
+</div>
+</footer>
+<script>
+    // Simple intersection observer for reveal animations
+    const observerOptions = {
+        threshold: 0.1
+    };
+
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('opacity-100');
+                entry.target.classList.remove('opacity-0', 'translate-y-8');
+            }
+        });
+    }, observerOptions);
+
+    document.querySelectorAll('section').forEach(section => {
+        section.classList.add('transition-all', 'duration-1000', 'opacity-0', 'translate-y-8');
+        observer.observe(section);
+    });
+</script>
+
+
+
+<script>
+document.addEventListener('DOMContentLoaded', () => {
+    const mobileBtn = document.querySelector('nav button.md\\:hidden');
+    const mobileMenu = document.createElement('div');
+    mobileMenu.className = 'md:hidden hidden flex-col absolute top-20 left-0 w-full bg-background/95 backdrop-blur-md border-b border-outline-variant/10 shadow-lg py-4 px-margin-mobile z-40';
+    mobileMenu.innerHTML = `
+        <a class="font-label-lg text-label-lg text-on-surface-variant font-medium py-3 border-b border-outline-variant/10 hover:text-primary transition-colors" href="services.html">Services</a>
+        <a class="font-label-lg text-label-lg text-on-surface-variant font-medium py-3 border-b border-outline-variant/10 hover:text-primary transition-colors" href="about.html">About Us</a>
+        <a class="font-label-lg text-label-lg text-on-surface-variant font-medium py-3 border-b border-outline-variant/10 hover:text-primary transition-colors" href="consultation.html">Consultation</a>
+        <button onclick="window.location.href='https://squareup.com/appointments/book/L5CWQHE9Q1V00'"   class="mt-4 px-6 py-3 bg-primary text-on-primary font-label-lg text-label-lg uppercase cursor-pointer active:scale-95 transition-all tracking-widest w-full">Book Now</button>
+    `;
+    const nav = document.querySelector('nav');
+    if(nav) nav.appendChild(mobileMenu);
+
+    if(mobileBtn) {
+        mobileBtn.addEventListener('click', () => {
+            if(mobileMenu.classList.contains('hidden')) {
+                mobileMenu.classList.remove('hidden');
+                mobileMenu.classList.add('flex');
+                mobileBtn.innerHTML = 'close';
+            } else {
+                mobileMenu.classList.add('hidden');
+                mobileMenu.classList.remove('flex');
+                mobileBtn.innerHTML = 'menu';
+            }
+        });
+    }
+});
+</script>
+\n</body></html>
